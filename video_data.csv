@@ -1,0 +1,2254 @@
+Time,Total length,Event,Subject,Group,Puzzle,StartEnd,SubjAssign
+55.653999999999996,3420.0,Screen sharing begins,03B,3,,,1.0
+72.275,3420.0,Opening phase 1*,None,3,resist,start,0.0
+105.025,3420.0,Mentioning redwarren.com,03B,3,resist,,1.0
+121.774,3420.0,"See ""RESIST""*",None,3,resist,,0.0
+172.771,3420.0,Open phase 2*,None,3,chase,start,0.0
+235.03099999999998,3420.0,Go to redwarren.com/resist*,03D,3,resist,end,0.0
+239.53099999999998,3420.0,Mentioning redwarren.com/resist,03D,3,resist,,1.0
+299.031,3420.0,Seeing colors website*,None,3,colors,start,0.0
+654.613,3420.0,Figure out purple position,03D,3,colors,,1.0
+719.865,3420.0,Figure out blue position,03E,3,colors,,1.0
+939.385,3420.0,Figure out green position,03D,3,colors,,1.0
+1071.631,3420.0,Figure out yellow position,03B,3,colors,,1.0
+1072.634,3420.0,Figure out red position,03B,3,colors,,1.0
+1073.635,3420.0,Get to color solution page*,None,3,colors,end,0.0
+1197.13,3420.0,Figure out the word is CHASE*,03D,3,chase,,0.0
+1226.135,3420.0,Go to redwarren.com/chase*,None,3,chase,end,0.0
+1230.635,3420.0,Mention inputting chase into URL,03D,3,chase,,1.0
+1333.0339999999999,3420.0,Open phase 3*,None,3,cables,start,0.0
+1373.295,3420.0,Figure out how to decode DIVERTS,03A,3,cables,,1.0
+1402.045,3420.0,Cables: Decode D,03E,3,cables,,1.0
+1430.543,3420.0,Cables: Decode I,03D,3,cables,,1.0
+1456.793,3420.0,Cables: Decode V,03D,3,cables,,1.0
+1473.293,3420.0,Cables: Decode E,03D,3,cables,,1.0
+1487.043,3420.0,Cables: Decode R,03D,3,cables,,1.0
+1501.545,3420.0,Cables: Decode T,03D,3,cables,,1.0
+1504.295,3420.0,Cables: Decode S,03D,3,cables,,1.0
+1506.7939999999999,3420.0,Fully solved cable password*,None,3,cables,,0.0
+1541.0439999999999,3420.0,First bring up the onedrive password box*,None,3,cables,,0.0
+1553.545,3420.0,Mention input consume as onedrive password,03A,3,cables,,1.0
+1569.795,3420.0,Input consume as onedrive password*,None,3,cables,end,0.0
+1574.295,3420.0,Open phase 4 picture*,None,3,flyer,start,0.0
+1626.543,3420.0,Open flyer*,None,3,flyer,,0.0
+1629.543,3420.0,Mention firestoneheavy.com,03A,3,flyer,,1.0
+1685.045,3420.0,Open firestoneheavy.com*,None,3,myspace,start,0.0
+1710.293,3420.0,Find Hughey Neube's name,03A,3,myspace,,1.0
+1725.2939999999999,3420.0,Mention Hughey Neube's Myspace,03E,3,myspace,,1.0
+1740.295,3420.0,Open admin portal page*,None,3,,,0.0
+1744.793,3420.0,Open Hughey Neube's Myspace*,None,3,myspace,,0.0
+1826.0439999999999,3420.0,Find missing corner of flyer*,None,3,myspace,,0.0
+1903.545,3420.0,Find pictures of Crumpet*,None,3,myspace,,0.0
+1952.0410000000002,3420.0,Find Employee ID photo*,None,3,myspace,,0.0
+2279.176,3420.0,Mention association between corner letters and flyer icons,03C,3,flyer,,1.0
+2407.465,3420.0,Flyer: Decode E,03D,3,flyer,,1.0
+2412.465,3420.0,Flyer: Decode M,03D,3,flyer,,1.0
+2427.964,3420.0,Flyer: Decode I,03B,3,flyer,,1.0
+2435.215,3420.0,Flyer: Decode P,03D,3,flyer,,1.0
+2438.215,3420.0,Flyer: Decode D,03B,3,flyer,,1.0
+2456.715,3420.0,Flyer: Decode second I,03B,3,flyer,,1.0
+2461.464,3420.0,Flyer: Decode N,03B,3,flyer,,1.0
+2469.7129999999997,3420.0,Flyer: Decode R,03E,3,flyer,,1.0
+2487.2110000000002,3420.0,Flyer: Decode second E,03B,3,flyer,,1.0
+2495.2129999999997,3420.0,Flyer: Decode V,03B,3,flyer,,1.0
+2515.4629999999997,3420.0,Have all of the flyer letters*,None,3,flyer,end,0.0
+2515.4629999999997,3420.0,Have all of the flyer letters*,None,3,EMPID,start,0.0
+2555.965,3420.0,Figure out what EMP ID means,03E,3,EMPID,,1.0
+2557.265,3420.0,Figure out what IN REV means,03E,3,EMPID,,1.0
+2587.261,3420.0,Notice Employee ID number,03B,3,myspace,end,1.0
+2647.015,3420.0,Bring up purple log in page*,None,3,EMPID,end,0.0
+2647.015,3420.0,Bring up purple log in page*,None,3,crumpet,start,0.0
+2652.265,3420.0,Figure out username,03C,3,crumpet,,1.0
+2667.014,3420.0,Figure out password,03B,3,crumpet,,1.0
+2679.764,3420.0,Get to maze game*,None,3,crumpet,end,0.0
+2679.764,3420.0,Get to maze game*,None,3,maze,start,0.0
+2824.075,3420.0,Figure out you need to walk to houses,03B,3,maze,,1.0
+2950.573,3420.0,"Find ""Second Song""",03D,3,maze,,1.0
+3178.075,3420.0,"Find ""Last Word""",03D,3,maze,,1.0
+3209.074,3420.0,"Find ""Toto""",03B,3,maze,,1.0
+3319.572,3420.0,"Find ""1979 Album""",03D,3,maze,,1.0
+3348.824,3420.0,Figure out word is dragon,03B,3,maze,,1.0
+3363.825,3420.0,Input dragon into admin portal*,None,3,maze,end,0.0
+3397.324,3420.0,See congratulations page*,None,3,,,0.0
+1188.115,3420.0,Mention use the colors to decode phase 2,None,3,chase,,1.0
+1197.364,3420.0,Colors: Decode C,03E,3,chase,,1.0
+1197.612,3420.0,Colors: Decode H,03E,3,chase,,1.0
+1199.363,3420.0,Colors: Decode A,03E,3,chase,,1.0
+1199.861,3420.0,Colors: Decode S,03E,3,chase,,1.0
+1200.615,3420.0,Colors: Decode E,03E,3,chase,,1.0
+2536.1910000000003,3420.0,Mention the spaces between words,None,3,flyer,,1.0
+2622.4429999999998,3420.0,mention going to firestoneheavy.com/745017,None,3,EMPID,,1.0
+1456.793,3420.0,Cables: Decode V,03E,3,cables,,1.0
+2279.176,3420.0,Mention association between corner letters and flyer icons,03D,3,flyer,,1.0
+2587.261,3420.0,Notice Employee ID number,03C,3,myspace,end,1.0
+70.86399999999999,3209.72,Screen sharing begins,34A,34,,,1.0
+132.14600000000002,3209.72,Mentioning redwarren.com,34B,34,resist,,1.0
+153.89700000000002,3209.72,"See ""RESIST""*",None,34,resist,,0.0
+165.394,3209.72,Mentioning redwarren.com/resist,34D,34,resist,,1.0
+171.395,3209.72,Go to redwarren.com/resist*,None,34,resist,end,0.0
+240.395,3209.72,Seeing colors website*,None,34,colors,start,0.0
+514.644,3209.72,Figure out red position,34B,34,colors,,1.0
+546.1419999999999,3209.72,Figure out purple position,34B,34,colors,,1.0
+572.894,3209.72,Figure out yellow position,34A,34,colors,,1.0
+586.894,3209.72,Figure out green position,34B,34,colors,,1.0
+587.641,3209.72,Figure out blue position,34B,34,colors,,1.0
+597.144,3209.72,Get to color solution page*,None,34,colors,end,0.0
+705.8939999999999,3209.72,Open phase 2*,None,34,chase,start,0.0
+741.806,3209.72,Mention use the colors to decode phase 2,34A,34,chase,,1.0
+744.809,3209.72,Colors: Decode C,34A,34,chase,,1.0
+768.559,3209.72,Colors: Decode H,34B,34,chase,,1.0
+772.061,3209.72,Colors: Decode A,34B,34,chase,,1.0
+773.809,3209.72,Colors: Decode S,34B,34,chase,,1.0
+777.315,3209.72,Colors: Decode E,34B,34,chase,,1.0
+778.059,3209.72,Figure out the word is CHASE*,None,34,chase,,0.0
+784.562,3209.72,Mention inputting chase into URL,34D,34,chase,,1.0
+835.306,3209.72,Go to redwarren.com/chase*,None,34,chase,end,0.0
+960.809,3209.72,Open phase 3*,None,34,cables,start,0.0
+979.813,3209.72,First bring up the onedrive password box*,None,34,cables,,0.0
+1051.559,3209.72,Figure out how to decode DIVERTS,34A,34,cables,,1.0
+1061.062,3209.72,Cables: Decode D,34D,34,cables,,1.0
+1103.56,3209.72,Cables: Decode I,34D,34,cables,,1.0
+1147.309,3209.72,Cables: Decode V,34D,34,cables,,1.0
+1191.812,3209.72,Cables: Decode E,34A,34,cables,,1.0
+1208.8110000000001,3209.72,Cables: Decode R,34A,34,cables,,1.0
+1225.308,3209.72,Cables: Decode S,34A,34,cables,,1.0
+1306.059,3209.72,Cables: Decode T,34C,34,cables,,1.0
+1311.5629999999999,3209.72,Fully solved cable password*,None,34,cables,,0.0
+1315.0620000000001,3209.72,Mention input consume as onedrive password,34A,34,cables,,1.0
+1316.5620000000001,3209.72,Input consume as onedrive password*,None,34,cables,end,0.0
+1342.5620000000001,3209.72,Open flyer*,None,34,flyer,,0.0
+1354.557,3209.72,Mention firestoneheavy.com,34A,34,flyer,,1.0
+1370.3120000000001,3209.72,Open firestoneheavy.com*,None,34,myspace,start,0.0
+1401.3110000000001,3209.72,Find Hughey Neube's name,34A,34,myspace,,1.0
+1470.8139999999999,3209.72,Open admin portal page*,None,34,,,0.0
+1541.0610000000001,3209.72,Open phase 4 picture*,None,34,flyer,start,0.0
+1636.306,3209.72,Mention Hughey Neube's Myspace,34A,34,myspace,,1.0
+1658.558,3209.72,Open Hughey Neube's Myspace*,None,34,myspace,,0.0
+1667.3110000000001,3209.72,Find pictures of Crumpet*,None,34,myspace,,0.0
+1696.8129999999999,3209.72,Find missing corner of flyer*,None,34,myspace,,0.0
+1807.0620000000001,3209.72,Find Employee ID photo*,None,34,myspace,,0.0
+1815.559,3209.72,Notice Employee ID number,34B,34,myspace,end,1.0
+2128.5570000000002,3209.72,Mention association between corner letters and flyer icons,34B,34,flyer,,1.0
+2145.812,3209.72,Flyer: Decode V,34B,34,flyer,,1.0
+2169.062,3209.72,Flyer: Decode E,34D,34,flyer,,1.0
+2183.0570000000002,3209.72,Flyer: Decode M,34B,34,flyer,,1.0
+2202.562,3209.72,Flyer: Decode I,34B,34,flyer,,1.0
+2207.3089999999997,3209.72,Flyer: Decode D,34B,34,flyer,,1.0
+2217.31,3209.72,Flyer: Decode second I,34D,34,flyer,,1.0
+2224.812,3209.72,Flyer: Decode N,34D,34,flyer,,1.0
+2237.561,3209.72,Flyer: Decode second E,34B,34,flyer,,1.0
+2289.3070000000002,3209.72,Flyer: Decode R,34D,34,flyer,,1.0
+2302.06,3209.72,Flyer: Decode P,34A,34,flyer,,1.0
+2317.058,3209.72,Have all of the flyer letters*,None,34,flyer,end,0.0
+2317.058,3209.72,Have all of the flyer letters*,None,34,EMPID,start,0.0
+2331.064,3209.72,Figure out what EMP ID means,34D,34,EMPID,,1.0
+2359.8070000000002,3209.72,Figure out what IN REV means,34D,34,EMPID,,1.0
+2414.812,3209.72,mention going to firestoneheavy.com/745017,None,34,EMPID,,1.0
+2456.061,3209.72,Bring up purple log in page*,None,34,EMPID,end,0.0
+2456.061,3209.72,Bring up purple log in page*,None,34,crumpet,start,0.0
+2462.3089999999997,3209.72,Figure out username,34A,34,crumpet,,1.0
+2466.062,3209.72,Figure out password,34A,34,crumpet,,1.0
+2477.812,3209.72,Get to maze game*,None,34,crumpet,end,0.0
+2477.812,3209.72,Get to maze game*,None,34,maze,start,0.0
+2518.56,3209.72,Figure out you need to walk to houses,34A,34,maze,,1.0
+2726.893,3209.72,"Find ""Last Word""",34A,34,maze,,1.0
+2909.1440000000002,3209.72,"Find ""Second Song""",34A,34,maze,,1.0
+2999.3959999999997,3209.72,"Find ""1979 Album""",34A,34,maze,,1.0
+3138.393,3209.72,"Find ""Toto""",34A,34,maze,,1.0
+3158.3959999999997,3209.72,Figure out word is dragon,34C,34,maze,,1.0
+3165.1459999999997,3209.72,Input dragon into admin portal*,None,34,maze,end,0.0
+3192.893,3209.72,See congratulations page*,None,34,,,0.0
+101.896,3209.72,Opening phase 1*,None,34,resist,start,0.0
+2322.895,3209.72,Mention the spaces between words,34D,34,flyer,,1.0
+5.907,2594.12,Screen sharing begins,04C,4,,,1.0
+127.404,2594.12,Opening phase 1*,04C,4,resist,start,0.0
+150.905,2594.12,Mentioning redwarren.com,04B,4,resist,,1.0
+181.32299999999998,2594.12,"See ""RESIST""*",04B,4,resist,,0.0
+193.577,2594.12,Mentioning redwarren.com/resist,04E,4,resist,,1.0
+194.325,2594.12,Go to redwarren.com/resist*,04E,4,resist,end,0.0
+254.071,2594.12,Seeing colors website*,04C,4,colors,start,0.0
+326.073,2594.12,Open phase 2*,04C,4,chase,start,0.0
+740.324,2594.12,Figure out green position,04E,4,colors,,1.0
+752.075,2594.12,Figure out yellow position,04E,4,colors,,1.0
+817.075,2594.12,Figure out blue position,04A,4,colors,,1.0
+817.323,2594.12,Figure out red position,04A,4,colors,,1.0
+817.574,2594.12,Figure out purple position,04A,4,colors,,1.0
+824.824,2594.12,Get to color solution page*,04C,4,colors,end,0.0
+838.075,2594.12,Colors: Decode C,04B,4,chase,,1.0
+839.576,2594.12,Mention use the colors to decode phase 2,04B,4,chase,,1.0
+845.075,2594.12,Colors: Decode H,04B,4,chase,,1.0
+845.826,2594.12,Colors: Decode A,04B,4,chase,,1.0
+847.323,2594.12,Colors: Decode S,04A,4,chase,,1.0
+849.325,2594.12,Figure out the word is CHASE*,04A,4,chase,,0.0
+849.575,2594.12,Colors: Decode E,04A,4,chase,,1.0
+856.321,2594.12,Mention inputting chase into URL,04A,4,chase,,1.0
+862.581,2594.12,Go to redwarren.com/chase*,04C,4,chase,end,0.0
+951.077,2594.12,Open phase 3*,04C,4,cables,start,0.0
+1002.324,2594.12,Figure out how to decode DIVERTS,04C,4,cables,,1.0
+1047.8239999999998,2594.12,Cables: Decode E,04E,4,cables,,1.0
+1050.826,2594.12,Cables: Decode D,04C,4,cables,,1.0
+1056.326,2594.12,Cables: Decode I,04B,4,cables,,1.0
+1062.576,2594.12,Cables: Decode V,04A,4,cables,,1.0
+1086.575,2594.12,Cables: Decode R,04D,4,cables,,1.0
+1094.825,2594.12,Cables: Decode T,04A,4,cables,,1.0
+1099.572,2594.12,Cables: Decode S,04A,4,cables,,1.0
+1159.326,2594.12,Fully solved cable password*,04B,4,cables,,0.0
+1176.8239999999998,2594.12,Mention input consume as onedrive password,04E,4,cables,,1.0
+1177.073,2594.12,Input consume as onedrive password*,None,4,cables,end,0.0
+1232.077,2594.12,Open phase 4 picture*,04C,4,flyer,start,0.0
+1275.076,2594.12,Open flyer*,04C,4,flyer,,0.0
+1310.076,2594.12,Mention firestoneheavy.com,04C,4,flyer,,1.0
+1315.826,2594.12,Open firestoneheavy.com*,04C,4,myspace,start,0.0
+1325.3239999999998,2594.12,Find Hughey Neube's name,04E,4,myspace,,1.0
+1332.5739999999998,2594.12,Mention Hughey Neube's Myspace,04E,4,myspace,,1.0
+1359.8239999999998,2594.12,Find pictures of Crumpet*,04C,4,myspace,,0.0
+1360.0739999999998,2594.12,Open Hughey Neube's Myspace*,04B,4,myspace,,0.0
+1373.325,2594.12,Find missing corner of flyer*,04C,4,myspace,,0.0
+1509.8220000000001,2594.12,Find Employee ID photo*,04C,4,myspace,,0.0
+1511.575,2594.12,Notice Employee ID number,04B,4,myspace,end,1.0
+1569.5770000000002,2594.12,Open admin portal page*,04C,4,,,0.0
+1874.035,2594.12,Mention association between corner letters and flyer icons,04B,4,flyer,,1.0
+1906.533,2594.12,Flyer: Decode E,04C,4,flyer,,1.0
+1918.036,2594.12,Flyer: Decode M,04E,4,flyer,,1.0
+1931.787,2594.12,Flyer: Decode P,04E,4,flyer,,1.0
+1938.035,2594.12,Flyer: Decode I,04E,4,flyer,,1.0
+1938.2920000000001,2594.12,Flyer: Decode D,04E,4,flyer,,1.0
+1944.535,2594.12,Flyer: Decode second I,04C,4,flyer,,1.0
+1949.533,2594.12,Flyer: Decode N,04C,4,flyer,,1.0
+1974.283,2594.12,Flyer: Decode R,04A,4,flyer,,1.0
+1983.5379999999998,2594.12,Flyer: Decode second E,04C,4,flyer,,1.0
+1989.036,2594.12,Flyer: Decode V,04A,4,flyer,,1.0
+2039.283,2594.12,Mention the spaces between words,04B,4,flyer,,1.0
+2046.5339999999999,2594.12,Have all of the flyer letters*,04B,4,flyer,end,0.0
+2046.5339999999999,2594.12,Have all of the flyer letters*,04B,4,EMPID,start,0.0
+2052.285,2594.12,Figure out what EMP ID means,04E,4,EMPID,,1.0
+2055.783,2594.12,Figure out what IN REV means,04E,4,EMPID,,1.0
+2091.285,2594.12,mention going to firestoneheavy.com/745017,04E,4,EMPID,,1.0
+2095.535,2594.12,Bring up purple log in page*,04E,4,EMPID,end,0.0
+2095.535,2594.12,Bring up purple log in page*,04E,4,crumpet,start,0.0
+2143.536,2594.12,Figure out username,04A,4,crumpet,,1.0
+2143.785,2594.12,Figure out password,04A,4,crumpet,,1.0
+2171.283,2594.12,Get to maze game*,04C,4,crumpet,end,0.0
+2171.283,2594.12,Get to maze game*,04C,4,maze,start,0.0
+2233.035,2594.12,Figure out you need to walk to houses,04B,4,maze,,1.0
+2379.784,2594.12,"Find ""Toto""",04B,4,maze,,1.0
+2420.036,2594.12,"Find ""1979 Album""",04A,4,maze,,1.0
+2423.038,2594.12,"Find ""Second Song""",04C,4,maze,,1.0
+2431.038,2594.12,"Find ""Last Word""",04D,4,maze,,1.0
+2514.7870000000003,2594.12,Figure out word is dragon,04B,4,maze,,1.0
+2524.04,2594.12,Input dragon into admin portal*,04C,4,maze,end,0.0
+2549.0389999999998,2594.12,See congratulations page*,04C,4,,,0.0
+1180.576,2594.12,First bring up the onedrive password box*,None,4,cables,,0.0
+181.32299999999998,2594.12,"See ""RESIST""*",04D,4,resist,,0.0
+845.826,2594.12,Colors: Decode A,04C,4,chase,,1.0
+847.323,2594.12,Colors: Decode S,04B,4,chase,,1.0
+847.323,2594.12,Colors: Decode S,04C,4,chase,,1.0
+849.325,2594.12,Figure out the word is CHASE*,04C,4,chase,,0.0
+849.575,2594.12,Colors: Decode E,04B,4,chase,,1.0
+849.575,2594.12,Colors: Decode E,04C,4,chase,,1.0
+856.321,2594.12,Mention inputting chase into URL,04D,4,chase,,1.0
+1159.326,2594.12,Fully solved cable password*,04C,4,cables,,0.0
+84.155,2934.88,Screen sharing begins,32A,32,,,1.0
+107.65100000000001,2934.88,Opening phase 1*,None,32,resist,start,0.0
+112.65100000000001,2934.88,Mentioning redwarren.com,32A,32,resist,,1.0
+125.155,2934.88,"See ""RESIST""*",None,32,resist,,0.0
+179.40200000000002,2934.88,Open phase 2*,None,32,chase,start,0.0
+234.905,2934.88,Mentioning redwarren.com/resist,32D,32,resist,,1.0
+263.651,2934.88,Go to redwarren.com/resist*,None,32,resist,end,0.0
+394.903,2934.88,Seeing colors website*,None,32,colors,start,0.0
+775.115,2934.88,Figure out blue position,32A,32,colors,,1.0
+775.3610000000001,2934.88,Get to color solution page*,None,32,colors,end,0.0
+776.613,2934.88,Figure out green position,32A,32,colors,,1.0
+776.86,2934.88,Figure out yellow position,32A,32,colors,,1.0
+777.11,2934.88,Figure out red position,32A,32,colors,,1.0
+778.365,2934.88,Figure out purple position,32A,32,colors,,1.0
+790.115,2934.88,Colors: Decode C,32C,32,chase,,1.0
+790.615,2934.88,Mention use the colors to decode phase 2,32C,32,chase,,1.0
+792.3610000000001,2934.88,Colors: Decode H,32C,32,chase,,1.0
+792.6110000000001,2934.88,Colors: Decode A,32C,32,chase,,1.0
+797.1139999999999,2934.88,Colors: Decode S,32C,32,chase,,1.0
+800.3610000000001,2934.88,Colors: Decode E,32C,32,chase,,1.0
+802.113,2934.88,Figure out the word is CHASE*,32C,32,chase,,0.0
+812.1110000000001,2934.88,Mention inputting chase into URL,32B,32,chase,,1.0
+831.3610000000001,2934.88,Go to redwarren.com/chase*,None,32,chase,end,0.0
+950.6110000000001,2934.88,Open phase 3*,None,32,cables,start,0.0
+983.115,2934.88,First bring up the onedrive password box*,None,32,cables,,0.0
+993.3610000000001,2934.88,Figure out how to decode DIVERTS,32C,32,cables,,1.0
+1010.865,2934.88,Cables: Decode D,32D,32,cables,,1.0
+1019.115,2934.88,Cables: Decode I,32D,32,cables,,1.0
+1033.365,2934.88,Cables: Decode V,32A,32,cables,,1.0
+1050.115,2934.88,Cables: Decode E,32A,32,cables,,1.0
+1052.865,2934.88,Cables: Decode R,32D,32,cables,,1.0
+1059.865,2934.88,Cables: Decode S,32B,32,cables,,1.0
+1060.615,2934.88,Cables: Decode T,32E,32,cables,,1.0
+1113.361,2934.88,Fully solved cable password*,None,32,cables,,0.0
+1118.614,2934.88,Mention input consume as onedrive password,32A,32,cables,,1.0
+1125.111,2934.88,Input consume as onedrive password*,None,32,cables,end,0.0
+1128.611,2934.88,Open phase 4 picture*,None,32,flyer,start,0.0
+1148.11,2934.88,Open flyer*,None,32,flyer,,0.0
+1158.861,2934.88,Mention firestoneheavy.com,32A,32,flyer,,1.0
+1198.865,2934.88,Open firestoneheavy.com*,None,32,myspace,start,0.0
+1224.361,2934.88,Find Hughey Neube's name,32A,32,myspace,,1.0
+1370.672,2934.88,Open admin portal page*,None,32,,,0.0
+1473.672,2934.88,Mention Hughey Neube's Myspace,32E,32,myspace,,1.0
+1747.175,2934.88,Open Hughey Neube's Myspace*,None,32,myspace,,0.0
+1755.672,2934.88,Find pictures of Crumpet*,None,32,myspace,,0.0
+1786.172,2934.88,Find missing corner of flyer*,None,32,myspace,,0.0
+1818.6760000000002,2934.88,Mention association between corner letters and flyer icons,32E,32,flyer,,1.0
+1852.925,2934.88,Find Employee ID photo*,None,32,myspace,,0.0
+1855.234,2934.88,Notice Employee ID number,32A,32,myspace,end,1.0
+1953.9879999999998,2934.88,Flyer: Decode M,32A,32,flyer,,1.0
+1959.734,2934.88,Flyer: Decode E,32A,32,flyer,,1.0
+1971.236,2934.88,Flyer: Decode I,32A,32,flyer,,1.0
+1973.74,2934.88,Flyer: Decode D,32A,32,flyer,,1.0
+1981.9879999999998,2934.88,Flyer: Decode second I,32A,32,flyer,,1.0
+1985.735,2934.88,Flyer: Decode N,32A,32,flyer,,1.0
+1998.985,2934.88,Flyer: Decode second E,32A,32,flyer,,1.0
+2002.484,2934.88,Flyer: Decode V,32A,32,flyer,,1.0
+2017.99,2934.88,Flyer: Decode P,32A,32,flyer,,1.0
+2066.985,2934.88,Flyer: Decode R,32A,32,flyer,,1.0
+2084.234,2934.88,Have all of the flyer letters*,None,32,flyer,end,0.0
+2084.234,2934.88,Have all of the flyer letters*,None,32,EMPID,start,0.0
+2098.234,2934.88,Figure out what EMP ID means,32B,32,EMPID,,1.0
+2103.989,2934.88,Figure out what IN REV means,32E,32,EMPID,,1.0
+2153.735,2934.88,mention going to firestoneheavy.com/745017,32E,32,EMPID,,1.0
+2168.24,2934.88,Bring up purple log in page*,None,32,EMPID,end,0.0
+2168.24,2934.88,Bring up purple log in page*,None,32,crumpet,start,0.0
+2180.234,2934.88,Figure out username,32A,32,crumpet,,1.0
+2185.484,2934.88,Figure out password,32A,32,crumpet,,1.0
+2195.989,2934.88,Get to maze game*,None,32,crumpet,end,0.0
+2195.989,2934.88,Get to maze game*,None,32,maze,start,0.0
+2489.237,2934.88,Figure out you need to walk to houses,32C,32,maze,,1.0
+2666.99,2934.88,"Find ""Second Song""",32A,32,maze,,1.0
+2688.99,2934.88,"Find ""Toto""",32E,32,maze,,1.0
+2718.485,2934.88,"Find ""1979 Album""",32B,32,maze,,1.0
+2769.487,2934.88,"Find ""Last Word""",32C,32,maze,,1.0
+2801.988,2934.88,Figure out word is dragon,32D,32,maze,,1.0
+2892.735,2934.88,Input dragon into admin portal*,None,32,maze,end,0.0
+2921.988,2934.88,See congratulations page*,None,32,,,0.0
+2100.616,2934.88,Mention the spaces between words,32B,32,flyer,,1.0
+790.115,2934.88,Colors: Decode C,32D,32,chase,,1.0
+790.615,2934.88,Mention use the colors to decode phase 2,32D,32,chase,,1.0
+792.3610000000001,2934.88,Colors: Decode H,32D,32,chase,,1.0
+792.6110000000001,2934.88,Colors: Decode A,32D,32,chase,,1.0
+797.1139999999999,2934.88,Colors: Decode S,32D,32,chase,,1.0
+800.3610000000001,2934.88,Colors: Decode E,32D,32,chase,,1.0
+802.113,2934.88,Figure out the word is CHASE*,32D,32,chase,,0.0
+1855.234,2934.88,Notice Employee ID number,32E,32,myspace,end,1.0
+54.402,5325.44,Screen sharing begins,29A,29,,,1.0
+286.165,5325.44,Opening phase 1*,None,29,resist,start,0.0
+296.406,5325.44,Open phase 2*,None,29,chase,start,0.0
+320.655,5325.44,Mentioning redwarren.com,29B,29,resist,,1.0
+366.402,5325.44,"See ""RESIST""*",None,29,resist,,0.0
+531.274,5325.44,Mentioning redwarren.com/resist,29E,29,resist,,1.0
+542.774,5325.44,Go to redwarren.com/resist*,None,29,resist,end,0.0
+618.023,5325.44,Seeing colors website*,None,29,colors,start,0.0
+1343.521,5325.44,Figure out blue position,29B,29,colors,,1.0
+1344.025,5325.44,Figure out green position,29B,29,colors,,1.0
+1344.3310000000001,5325.44,Figure out yellow position,29B,29,colors,,1.0
+1638.776,5325.44,Figure out red position,29A,29,colors,,1.0
+1648.031,5325.44,Get to color solution page*,None,29,colors,end,0.0
+1654.023,5325.44,Mention use the colors to decode phase 2,29A,29,chase,,1.0
+1776.523,5325.44,Colors: Decode C,29C,29,chase,,1.0
+1781.602,5325.44,Colors: Decode H,29A,29,chase,,1.0
+1783.3529999999998,5325.44,Colors: Decode A,29A,29,chase,,1.0
+1789.855,5325.44,Colors: Decode S,29A,29,chase,,1.0
+1830.104,5325.44,Colors: Decode E,29C,29,chase,,1.0
+1831.104,5325.44,Figure out the word is CHASE*,None,29,chase,,0.0
+1846.356,5325.44,Go to redwarren.com/chase*,None,29,chase,end,0.0
+1969.609,5325.44,Open phase 3*,None,29,cables,start,0.0
+2067.512,5325.44,Figure out how to decode DIVERTS,29B,29,cables,,1.0
+2094.6020000000003,5325.44,First bring up the onedrive password box*,None,29,cables,,0.0
+2210.018,5325.44,Cables: Decode D,29B,29,cables,,1.0
+2259.761,5325.44,Cables: Decode I,29B,29,cables,,1.0
+2312.761,5325.44,Cables: Decode V,29C,29,cables,,1.0
+2370.531,5325.44,Cables: Decode E,29A,29,cables,,1.0
+2407.281,5325.44,Cables: Decode R,29E,29,cables,,1.0
+2408.03,5325.44,Cables: Decode T,29C,29,cables,,1.0
+2414.031,5325.44,Cables: Decode S,29E,29,cables,,1.0
+2414.277,5325.44,Fully solved cable password*,None,29,cables,,0.0
+2432.031,5325.44,Input consume as onedrive password*,None,29,cables,end,0.0
+2449.78,5325.44,Open phase 4 picture*,None,29,flyer,start,0.0
+2480.532,5325.44,Open flyer*,None,29,flyer,,0.0
+2491.281,5325.44,Mention firestoneheavy.com,29A,29,flyer,,1.0
+2492.779,5325.44,Open firestoneheavy.com*,None,29,myspace,start,0.0
+2547.276,5325.44,Find Hughey Neube's name,29C,29,myspace,,1.0
+2617.031,5325.44,Open admin portal page*,None,29,,,0.0
+2640.6809999999996,5325.44,Mention Hughey Neube's Myspace,29A,29,myspace,,1.0
+2828.6820000000002,5325.44,Open Hughey Neube's Myspace*,None,29,myspace,,0.0
+2831.928,5325.44,Find pictures of Crumpet*,None,29,myspace,,0.0
+2843.183,5325.44,Find missing corner of flyer*,None,29,myspace,,0.0
+2874.178,5325.44,Mention association between corner letters and flyer icons,None,29,flyer,,1.0
+2952.178,5325.44,Flyer: Decode M,29A,29,flyer,,1.0
+3043.429,5325.44,Flyer: Decode P,29A,29,flyer,,1.0
+3046.679,5325.44,Mention the spaces between words,None,29,flyer,,1.0
+3101.928,5325.44,Flyer: Decode I,29C,29,flyer,,1.0
+3107.928,5325.44,Flyer: Decode D,29C,29,flyer,,1.0
+3261.9240000000004,5325.44,Flyer: Decode E,29E,29,flyer,,1.0
+3304.43,5325.44,Flyer: Decode second I,29C,29,flyer,,1.0
+3321.6740000000004,5325.44,Flyer: Decode N,29A,29,flyer,,1.0
+3339.179,5325.44,Flyer: Decode R,29E,29,flyer,,1.0
+3344.678,5325.44,Flyer: Decode second E,29A,29,flyer,,1.0
+3347.678,5325.44,Flyer: Decode V,29C,29,flyer,,1.0
+3418.046,5325.44,Have all of the flyer letters*,None,29,flyer,end,0.0
+3418.046,5325.44,Have all of the flyer letters*,None,29,EMPID,start,0.0
+3430.542,5325.44,Figure out what EMP ID means,29A,29,EMPID,,1.0
+3508.783,5325.44,Find Employee ID photo*,None,29,myspace,,0.0
+3512.531,5325.44,Notice Employee ID number,29C,29,myspace,end,1.0
+3523.282,5325.44,Figure out what IN REV means,29C,29,EMPID,,1.0
+3554.22,5325.44,mention going to firestoneheavy.com/745017,29E,29,EMPID,,1.0
+3733.7209999999995,5325.44,Bring up purple log in page*,None,29,EMPID,end,0.0
+3733.7209999999995,5325.44,Bring up purple log in page*,None,29,crumpet,start,0.0
+3750.4509999999996,5325.44,Figure out password,29B,29,crumpet,,1.0
+3757.2,5325.44,Figure out username,29B,29,crumpet,,1.0
+3989.203,5325.44,Get to maze game*,None,29,crumpet,end,0.0
+3989.203,5325.44,Get to maze game*,None,29,maze,start,0.0
+4865.686,5325.44,Figure out you need to walk to houses,29C,29,maze,,1.0
+4880.188,5325.44,"Find ""Second Song""",29A,29,maze,,1.0
+4946.687,5325.44,"Find ""Last Word""",29C,29,maze,,1.0
+4956.439,5325.44,"Find ""1979 Album""",29E,29,maze,,1.0
+5000.187,5325.44,"Find ""Toto""",29B,29,maze,,1.0
+5270.196999999999,5325.44,Figure out word is dragon,29C,29,maze,,1.0
+5285.446999999999,5325.44,Input dragon into admin portal*,None,29,maze,end,0.0
+5309.698,5325.44,See congratulations page*,None,29,,,0.0
+1627.3570000000002,5325.44,Figure out purple position,None,29,colors,,1.0
+1843.356,5325.44,Mention inputting chase into URL,29A,29,chase,,1.0
+2426.6679999999997,5325.44,Mention input consume as onedrive password,29A,29,cables,,1.0
+1783.3529999999998,5325.44,Colors: Decode A,29E,29,chase,,1.0
+74.905,2835.0,None,23C,23,,,
+75.405,2835.0,"See ""RESIST""*",None,23,resist,,0.0
+96.656,2835.0,Opening phase 1*,None,23,resist,start,0.0
+99.654,2835.0,Mentioning redwarren.com,23E,23,resist,,1.0
+129.156,2835.0,Open phase 2*,None,23,chase,start,0.0
+238.405,2835.0,Mentioning redwarren.com/resist,23B,23,resist,,1.0
+244.40599999999998,2835.0,Go to redwarren.com/resist*,None,23,resist,end,0.0
+293.405,2835.0,Seeing colors website*,None,23,colors,start,0.0
+378.212,2835.0,Mention use the colors to decode phase 2,23B,23,chase,,1.0
+433.905,2835.0,Figure out yellow position,23C,23,colors,,1.0
+535.154,2835.0,Figure out green position,23C,23,colors,,1.0
+566.154,2835.0,Figure out red position,23C,23,colors,,1.0
+584.1,2835.0,Colors: Decode H,23E,23,chase,,1.0
+593.602,2835.0,Colors: Decode A,23E,23,chase,,1.0
+604.852,2835.0,Colors: Decode E,23C,23,chase,,1.0
+605.349,2835.0,Colors: Decode S,23C,23,chase,,1.0
+636.601,2835.0,Mention inputting chase into URL,23D,23,chase,,1.0
+697.6,2835.0,Figure out purple position,23D,23,colors,,1.0
+697.6010000000001,2835.0,Figure out blue position,23C,23,colors,,1.0
+702.102,2835.0,Get to color solution page*,None,23,colors,end,0.0
+712.6010000000001,2835.0,Colors: Decode C,23E,23,chase,,1.0
+722.352,2835.0,Figure out the word is CHASE*,None,23,chase,,0.0
+729.35,2835.0,Go to redwarren.com/chase*,None,23,chase,end,0.0
+813.352,2835.0,Open phase 3*,None,23,cables,start,0.0
+858.352,2835.0,First bring up the onedrive password box*,None,23,cables,,0.0
+924.75,2835.0,Figure out how to decode DIVERTS,23E,23,cables,,1.0
+933.7489999999999,2835.0,Cables: Decode D,23E,23,cables,,1.0
+957.0010000000001,2835.0,Cables: Decode I,23D,23,cables,,1.0
+982.2510000000001,2835.0,Cables: Decode V,23D,23,cables,,1.0
+993.498,2835.0,Cables: Decode R,23B,23,cables,,1.0
+997.502,2835.0,Cables: Decode S,23E,23,cables,,1.0
+1044.751,2835.0,Cables: Decode E,23B,23,cables,,1.0
+1059.001,2835.0,Cables: Decode T,23D,23,cables,,1.0
+1078.252,2835.0,Fully solved cable password*,None,23,cables,,0.0
+1082.002,2835.0,Mention input consume as onedrive password,23C,23,cables,,1.0
+1085.5,2835.0,Input consume as onedrive password*,None,23,cables,end,0.0
+1103.0,2835.0,Open phase 4 picture*,None,23,flyer,start,0.0
+1117.253,2835.0,Open flyer*,None,23,flyer,,0.0
+1161.248,2835.0,Mention firestoneheavy.com,23E,23,flyer,,1.0
+1169.503,2835.0,Open firestoneheavy.com*,None,23,myspace,start,0.0
+1177.998,2835.0,Find Hughey Neube's name,23E,23,myspace,,1.0
+1186.628,2835.0,Mention Hughey Neube's Myspace,23E,23,myspace,,1.0
+1227.882,2835.0,Open Hughey Neube's Myspace*,None,23,myspace,,0.0
+1235.632,2835.0,Find missing corner of flyer*,None,23,myspace,,0.0
+1277.631,2835.0,Find pictures of Crumpet*,None,23,myspace,,0.0
+1352.632,2835.0,Open admin portal page*,None,23,,,0.0
+1539.88,2835.0,Find Employee ID photo*,None,23,myspace,,0.0
+1540.631,2835.0,Notice Employee ID number,23B,23,myspace,end,1.0
+1704.13,2835.0,Mention association between corner letters and flyer icons,23E,23,flyer,,1.0
+1717.631,2835.0,Flyer: Decode M,23D,23,flyer,,1.0
+1725.131,2835.0,Flyer: Decode E,23D,23,flyer,,1.0
+1757.882,2835.0,Flyer: Decode P,23D,23,flyer,,1.0
+1760.382,2835.0,Mention the spaces between words,23B,23,flyer,,1.0
+1765.882,2835.0,Flyer: Decode I,23D,23,flyer,,1.0
+1772.8829999999998,2835.0,Flyer: Decode D,23B,23,flyer,,1.0
+1776.632,2835.0,Flyer: Decode second I,23B,23,flyer,,1.0
+1779.3829999999998,2835.0,Flyer: Decode N,23B,23,flyer,,1.0
+1820.381,2835.0,Flyer: Decode R,23B,23,flyer,,1.0
+1828.3829999999998,2835.0,Flyer: Decode V,23D,23,flyer,,1.0
+1886.7520000000002,2835.0,Figure out what EMP ID means,23D,23,EMPID,,1.0
+2008.499,2835.0,Flyer: Decode second E,23B,23,flyer,,1.0
+2015.251,2835.0,Have all of the flyer letters*,None,23,flyer,end,0.0
+2015.251,2835.0,Have all of the flyer letters*,None,23,EMPID,start,0.0
+2125.999,2835.0,Figure out what IN REV means,23C,23,EMPID,,1.0
+2160.498,2835.0,mention going to firestoneheavy.com/745017,23B,23,EMPID,,1.0
+2178.001,2835.0,Bring up purple log in page*,None,23,EMPID,end,0.0
+2178.001,2835.0,Bring up purple log in page*,None,23,crumpet,start,0.0
+2215.751,2835.0,Figure out password,23D,23,crumpet,,1.0
+2218.002,2835.0,Figure out username,23B,23,crumpet,,1.0
+2238.248,2835.0,Get to maze game*,None,23,crumpet,end,0.0
+2238.248,2835.0,Get to maze game*,None,23,maze,start,0.0
+2313.001,2835.0,Figure out you need to walk to houses,23E,23,maze,,1.0
+2378.251,2835.0,"Find ""1979 Album""",23B,23,maze,,1.0
+2405.5,2835.0,"Find ""Second Song""",23D,23,maze,,1.0
+2626.9990000000003,2835.0,"Find ""Last Word""",23D,23,maze,,1.0
+2686.862,2835.0,"Find ""Toto""",23B,23,maze,,1.0
+2700.111,2835.0,Figure out word is dragon,23C,23,maze,,1.0
+2734.112,2835.0,Input dragon into admin portal*,None,23,maze,end,0.0
+2768.113,2835.0,See congratulations page*,None,23,,,0.0
+74.405,2835.0,Screen sharing begins,23C,23,,,1.0
+119.155,2344.64,Screen sharing begins,19C,19,,,1.0
+123.355,2344.64,Opening phase 1*,None,19,resist,start,0.0
+135.606,2344.64,Mentioning redwarren.com,19A,19,resist,,1.0
+136.356,2344.64,"See ""RESIST""*",None,19,resist,,0.0
+161.60299999999998,2344.64,Mentioning redwarren.com/resist,19B,19,resist,,1.0
+178.356,2344.64,Go to redwarren.com/resist*,None,19,resist,end,0.0
+244.605,2344.64,Seeing colors website*,None,19,colors,start,0.0
+355.35699999999997,2344.64,Figure out blue position,19C,19,colors,,1.0
+355.85900000000004,2344.64,Figure out green position,19C,19,colors,,1.0
+356.10699999999997,2344.64,Figure out yellow position,19C,19,colors,,1.0
+356.356,2344.64,Figure out red position,19C,19,colors,,1.0
+356.606,2344.64,Figure out purple position,19C,19,colors,,1.0
+356.85699999999997,2344.64,Get to color solution page*,None,19,colors,end,0.0
+394.853,2344.64,Open phase 2*,None,19,chase,start,0.0
+406.356,2344.64,Mention use the colors to decode phase 2,19B,19,chase,,1.0
+408.605,2344.64,Colors: Decode C,19C,19,chase,,1.0
+409.105,2344.64,Colors: Decode H,19C,19,chase,,1.0
+410.855,2344.64,Colors: Decode A,19C,19,chase,,1.0
+413.102,2344.64,Colors: Decode S,19C,19,chase,,1.0
+414.85400000000004,2344.64,Colors: Decode E,19C,19,chase,,1.0
+415.103,2344.64,Figure out the word is CHASE*,None,19,chase,,0.0
+418.105,2344.64,Go to redwarren.com/chase*,19B,19,chase,end,0.0
+542.354,2344.64,Open phase 3*,None,19,cables,start,0.0
+554.102,2344.64,Figure out how to decode DIVERTS,19A,19,cables,,1.0
+564.855,2344.64,First bring up the onedrive password box*,None,19,cables,,0.0
+606.351,2344.64,Cables: Decode D,19A,19,cables,,1.0
+631.604,2344.64,Cables: Decode S,19C,19,cables,,1.0
+649.3530000000001,2344.64,Cables: Decode R,19C,19,cables,,1.0
+675.1039999999999,2344.64,Cables: Decode V,19D,19,cables,,1.0
+687.1030000000001,2344.64,Cables: Decode I,19B,19,cables,,1.0
+691.355,2344.64,Cables: Decode T,19D,19,cables,,1.0
+703.855,2344.64,Cables: Decode E,19C,19,cables,,1.0
+710.6030000000001,2344.64,Fully solved cable password*,None,19,cables,,0.0
+848.8539999999999,2344.64,Mention input consume as onedrive password,19B,19,cables,,1.0
+884.102,2344.64,Input consume as onedrive password*,None,19,cables,end,0.0
+900.852,2344.64,Open flyer*,None,19,flyer,,0.0
+915.8530000000001,2344.64,Mention firestoneheavy.com,19C,19,flyer,,1.0
+919.85,2344.64,Open firestoneheavy.com*,None,19,myspace,start,0.0
+937.6010000000001,2344.64,Open phase 4 picture*,None,19,flyer,start,0.0
+947.105,2344.64,Find Hughey Neube's name,19B,19,myspace,,1.0
+962.3530000000001,2344.64,Open admin portal page*,None,19,,,0.0
+964.352,2344.64,Mention Hughey Neube's Myspace,19D,19,myspace,,1.0
+982.6030000000001,2344.64,Open Hughey Neube's Myspace*,None,19,myspace,,0.0
+988.1039999999999,2344.64,Find pictures of Crumpet*,None,19,myspace,,0.0
+1001.355,2344.64,Find missing corner of flyer*,19B,19,myspace,,0.0
+1036.355,2344.64,Find Employee ID photo*,None,19,myspace,,0.0
+1517.852,2344.64,Mention association between corner letters and flyer icons,19B,19,flyer,,1.0
+1534.352,2344.64,Flyer: Decode E,19C,19,flyer,,1.0
+1537.604,2344.64,Flyer: Decode M,19C,19,flyer,,1.0
+1546.105,2344.64,Flyer: Decode P,19C,19,flyer,,1.0
+1550.854,2344.64,Flyer: Decode I,19B,19,flyer,,1.0
+1558.1029999999998,2344.64,Flyer: Decode D,19C,19,flyer,,1.0
+1567.355,2344.64,Flyer: Decode second I,19C,19,flyer,,1.0
+1607.1029999999998,2344.64,Flyer: Decode N,19C,19,flyer,,1.0
+1621.351,2344.64,Flyer: Decode R,19C,19,flyer,,1.0
+1626.604,2344.64,Flyer: Decode second E,19B,19,flyer,,1.0
+1631.6029999999998,2344.64,Flyer: Decode V,19C,19,flyer,,1.0
+1633.852,2344.64,Have all of the flyer letters*,None,19,flyer,end,0.0
+1633.852,2344.64,Have all of the flyer letters*,None,19,EMPID,start,0.0
+1707.601,2344.64,Mention the spaces between words,19C,19,flyer,,1.0
+1746.355,2344.64,Figure out what EMP ID means,19A,19,EMPID,,1.0
+1759.101,2344.64,Notice Employee ID number,19B,19,myspace,end,1.0
+1772.855,2344.64,Figure out what IN REV means,19B,19,EMPID,,1.0
+1780.855,2344.64,mention going to firestoneheavy.com/745017,19B,19,EMPID,,1.0
+1785.6029999999998,2344.64,Bring up purple log in page*,None,19,EMPID,end,0.0
+1785.6029999999998,2344.64,Bring up purple log in page*,None,19,crumpet,start,0.0
+1808.351,2344.64,Figure out username,19A,19,crumpet,,1.0
+1842.601,2344.64,Figure out password,19C,19,crumpet,,1.0
+1858.354,2344.64,Get to maze game*,None,19,crumpet,end,0.0
+1858.354,2344.64,Get to maze game*,None,19,maze,start,0.0
+1971.356,2344.64,Figure out you need to walk to houses,19C,19,maze,,1.0
+1974.6070000000002,2344.64,"Find ""Second Song""",19C,19,maze,,1.0
+2040.406,2344.64,"Find ""1979 Album""",19C,19,maze,,1.0
+2109.406,2344.64,"Find ""Last Word""",19A,19,maze,,1.0
+2168.152,2344.64,"Find ""Toto""",19B,19,maze,,1.0
+2192.156,2344.64,Figure out word is dragon,19B,19,maze,,1.0
+2205.155,2344.64,Input dragon into admin portal*,None,19,maze,end,0.0
+2252.159,2344.64,See congratulations page*,None,19,,,0.0
+418.356,2344.64,Mention inputting chase into URL,19B,19,chase,,1.0
+406.356,2344.64,Mention use the colors to decode phase 2,19C,19,chase,,1.0
+2192.156,2344.64,Figure out word is dragon,19C,19,maze,,1.0
+3.405,4411.8,Screen sharing begins,21A,21,,,1.0
+49.656000000000006,4411.8,Opening phase 1*,None,21,resist,start,0.0
+56.403,4411.8,Open phase 2*,None,21,chase,start,0.0
+66.655,4411.8,Mentioning redwarren.com,21B,21,resist,,1.0
+122.905,4411.8,"See ""RESIST""*",None,21,resist,,0.0
+160.905,4411.8,Mentioning redwarren.com/resist,21B,21,resist,,1.0
+172.15400000000002,4411.8,Go to redwarren.com/resist*,None,21,resist,end,0.0
+229.65200000000002,4411.8,Seeing colors website*,None,21,colors,start,0.0
+237.655,4411.8,Mention use the colors to decode phase 2,21C,21,chase,,1.0
+1436.4,4411.8,Figure out red position,21B,21,colors,,1.0
+1444.154,4411.8,Figure out purple position,21B,21,colors,,1.0
+1505.652,4411.8,Figure out blue position,21C,21,colors,,1.0
+1512.404,4411.8,Figure out green position,21B,21,colors,,1.0
+1512.405,4411.8,Figure out yellow position,21B,21,colors,,1.0
+1517.655,4411.8,Get to color solution page*,None,21,colors,end,0.0
+1527.9029999999998,4411.8,Colors: Decode C,21C,21,chase,,1.0
+1528.905,4411.8,Colors: Decode H,21C,21,chase,,1.0
+1531.152,4411.8,Colors: Decode A,21C,21,chase,,1.0
+1532.1529999999998,4411.8,Colors: Decode S,21C,21,chase,,1.0
+1532.905,4411.8,Colors: Decode E,21C,21,chase,,1.0
+1533.405,4411.8,Figure out the word is CHASE*,21C,21,chase,,0.0
+1567.405,4411.8,Mention inputting chase into URL,21B,21,chase,,1.0
+1573.902,4411.8,Go to redwarren.com/chase*,None,21,chase,end,0.0
+1655.4029999999998,4411.8,Open phase 3*,None,21,cables,start,0.0
+1694.151,4411.8,First bring up the onedrive password box*,None,21,cables,,0.0
+1779.906,4411.8,Figure out how to decode DIVERTS,21A,21,cables,,1.0
+1789.905,4411.8,Cables: Decode D,21C,21,cables,,1.0
+1825.901,4411.8,Cables: Decode I,21A,21,cables,,1.0
+1837.655,4411.8,Cables: Decode R,21B,21,cables,,1.0
+1861.65,4411.8,Cables: Decode V,21C,21,cables,,1.0
+1877.154,4411.8,Cables: Decode T,21B,21,cables,,1.0
+1877.404,4411.8,Cables: Decode S,21B,21,cables,,1.0
+1888.654,4411.8,Cables: Decode E,21C,21,cables,,1.0
+1893.652,4411.8,Fully solved cable password*,None,21,cables,,0.0
+1897.905,4411.8,Mention input consume as onedrive password,21A,21,cables,,1.0
+1898.904,4411.8,Input consume as onedrive password*,None,21,cables,end,0.0
+1915.6529999999998,4411.8,Open phase 4 picture*,None,21,flyer,start,0.0
+1953.6529999999998,4411.8,Open flyer*,None,21,flyer,,0.0
+1959.991,4411.8,Mention firestoneheavy.com,21B,21,flyer,,1.0
+1977.991,4411.8,Open firestoneheavy.com*,None,21,myspace,start,0.0
+1998.9920000000002,4411.8,Find Hughey Neube's name,21B,21,myspace,,1.0
+2036.251,4411.8,Open admin portal page*,None,21,,,0.0
+2317.2529999999997,4411.8,Mention Hughey Neube's Myspace,21B,21,myspace,,1.0
+2319.004,4411.8,Open Hughey Neube's Myspace*,None,21,myspace,,0.0
+2327.2529999999997,4411.8,Find pictures of Crumpet*,None,21,myspace,,0.0
+2340.504,4411.8,Find missing corner of flyer*,None,21,myspace,,0.0
+2623.255,4411.8,Find Employee ID photo*,None,21,myspace,,0.0
+2631.92,4411.8,Notice Employee ID number,21A,21,myspace,end,1.0
+2729.6679999999997,4411.8,Mention association between corner letters and flyer icons,21B,21,flyer,,1.0
+2863.9190000000003,4411.8,Flyer: Decode R,21C,21,flyer,,1.0
+2873.417,4411.8,Flyer: Decode second I,21B,21,flyer,,1.0
+2880.1690000000003,4411.8,Flyer: Decode second E,21B,21,flyer,,1.0
+2908.667,4411.8,Flyer: Decode P,21B,21,flyer,,1.0
+2913.6679999999997,4411.8,Flyer: Decode I,21B,21,flyer,,1.0
+2916.7490000000003,4411.8,Flyer: Decode M,21B,21,flyer,,1.0
+2921.2470000000003,4411.8,Flyer: Decode D,21B,21,flyer,,1.0
+2926.248,4411.8,Flyer: Decode V,21B,21,flyer,,1.0
+2929.9990000000003,4411.8,Flyer: Decode E,21B,21,flyer,,1.0
+2932.2490000000003,4411.8,Flyer: Decode N,21B,21,flyer,,1.0
+3000.498,4411.8,Have all of the flyer letters*,None,21,flyer,end,0.0
+3000.498,4411.8,Have all of the flyer letters*,None,21,EMPID,start,0.0
+3256.417,4411.8,Figure out what EMP ID means,21B,21,EMPID,,1.0
+3261.987,4411.8,Figure out what IN REV means,21B,21,EMPID,,1.0
+3316.583,4411.8,Bring up purple log in page*,None,21,EMPID,end,0.0
+3316.583,4411.8,Bring up purple log in page*,None,21,crumpet,start,0.0
+3342.0809999999997,4411.8,Figure out username,21A,21,crumpet,,1.0
+3392.33,4411.8,Figure out password,21B,21,crumpet,,1.0
+3442.827,4411.8,Get to maze game*,None,21,crumpet,end,0.0
+3442.827,4411.8,Get to maze game*,None,21,maze,start,0.0
+3944.6609999999996,4411.8,"Find ""Last Word""",21C,21,maze,,1.0
+4145.156,4411.8,"Find ""1979 Album""",21C,21,maze,,1.0
+4207.91,4411.8,"Find ""Toto""",21B,21,maze,,1.0
+4261.66,4411.8,Figure out word is dragon,21C,21,maze,,1.0
+4324.411,4411.8,Input dragon into admin portal*,None,21,maze,end,0.0
+4359.661,4411.8,See congratulations page*,None,21,,,0.0
+2993.587,4411.8,Mention the spaces between words,None,21,flyer,,1.0
+3300.756,4411.8,mention going to firestoneheavy.com/745017,None,21,EMPID,,1.0
+3827.9320000000002,4411.8,Figure out you need to walk to houses,None,21,maze,,1.0
+4228.934,4411.8,"Find ""Second Song""",None,21,maze,,1.0
+122.745,3156.56,Screen sharing begins,22A,22,,,1.0
+139.495,3156.56,Opening phase 1*,None,22,resist,start,0.0
+250.74400000000003,3156.56,Open phase 2*,None,22,chase,start,0.0
+323.999,3156.56,Mentioning redwarren.com,22C,22,resist,,1.0
+339.99699999999996,3156.56,"See ""RESIST""*",None,22,resist,,0.0
+352.241,3156.56,Mentioning redwarren.com/resist,22C,22,resist,,1.0
+365.74199999999996,3156.56,Go to redwarren.com/resist*,None,22,resist,end,0.0
+430.751,3156.56,Seeing colors website*,None,22,colors,start,0.0
+785.75,3156.56,Figure out green position,22E,22,colors,,1.0
+857.9939999999999,3156.56,Figure out blue position,22D,22,colors,,1.0
+858.245,3156.56,Figure out yellow position,22D,22,colors,,1.0
+858.9939999999999,3156.56,Figure out red position,22D,22,colors,,1.0
+859.242,3156.56,Figure out purple position,22D,22,colors,,1.0
+859.993,3156.56,Get to color solution page*,None,22,colors,end,0.0
+908.191,3156.56,Mention use the colors to decode phase 2,22E,22,chase,,1.0
+915.442,3156.56,Figure out the word is CHASE*,None,22,chase,,0.0
+916.442,3156.56,Mention inputting chase into URL,22D,22,chase,,1.0
+924.698,3156.56,Go to redwarren.com/chase*,None,22,chase,end,0.0
+1053.1989999999998,3156.56,Open phase 3*,None,22,cables,start,0.0
+1064.453,3156.56,First bring up the onedrive password box*,None,22,cables,,0.0
+1102.451,3156.56,Figure out how to decode DIVERTS,22B,22,cables,,1.0
+1115.701,3156.56,Cables: Decode D,22A,22,cables,,1.0
+1131.451,3156.56,Cables: Decode I,22A,22,cables,,1.0
+1146.955,3156.56,Cables: Decode V,22A,22,cables,,1.0
+1157.448,3156.56,Cables: Decode E,22A,22,cables,,1.0
+1174.201,3156.56,Cables: Decode R,22A,22,cables,,1.0
+1183.9489999999998,3156.56,Cables: Decode T,22A,22,cables,,1.0
+1193.448,3156.56,Cables: Decode S,22A,22,cables,,1.0
+1195.203,3156.56,Fully solved cable password*,None,22,cables,,0.0
+1200.954,3156.56,Input consume as onedrive password*,None,22,cables,end,0.0
+1222.203,3156.56,Open phase 4 picture*,None,22,flyer,start,0.0
+1225.698,3156.56,Open flyer*,None,22,flyer,,0.0
+1257.7069999999999,3156.56,Mention firestoneheavy.com,22A,22,flyer,,1.0
+1258.201,3156.56,Open firestoneheavy.com*,None,22,myspace,start,0.0
+1300.452,3156.56,Find Hughey Neube's name,22B,22,myspace,,1.0
+1323.201,3156.56,Open admin portal page*,None,22,,,0.0
+1542.7,3156.56,Mention Hughey Neube's Myspace,22B,22,myspace,,1.0
+1543.1989999999998,3156.56,Open Hughey Neube's Myspace*,None,22,myspace,,0.0
+1555.203,3156.56,Find missing corner of flyer*,None,22,myspace,,0.0
+1564.9520000000002,3156.56,Find pictures of Crumpet*,None,22,myspace,,0.0
+1693.2079999999999,3156.56,Find Employee ID photo*,None,22,myspace,,0.0
+1695.453,3156.56,Notice Employee ID number,22A,22,myspace,end,1.0
+1766.375,3156.56,Mention association between corner letters and flyer icons,22D,22,flyer,,1.0
+1809.1270000000002,3156.56,Flyer: Decode E,22A,22,flyer,,1.0
+1822.128,3156.56,Flyer: Decode M,22A,22,flyer,,1.0
+1840.63,3156.56,Flyer: Decode P,22A,22,flyer,,1.0
+1847.3770000000002,3156.56,Flyer: Decode I,22D,22,flyer,,1.0
+1853.122,3156.56,Flyer: Decode D,22D,22,flyer,,1.0
+1858.631,3156.56,Flyer: Decode second I,22D,22,flyer,,1.0
+1870.8770000000002,3156.56,Flyer: Decode N,22D,22,flyer,,1.0
+1901.6270000000002,3156.56,Flyer: Decode second E,22D,22,flyer,,1.0
+1919.1270000000002,3156.56,Flyer: Decode R,22A,22,flyer,,1.0
+1936.375,3156.56,Flyer: Decode V,22A,22,flyer,,1.0
+1937.621,3156.56,Have all of the flyer letters*,None,22,flyer,end,0.0
+1937.621,3156.56,Have all of the flyer letters*,None,22,EMPID,start,0.0
+2141.871,3156.56,Figure out what EMP ID means,22B,22,EMPID,,1.0
+2448.384,3156.56,Mention the spaces between words,None,22,flyer,,1.0
+2459.634,3156.56,Figure out what IN REV means,22E,22,EMPID,,1.0
+2486.133,3156.56,mention going to firestoneheavy.com/745017,22A,22,EMPID,,1.0
+2493.928,3156.56,Bring up purple log in page*,None,22,EMPID,end,0.0
+2493.928,3156.56,Bring up purple log in page*,None,22,crumpet,start,0.0
+2537.167,3156.56,Figure out password,22A,22,crumpet,,1.0
+2577.417,3156.56,Figure out username,22B,22,crumpet,,1.0
+2631.421,3156.56,Get to maze game*,None,22,crumpet,end,0.0
+2631.421,3156.56,Get to maze game*,None,22,maze,start,0.0
+2671.947,3156.56,Figure out you need to walk to houses,22E,22,maze,,1.0
+2771.7,3156.56,"Find ""Toto""",22B,22,maze,,1.0
+2887.458,3156.56,"Find ""Last Word""",22B,22,maze,,1.0
+2897.949,3156.56,"Find ""1979 Album""",22E,22,maze,,1.0
+3017.2070000000003,3156.56,"Find ""Second Song""",22B,22,maze,,1.0
+3081.953,3156.56,Figure out word is dragon,22E,22,maze,,1.0
+3117.2090000000003,3156.56,Input dragon into admin portal*,None,22,maze,end,0.0
+3138.4590000000003,3156.56,See congratulations page*,None,22,,,0.0
+920.383,3156.56,Colors: Decode C,22C,22,chase,,1.0
+922.377,3156.56,Colors: Decode H,22C,22,chase,,1.0
+923.133,3156.56,Colors: Decode A,22C,22,chase,,1.0
+924.383,3156.56,Colors: Decode S,22C,22,chase,,1.0
+925.133,3156.56,Colors: Decode E,22C,22,chase,,1.0
+1200.585,3156.56,Mention input consume as onedrive password,None,22,cables,,1.0
+1840.63,3156.56,Flyer: Decode P,22D,22,flyer,,1.0
+1936.375,3156.56,Flyer: Decode V,22D,22,flyer,,1.0
+32.865,2831.6,Screen sharing begins,35D,35,,,1.0
+43.365,2831.6,Opening phase 1*,None,35,resist,start,0.0
+62.843,2831.6,Mentioning redwarren.com,35B,35,resist,,1.0
+63.342,2831.6,"See ""RESIST""*",None,35,resist,,0.0
+64.84100000000001,2831.6,Open phase 2*,None,35,chase,start,0.0
+82.345,2831.6,Mentioning redwarren.com/resist,35D,35,resist,,1.0
+85.344,2831.6,Go to redwarren.com/resist*,None,35,resist,end,0.0
+120.098,2831.6,Seeing colors website*,None,35,colors,start,0.0
+324.095,2831.6,Figure out green position,35D,35,colors,,1.0
+346.841,2831.6,Figure out yellow position,35B,35,colors,,1.0
+560.183,2831.6,Figure out blue position,35D,35,colors,,1.0
+667.929,2831.6,Figure out red position,35D,35,colors,,1.0
+668.433,2831.6,Figure out purple position,35D,35,colors,,1.0
+668.678,2831.6,Get to color solution page*,None,35,colors,end,0.0
+681.179,2831.6,Mention use the colors to decode phase 2,35B,35,chase,,1.0
+736.186,2831.6,Colors: Decode C,35B,35,chase,,1.0
+739.436,2831.6,Colors: Decode H,35B,35,chase,,1.0
+742.681,2831.6,Colors: Decode A,35C,35,chase,,1.0
+744.428,2831.6,Colors: Decode S,35C,35,chase,,1.0
+745.681,2831.6,Colors: Decode E,35C,35,chase,,1.0
+745.93,2831.6,Figure out the word is CHASE*,None,35,chase,,0.0
+757.681,2831.6,Mention inputting chase into URL,35D,35,chase,,1.0
+761.681,2831.6,Go to redwarren.com/chase*,None,35,chase,end,0.0
+844.935,2831.6,Open phase 3*,None,35,cables,start,0.0
+873.437,2831.6,First bring up the onedrive password box*,None,35,cables,,0.0
+916.434,2831.6,Figure out how to decode DIVERTS,35D,35,cables,,1.0
+964.43,2831.6,Cables: Decode T,35A,35,cables,,1.0
+966.932,2831.6,Cables: Decode D,35B,35,cables,,1.0
+974.185,2831.6,Cables: Decode I,35A,35,cables,,1.0
+985.68,2831.6,Cables: Decode E,None,35,cables,,1.0
+986.682,2831.6,Cables: Decode S,None,35,cables,,1.0
+990.185,2831.6,Cables: Decode R,None,35,cables,,1.0
+994.43,2831.6,Cables: Decode V,35E,35,cables,,1.0
+998.428,2831.6,Fully solved cable password*,None,35,cables,,0.0
+1010.183,2831.6,Input consume as onedrive password*,None,35,cables,end,0.0
+1039.93,2831.6,Open phase 4 picture*,None,35,flyer,start,0.0
+1083.9289999999999,2831.6,Open flyer*,None,35,flyer,,0.0
+1090.682,2831.6,Mention firestoneheavy.com,35C,35,flyer,,1.0
+1120.19,2831.6,Open firestoneheavy.com*,None,35,myspace,start,0.0
+1133.683,2831.6,Find Hughey Neube's name,35D,35,myspace,,1.0
+1164.681,2831.6,Open admin portal page*,None,35,,,0.0
+1192.9289999999999,2831.6,Mention Hughey Neube's Myspace,35A,35,myspace,,1.0
+1213.933,2831.6,Open Hughey Neube's Myspace*,None,35,myspace,,0.0
+1214.933,2831.6,Find missing corner of flyer*,None,35,myspace,,0.0
+1220.941,2831.6,Find pictures of Crumpet*,None,35,myspace,,0.0
+1480.94,2831.6,Find Employee ID photo*,None,35,myspace,,0.0
+1508.932,2831.6,Notice Employee ID number,35D,35,myspace,end,1.0
+2020.68,2831.6,Mention association between corner letters and flyer icons,35B,35,flyer,,1.0
+2023.931,2831.6,Flyer: Decode E,35A,35,flyer,,1.0
+2026.931,2831.6,Flyer: Decode M,35A,35,flyer,,1.0
+2048.9320000000002,2831.6,Flyer: Decode I,35A,35,flyer,,1.0
+2050.683,2831.6,Flyer: Decode D,35A,35,flyer,,1.0
+2056.1820000000002,2831.6,Flyer: Decode second I,35A,35,flyer,,1.0
+2057.683,2831.6,Flyer: Decode N,35A,35,flyer,,1.0
+2077.185,2831.6,Flyer: Decode P,35A,35,flyer,,1.0
+2081.433,2831.6,Flyer: Decode R,35A,35,flyer,,1.0
+2101.4339999999997,2831.6,Flyer: Decode second E,35A,35,flyer,,1.0
+2104.1820000000002,2831.6,Flyer: Decode V,35A,35,flyer,,1.0
+2137.6839999999997,2831.6,Have all of the flyer letters*,None,35,flyer,end,0.0
+2137.6839999999997,2831.6,Have all of the flyer letters*,None,35,EMPID,start,0.0
+2219.43,2831.6,Figure out what EMP ID means,35D,35,EMPID,,1.0
+2224.431,2831.6,Figure out what IN REV means,35B,35,EMPID,,1.0
+2230.9339999999997,2831.6,mention going to firestoneheavy.com/745017,None,35,EMPID,,1.0
+2238.931,2831.6,Bring up purple log in page*,None,35,EMPID,end,0.0
+2238.931,2831.6,Bring up purple log in page*,None,35,crumpet,start,0.0
+2246.6820000000002,2831.6,Figure out username,35C,35,crumpet,,1.0
+2258.93,2831.6,Figure out password,35B,35,crumpet,,1.0
+2282.435,2831.6,Get to maze game*,None,35,crumpet,end,0.0
+2282.435,2831.6,Get to maze game*,None,35,maze,start,0.0
+2324.685,2831.6,Figure out you need to walk to houses,35D,35,maze,,1.0
+2417.929,2831.6,"Find ""Second Song""",35D,35,maze,,1.0
+2515.19,2831.6,"Find ""1979 Album""",35B,35,maze,,1.0
+2588.936,2831.6,"Find ""Toto""",35B,35,maze,,1.0
+2673.44,2831.6,"Find ""Last Word""",35B,35,maze,,1.0
+2674.93,2831.6,Figure out word is dragon,35D,35,maze,,1.0
+2678.933,2831.6,Input dragon into admin portal*,None,35,maze,end,0.0
+2709.6809999999996,2831.6,See congratulations page*,None,35,,,0.0
+1000.342,2831.6,Mention input consume as onedrive password,35D,35,cables,,1.0
+2204.342,2831.6,Mention the spaces between words,None,35,flyer,,1.0
+5.155,2256.24,Screen sharing begins,28A,28,,,1.0
+70.403,2256.24,Opening phase 1*,None,28,resist,start,0.0
+74.657,2256.24,Mentioning redwarren.com,28A,28,resist,,1.0
+89.154,2256.24,"See ""RESIST""*",None,28,resist,,0.0
+108.406,2256.24,Mentioning redwarren.com/resist,28D,28,resist,,1.0
+117.654,2256.24,Go to redwarren.com/resist*,None,28,resist,end,0.0
+171.707,2256.24,Seeing colors website*,None,28,colors,start,0.0
+498.88800000000003,2256.24,Figure out yellow position,28C,28,colors,,1.0
+576.443,2256.24,Figure out green position,28D,28,colors,,1.0
+581.191,2256.24,Figure out blue position,28A,28,colors,,1.0
+586.189,2256.24,Figure out red position,28D,28,colors,,1.0
+586.445,2256.24,Figure out purple position,28D,28,colors,,1.0
+588.196,2256.24,Get to color solution page*,None,28,colors,end,0.0
+690.69,2256.24,Open phase 2*,None,28,chase,start,0.0
+732.939,2256.24,Mention use the colors to decode phase 2,28A,28,chase,,1.0
+735.195,2256.24,Colors: Decode C,28C,28,chase,,1.0
+736.189,2256.24,Colors: Decode H,28C,28,chase,,1.0
+738.191,2256.24,Colors: Decode A,28C,28,chase,,1.0
+747.447,2256.24,Colors: Decode S,28C,28,chase,,1.0
+749.195,2256.24,Colors: Decode E,28C,28,chase,,1.0
+750.195,2256.24,Figure out the word is CHASE*,None,28,chase,,0.0
+760.191,2256.24,Mention inputting chase into URL,28D,28,chase,,1.0
+769.445,2256.24,Go to redwarren.com/chase*,None,28,chase,end,0.0
+881.945,2256.24,Open phase 3*,None,28,cables,start,0.0
+924.693,2256.24,First bring up the onedrive password box*,None,28,cables,,0.0
+981.439,2256.24,Figure out how to decode DIVERTS,28C,28,cables,,1.0
+995.944,2256.24,Cables: Decode D,28B,28,cables,,1.0
+1035.445,2256.24,Cables: Decode V,28C,28,cables,,1.0
+1037.445,2256.24,Cables: Decode I,28A,28,cables,,1.0
+1047.4460000000001,2256.24,Cables: Decode E,28B,28,cables,,1.0
+1054.443,2256.24,Cables: Decode S,28A,28,cables,,1.0
+1061.694,2256.24,Cables: Decode R,28D,28,cables,,1.0
+1072.69,2256.24,Cables: Decode T,28C,28,cables,,1.0
+1074.193,2256.24,Fully solved cable password*,None,28,cables,,0.0
+1082.69,2256.24,Input consume as onedrive password*,None,28,cables,end,0.0
+1095.94,2256.24,Open phase 4 picture*,None,28,flyer,start,0.0
+1123.944,2256.24,Open flyer*,None,28,flyer,,0.0
+1138.444,2256.24,Mention firestoneheavy.com,28A,28,flyer,,1.0
+1142.693,2256.24,Open firestoneheavy.com*,None,28,myspace,start,0.0
+1165.691,2256.24,Find Hughey Neube's name,28C,28,myspace,,1.0
+1200.695,2256.24,Open admin portal page*,None,28,,,0.0
+1244.19,2256.24,Mention Hughey Neube's Myspace,28B,28,myspace,,1.0
+1259.944,2256.24,Open Hughey Neube's Myspace*,None,28,myspace,,0.0
+1260.19,2256.24,Find pictures of Crumpet*,None,28,myspace,,0.0
+1268.193,2256.24,Find missing corner of flyer*,None,28,myspace,,0.0
+1445.941,2256.24,Mention association between corner letters and flyer icons,28D,28,flyer,,1.0
+1506.694,2256.24,Mention the spaces between words,28A,28,flyer,,1.0
+1574.6889999999999,2256.24,Flyer: Decode E,28C,28,flyer,,1.0
+1620.193,2256.24,Flyer: Decode M,28D,28,flyer,,1.0
+1628.195,2256.24,Flyer: Decode P,28C,28,flyer,,1.0
+1652.19,2256.24,Flyer: Decode I,28D,28,flyer,,1.0
+1654.945,2256.24,Flyer: Decode D,28D,28,flyer,,1.0
+1665.194,2256.24,Flyer: Decode second I,28D,28,flyer,,1.0
+1671.19,2256.24,Flyer: Decode N,28C,28,flyer,,1.0
+1688.192,2256.24,Flyer: Decode second E,28D,28,flyer,,1.0
+1692.1889999999999,2256.24,Flyer: Decode V,28C,28,flyer,,1.0
+1736.943,2256.24,Flyer: Decode R,28B,28,flyer,,1.0
+1739.942,2256.24,Have all of the flyer letters*,None,28,flyer,end,0.0
+1739.942,2256.24,Have all of the flyer letters*,None,28,EMPID,start,0.0
+2045.4389999999999,2256.24,Find Employee ID photo*,None,28,myspace,,0.0
+2045.94,2256.24,Notice Employee ID number,28C,28,myspace,end,1.0
+938.655,2256.24,Mention input consume as onedrive password,28D,28,cables,,1.0
+2101.929,2256.24,Figure out what EMP ID means,None,28,EMPID,,1.0
+2113.386,2256.24,Figure out what IN REV means,None,28,EMPID,,1.0
+2133.385,2256.24,mention going to firestoneheavy.com/745017,28C,28,EMPID,,1.0
+2143.8779999999997,2256.24,Bring up purple log in page*,None,28,EMPID,end,0.0
+2143.8779999999997,2256.24,Bring up purple log in page*,None,28,crumpet,start,0.0
+2155.382,2256.24,Figure out username,28A,28,crumpet,,1.0
+2168.384,2256.24,Figure out password,28C,28,crumpet,,1.0
+2206.885,2256.24,Get to maze game*,None,28,crumpet,end,0.0
+2206.885,2256.24,Get to maze game*,None,28,maze,start,0.0
+1671.19,2256.24,Flyer: Decode N,28D,28,flyer,,1.0
+39.652,2786.44,Screen sharing begins,30A,30,,,1.0
+68.653,2786.44,Opening phase 1*,None,30,resist,start,0.0
+89.90299999999999,2786.44,Mentioning redwarren.com,30A,30,resist,,1.0
+95.40100000000001,2786.44,"See ""RESIST""*",None,30,resist,,0.0
+117.904,2786.44,Open phase 2*,None,30,chase,start,0.0
+157.153,2786.44,Mentioning redwarren.com/resist,30E,30,resist,,1.0
+172.65400000000002,2786.44,Go to redwarren.com/resist*,None,30,resist,end,0.0
+219.90599999999998,2786.44,Seeing colors website*,None,30,colors,start,0.0
+520.538,2786.44,Figure out yellow position,30D,30,colors,,1.0
+744.03,2786.44,Figure out green position,30D,30,colors,,1.0
+899.128,2786.44,Figure out blue position,30B,30,colors,,1.0
+900.3789999999999,2786.44,Figure out red position,30B,30,colors,,1.0
+900.633,2786.44,Figure out purple position,30B,30,colors,,1.0
+916.377,2786.44,Get to color solution page*,None,30,colors,end,0.0
+925.3789999999999,2786.44,Mention use the colors to decode phase 2,30A,30,chase,,1.0
+934.378,2786.44,Figure out the word is CHASE*,30D,30,chase,,0.0
+942.5260000000001,2786.44,Mention inputting chase into URL,30A,30,chase,,1.0
+952.525,2786.44,Go to redwarren.com/chase*,None,30,chase,end,0.0
+1037.521,2786.44,Open phase 3*,None,30,cables,start,0.0
+1070.272,2786.44,First bring up the onedrive password box*,None,30,cables,,0.0
+1099.775,2786.44,Figure out how to decode DIVERTS,30D,30,cables,,1.0
+1128.7730000000001,2786.44,Cables: Decode D,30A,30,cables,,1.0
+1137.637,2786.44,Cables: Decode I,30E,30,cables,,1.0
+1146.039,2786.44,Cables: Decode T,30B,30,cables,,1.0
+1175.789,2786.44,Cables: Decode V,30C,30,cables,,1.0
+1190.0230000000001,2786.44,Cables: Decode S,30C,30,cables,,1.0
+1190.774,2786.44,Cables: Decode E,30E,30,cables,,1.0
+1208.275,2786.44,Cables: Decode R,30B,30,cables,,1.0
+1211.275,2786.44,Fully solved cable password*,None,30,cables,,0.0
+1216.025,2786.44,Mention input consume as onedrive password,30A,30,cables,,1.0
+1219.525,2786.44,Input consume as onedrive password*,None,30,cables,end,0.0
+1229.5230000000001,2786.44,Open phase 4 picture*,None,30,flyer,start,0.0
+1249.774,2786.44,Open flyer*,None,30,flyer,,0.0
+1263.522,2786.44,Mention firestoneheavy.com,30A,30,flyer,,1.0
+1278.275,2786.44,Open firestoneheavy.com*,None,30,myspace,start,0.0
+1289.275,2786.44,Find Hughey Neube's name,30A,30,myspace,,1.0
+1307.524,2786.44,Open admin portal page*,None,30,,,0.0
+1324.275,2786.44,Mention Hughey Neube's Myspace,30A,30,myspace,,1.0
+1343.776,2786.44,Open Hughey Neube's Myspace*,None,30,myspace,,0.0
+1345.775,2786.44,Find pictures of Crumpet*,None,30,myspace,,0.0
+1406.22,2786.44,Find missing corner of flyer*,None,30,myspace,,0.0
+1554.23,2786.44,Find Employee ID photo*,None,30,myspace,,0.0
+1555.7279999999998,2786.44,Notice Employee ID number,30D,30,myspace,end,1.0
+1865.481,2786.44,Mention association between corner letters and flyer icons,30A,30,flyer,,1.0
+1876.025,2786.44,Flyer: Decode M,30A,30,flyer,,1.0
+1902.525,2786.44,Flyer: Decode second I,30A,30,flyer,,1.0
+1908.771,2786.44,Flyer: Decode N,30A,30,flyer,,1.0
+1933.525,2786.44,Flyer: Decode P,30D,30,flyer,,1.0
+1956.021,2786.44,Flyer: Decode D,None,30,flyer,,1.0
+1966.5220000000002,2786.44,Flyer: Decode I,None,30,flyer,,1.0
+2015.023,2786.44,Flyer: Decode E,30D,30,flyer,,1.0
+2016.025,2786.44,Figure out what EMP ID means,30D,30,EMPID,,1.0
+2023.274,2786.44,Flyer: Decode second E,30D,30,flyer,,1.0
+2023.7720000000002,2786.44,Flyer: Decode V,30D,30,flyer,,1.0
+2040.021,2786.44,Flyer: Decode R,30D,30,flyer,,1.0
+2042.2720000000002,2786.44,Have all of the flyer letters*,None,30,flyer,end,0.0
+2042.2720000000002,2786.44,Have all of the flyer letters*,None,30,EMPID,start,0.0
+2058.526,2786.44,Figure out what IN REV means,30D,30,EMPID,,1.0
+2060.774,2786.44,mention going to firestoneheavy.com/745017,30D,30,EMPID,,1.0
+2073.524,2786.44,Bring up purple log in page*,None,30,EMPID,end,0.0
+2073.524,2786.44,Bring up purple log in page*,None,30,crumpet,start,0.0
+2241.28,2786.44,Figure out username,30E,30,crumpet,,1.0
+2241.778,2786.44,Figure out password,30E,30,crumpet,,1.0
+2272.028,2786.44,Get to maze game*,None,30,crumpet,end,0.0
+2272.028,2786.44,Get to maze game*,None,30,maze,start,0.0
+2319.042,2786.44,Figure out you need to walk to houses,30E,30,maze,,1.0
+2442.788,2786.44,"Find ""Last Word""",30E,30,maze,,1.0
+2479.2889999999998,2786.44,"Find ""1979 Album""",30A,30,maze,,1.0
+2535.042,2786.44,"Find ""Second Song""",30B,30,maze,,1.0
+2693.538,2786.44,"Find ""Toto""",30E,30,maze,,1.0
+2715.539,2786.44,Figure out word is dragon,30D,30,maze,,1.0
+2721.5409999999997,2786.44,Input dragon into admin portal*,None,30,maze,end,0.0
+2746.2870000000003,2786.44,See congratulations page*,None,30,,,0.0
+935.0210000000001,2786.44,Colors: Decode C,30D,30,chase,,1.0
+935.525,2786.44,Colors: Decode H,30D,30,chase,,1.0
+936.0260000000001,2786.44,Colors: Decode A,30D,30,chase,,1.0
+936.7760000000001,2786.44,Colors: Decode S,30D,30,chase,,1.0
+937.5260000000001,2786.44,Colors: Decode E,30D,30,chase,,1.0
+2018.776,2786.44,Mention the spaces between words,30D,30,flyer,,1.0
+81.157,3101.12,Screen sharing begins,18D,18,,,1.0
+106.184,3101.12,Opening phase 1*,None,18,resist,start,0.0
+123.93700000000001,3101.12,Open phase 2*,None,18,chase,start,0.0
+359.931,3101.12,Mentioning redwarren.com,18A,18,resist,,1.0
+364.185,3101.12,"See ""RESIST""*",None,18,resist,,0.0
+366.686,3101.12,Mentioning redwarren.com/resist,18B,18,resist,,1.0
+380.18199999999996,3101.12,Go to redwarren.com/resist*,None,18,resist,end,0.0
+434.935,3101.12,Seeing colors website*,None,18,colors,start,0.0
+651.3290000000001,3101.12,Figure out blue position,18D,18,colors,,1.0
+779.9069999999999,3101.12,Figure out red position,18E,18,colors,,1.0
+881.19,3101.12,Figure out green position,18B,18,colors,,1.0
+927.444,3101.12,Figure out yellow position,18C,18,colors,,1.0
+928.689,3101.12,Figure out purple position,18C,18,colors,,1.0
+928.945,3101.12,Get to color solution page*,None,18,colors,end,0.0
+951.936,3101.12,Mention use the colors to decode phase 2,18E,18,chase,,1.0
+956.939,3101.12,Colors: Decode H,18C,18,chase,,1.0
+957.942,3101.12,Colors: Decode A,18C,18,chase,,1.0
+958.19,3101.12,Colors: Decode S,18C,18,chase,,1.0
+959.19,3101.12,Colors: Decode E,18C,18,chase,,1.0
+966.938,3101.12,Colors: Decode C,18B,18,chase,,1.0
+967.44,3101.12,Figure out the word is CHASE*,None,18,chase,,0.0
+977.931,3101.12,Go to redwarren.com/chase*,18B,18,chase,end,0.0
+1092.18,3101.12,Open phase 3*,18C,18,cables,start,0.0
+1102.183,3101.12,First bring up the onedrive password box*,18D,18,cables,,0.0
+1143.43,3101.12,Figure out how to decode DIVERTS,18B,18,cables,,1.0
+1159.178,3101.12,Cables: Decode D,18A,18,cables,,1.0
+1173.4289999999999,3101.12,Cables: Decode I,18D,18,cables,,1.0
+1177.432,3101.12,Cables: Decode V,18B,18,cables,,1.0
+1185.431,3101.12,Cables: Decode E,18D,18,cables,,1.0
+1196.684,3101.12,Cables: Decode R,18D,18,cables,,1.0
+1201.68,3101.12,Cables: Decode T,18C,18,cables,,1.0
+1204.178,3101.12,Cables: Decode S,18B,18,cables,,1.0
+1205.183,3101.12,Fully solved cable password*,None,18,cables,,0.0
+1210.177,3101.12,Mention input consume as onedrive password,18A,18,cables,,1.0
+1213.932,3101.12,Input consume as onedrive password*,None,18,cables,end,0.0
+1241.684,3101.12,Open phase 4 picture*,None,18,flyer,start,0.0
+1258.6860000000001,3101.12,Open flyer*,None,18,flyer,,0.0
+1270.68,3101.12,Open firestoneheavy.com*,None,18,myspace,start,0.0
+1275.934,3101.12,Mention firestoneheavy.com,None,18,flyer,,1.0
+1317.682,3101.12,Find Hughey Neube's name,18D,18,myspace,,1.0
+1318.432,3101.12,Mention Hughey Neube's Myspace,18B,18,myspace,,1.0
+1337.1870000000001,3101.12,Open Hughey Neube's Myspace*,None,18,myspace,,0.0
+1338.181,3101.12,Find pictures of Crumpet*,None,18,myspace,,0.0
+1347.433,3101.12,Find missing corner of flyer*,None,18,myspace,,0.0
+1382.672,3101.12,Open admin portal page*,None,18,,,0.0
+1512.184,3101.12,Find Employee ID photo*,None,18,myspace,,0.0
+1513.933,3101.12,Notice Employee ID number,18D,18,myspace,end,1.0
+2171.17,3101.12,Mention association between corner letters and flyer icons,18B,18,flyer,,1.0
+2290.417,3101.12,Flyer: Decode E,18B,18,flyer,,1.0
+2292.6710000000003,3101.12,Flyer: Decode M,18B,18,flyer,,1.0
+2296.422,3101.12,Flyer: Decode P,18B,18,flyer,,1.0
+2305.67,3101.12,Flyer: Decode I,18B,18,flyer,,1.0
+2306.672,3101.12,Flyer: Decode D,18B,18,flyer,,1.0
+2308.177,3101.12,Flyer: Decode second I,18B,18,flyer,,1.0
+2310.67,3101.12,Flyer: Decode N,18B,18,flyer,,1.0
+2321.673,3101.12,Flyer: Decode R,18D,18,flyer,,1.0
+2321.923,3101.12,Flyer: Decode second E,18B,18,flyer,,1.0
+2322.425,3101.12,Flyer: Decode V,18B,18,flyer,,1.0
+2323.4210000000003,3101.12,Have all of the flyer letters*,None,18,flyer,end,0.0
+2323.4210000000003,3101.12,Have all of the flyer letters*,None,18,EMPID,start,0.0
+2338.1679999999997,3101.12,Figure out what EMP ID means,18D,18,EMPID,,1.0
+2435.17,3101.12,Mention the spaces between words,18B,18,flyer,,1.0
+2487.673,3101.12,Figure out what IN REV means,18B,18,EMPID,,1.0
+2500.672,3101.12,mention going to firestoneheavy.com/745017,18C,18,EMPID,,1.0
+2502.436,3101.12,Bring up purple log in page*,None,18,EMPID,end,0.0
+2502.436,3101.12,Bring up purple log in page*,None,18,crumpet,start,0.0
+2513.419,3101.12,Figure out username,18A,18,crumpet,,1.0
+2519.173,3101.12,Figure out password,18A,18,crumpet,,1.0
+2528.674,3101.12,Get to maze game*,None,18,crumpet,end,0.0
+2528.674,3101.12,Get to maze game*,None,18,maze,start,0.0
+2623.9240000000004,3101.12,Figure out you need to walk to houses,18A,18,maze,,1.0
+2708.67,3101.12,"Find ""1979 Album""",18D,18,maze,,1.0
+2803.423,3101.12,"Find ""Last Word""",18D,18,maze,,1.0
+2843.672,3101.12,"Find ""Toto""",18A,18,maze,,1.0
+2893.9190000000003,3101.12,"Find ""Second Song""",18D,18,maze,,1.0
+3034.672,3101.12,Figure out word is dragon,18B,18,maze,,1.0
+3037.671,3101.12,Input dragon into admin portal*,None,18,maze,end,0.0
+3076.03,3101.12,See congratulations page*,None,18,,,0.0
+978.186,3101.12,Mention inputting chase into URL,18B,18,chase,,1.0
+34.152,3045.32,Screen sharing begins,15A,15,,,1.0
+150.903,3045.32,Opening phase 1*,None,15,resist,start,0.0
+185.40400000000002,3045.32,Open phase 2*,None,15,chase,start,0.0
+208.15400000000002,3045.32,Mentioning redwarren.com,15D,15,resist,,1.0
+223.90400000000002,3045.32,"See ""RESIST""*",15B,15,resist,,0.0
+240.403,3045.32,Mentioning redwarren.com/resist,15B,15,resist,,1.0
+254.65400000000002,3045.32,Go to redwarren.com/resist*,None,15,resist,end,0.0
+318.493,3045.32,Seeing colors website*,None,15,colors,start,0.0
+608.494,3045.32,Figure out red position,15E,15,colors,,1.0
+699.2439999999999,3045.32,Figure out yellow position,15E,15,colors,,1.0
+707.9910000000001,3045.32,Figure out green position,15B,15,colors,,1.0
+713.4910000000001,3045.32,Figure out blue position,15A,15,colors,,1.0
+718.992,3045.32,Figure out purple position,15A,15,colors,,1.0
+719.495,3045.32,Get to color solution page*,None,15,colors,end,0.0
+725.993,3045.32,Mention use the colors to decode phase 2,15E,15,chase,,1.0
+731.2439999999999,3045.32,Colors: Decode C,15E,15,chase,,1.0
+732.992,3045.32,Colors: Decode H,15E,15,chase,,1.0
+735.242,3045.32,Colors: Decode A,15E,15,chase,,1.0
+736.495,3045.32,Colors: Decode S,15E,15,chase,,1.0
+737.495,3045.32,Colors: Decode E,15E,15,chase,,1.0
+738.2439999999999,3045.32,Figure out the word is CHASE*,15E,15,chase,,0.0
+789.2439999999999,3045.32,Mention inputting chase into URL,15E,15,chase,,1.0
+808.4939999999999,3045.32,Go to redwarren.com/chase*,None,15,chase,end,0.0
+901.495,3045.32,Open phase 3*,None,15,cables,start,0.0
+912.242,3045.32,Figure out how to decode DIVERTS,15A,15,cables,,1.0
+932.998,3045.32,First bring up the onedrive password box*,None,15,cables,,0.0
+990.9960000000001,3045.32,Cables: Decode D,15A,15,cables,,1.0
+997.118,3045.32,Cables: Decode S,15C,15,cables,,1.0
+1011.6210000000001,3045.32,Cables: Decode I,15D,15,cables,,1.0
+1037.121,3045.32,Cables: Decode V,15B,15,cables,,1.0
+1053.122,3045.32,Cables: Decode T,15C,15,cables,,1.0
+1061.621,3045.32,Cables: Decode E,15E,15,cables,,1.0
+1068.618,3045.32,Cables: Decode R,15B,15,cables,,1.0
+1108.62,3045.32,Fully solved cable password*,None,15,cables,,0.0
+1118.873,3045.32,Mention input consume as onedrive password,15A,15,cables,,1.0
+1133.619,3045.32,Input consume as onedrive password*,15A,15,cables,end,0.0
+1150.371,3045.32,Open phase 4 picture*,None,15,flyer,start,0.0
+1183.122,3045.32,Open flyer*,None,15,flyer,,0.0
+1188.369,3045.32,Mention firestoneheavy.com,15A,15,flyer,,1.0
+1191.621,3045.32,Open firestoneheavy.com*,None,15,myspace,start,0.0
+1211.37,3045.32,Find Hughey Neube's name,15A,15,myspace,,1.0
+1226.872,3045.32,Mention Hughey Neube's Myspace,15A,15,myspace,,1.0
+1256.622,3045.32,Open Hughey Neube's Myspace*,None,15,myspace,,0.0
+1259.871,3045.32,Find pictures of Crumpet*,None,15,myspace,,0.0
+1275.373,3045.32,Find Employee ID photo*,None,15,myspace,,0.0
+1277.123,3045.32,Notice Employee ID number,15A,15,myspace,end,1.0
+1285.62,3045.32,Find missing corner of flyer*,None,15,myspace,,0.0
+1535.121,3045.32,Open admin portal page*,None,15,,,0.0
+1736.371,3045.32,Mention association between corner letters and flyer icons,15C,15,flyer,,1.0
+1991.371,3045.32,Flyer: Decode R,15C,15,flyer,,1.0
+2004.622,3045.32,Flyer: Decode E,15C,15,flyer,,1.0
+2006.1170000000002,3045.32,Flyer: Decode M,15C,15,flyer,,1.0
+2007.872,3045.32,Flyer: Decode P,15C,15,flyer,,1.0
+2021.369,3045.32,Flyer: Decode second I,15C,15,flyer,,1.0
+2022.369,3045.32,Flyer: Decode N,15C,15,flyer,,1.0
+2081.3720000000003,3045.32,Flyer: Decode I,15D,15,flyer,,1.0
+2081.62,3045.32,Flyer: Decode D,15D,15,flyer,,1.0
+2136.623,3045.32,Flyer: Decode second E,15E,15,flyer,,1.0
+2140.1220000000003,3045.32,Flyer: Decode V,15C,15,flyer,,1.0
+2146.621,3045.32,Have all of the flyer letters*,None,15,flyer,end,0.0
+2146.621,3045.32,Have all of the flyer letters*,None,15,EMPID,start,0.0
+2148.121,3045.32,Figure out what EMP ID means,15A,15,EMPID,,1.0
+2154.1220000000003,3045.32,Figure out what IN REV means,15B,15,EMPID,,1.0
+2169.871,3045.32,mention going to firestoneheavy.com/745017,15A,15,EMPID,,1.0
+2195.373,3045.32,Bring up purple log in page*,None,15,EMPID,end,0.0
+2195.373,3045.32,Bring up purple log in page*,None,15,crumpet,start,0.0
+2207.118,3045.32,Figure out password,15B,15,crumpet,,1.0
+2367.873,3045.32,Figure out username,15B,15,crumpet,,1.0
+2421.118,3045.32,Get to maze game*,None,15,crumpet,end,0.0
+2421.118,3045.32,Get to maze game*,None,15,maze,start,0.0
+2468.1620000000003,3045.32,Figure out you need to walk to houses,15A,15,maze,,1.0
+2619.6620000000003,3045.32,"Find ""1979 Album""",15B,15,maze,,1.0
+2673.1609999999996,3045.32,"Find ""Second Song""",15C,15,maze,,1.0
+2734.1620000000003,3045.32,"Find ""Last Word""",15D,15,maze,,1.0
+2814.915,3045.32,"Find ""Toto""",15D,15,maze,,1.0
+2857.118,3045.32,Figure out word is dragon,15A,15,maze,,1.0
+2903.555,3045.32,Input dragon into admin portal*,None,15,maze,end,0.0
+2935.558,3045.32,See congratulations page*,None,15,,,0.0
+2010.995,3045.32,Mention the spaces between words,15C,15,flyer,,1.0
+66.156,3591.88,Screen sharing begins,17A,17,,,1.0
+223.40200000000002,3591.88,Opening phase 1*,None,17,resist,start,0.0
+232.65099999999998,3591.88,Mentioning redwarren.com,17B,17,resist,,1.0
+253.155,3591.88,"See ""RESIST""*",None,17,resist,,0.0
+298.656,3591.88,Open phase 2*,None,17,chase,start,0.0
+353.655,3591.88,Go to redwarren.com/resist*,None,17,resist,end,0.0
+451.154,3591.88,Seeing colors website*,None,17,colors,start,0.0
+844.6139999999999,3591.88,Figure out red position,17E,17,colors,,1.0
+968.6139999999999,3591.88,Figure out green position,17E,17,colors,,1.0
+979.8660000000001,3591.88,Figure out purple position,17E,17,colors,,1.0
+1028.114,3591.88,Figure out blue position,17E,17,colors,,1.0
+1081.865,3591.88,Figure out yellow position,17E,17,colors,,1.0
+1104.116,3591.88,Get to color solution page*,None,17,colors,end,0.0
+1134.113,3591.88,Mention use the colors to decode phase 2,17C,17,chase,,1.0
+1186.616,3591.88,Mention inputting chase into URL,17A,17,chase,,1.0
+1369.115,3591.88,Colors: Decode C,17B,17,chase,,1.0
+1369.615,3591.88,Colors: Decode H,17B,17,chase,,1.0
+1370.114,3591.88,Colors: Decode A,17B,17,chase,,1.0
+1370.6129999999998,3591.88,Colors: Decode S,17B,17,chase,,1.0
+1371.115,3591.88,Colors: Decode E,17B,17,chase,,1.0
+1371.361,3591.88,Figure out the word is CHASE*,None,17,chase,,0.0
+1375.365,3591.88,Go to redwarren.com/chase*,None,17,chase,end,0.0
+1467.364,3591.88,Open phase 3*,None,17,cables,start,0.0
+1594.365,3591.88,Figure out how to decode DIVERTS,17B,17,cables,,1.0
+1603.116,3591.88,Cables: Decode D,17D,17,cables,,1.0
+1635.114,3591.88,Cables: Decode S,17D,17,cables,,1.0
+1645.902,3591.88,Cables: Decode I,17E,17,cables,,1.0
+1653.797,3591.88,Cables: Decode R,17C,17,cables,,1.0
+1682.796,3591.88,Cables: Decode E,17D,17,cables,,1.0
+1715.293,3591.88,Cables: Decode T,17C,17,cables,,1.0
+1770.797,3591.88,Cables: Decode V,17B,17,cables,,1.0
+1771.047,3591.88,Fully solved cable password*,None,17,cables,,0.0
+1772.2979999999998,3591.88,Input consume as onedrive password*,17E,17,cables,end,0.0
+1802.2979999999998,3591.88,Open phase 4 picture*,None,17,flyer,start,0.0
+1803.545,3591.88,Open flyer*,None,17,flyer,,0.0
+1842.2179999999998,3591.88,Mention firestoneheavy.com,17D,17,flyer,,1.0
+1846.467,3591.88,Open firestoneheavy.com*,None,17,myspace,start,0.0
+1903.362,3591.88,Find Hughey Neube's name,17B,17,myspace,,1.0
+2020.36,3591.88,Open admin portal page*,None,17,,,0.0
+2098.611,3591.88,Mention Hughey Neube's Myspace,17E,17,myspace,,1.0
+2113.36,3591.88,Open Hughey Neube's Myspace*,None,17,myspace,,0.0
+2122.607,3591.88,Find pictures of Crumpet*,None,17,myspace,,0.0
+2194.777,3591.88,Find missing corner of flyer*,None,17,myspace,,0.0
+2212.612,3591.88,Find Employee ID photo*,None,17,myspace,,0.0
+2231.525,3591.88,Notice Employee ID number,17D,17,myspace,end,1.0
+2656.777,3591.88,Mention association between corner letters and flyer icons,17E,17,flyer,,1.0
+2659.0229999999997,3591.88,Flyer: Decode E,17E,17,flyer,,1.0
+2659.53,3591.88,Flyer: Decode M,17E,17,flyer,,1.0
+2660.026,3591.88,Flyer: Decode P,17E,17,flyer,,1.0
+2673.775,3591.88,Flyer: Decode I,17C,17,flyer,,1.0
+2674.027,3591.88,Flyer: Decode D,17E,17,flyer,,1.0
+2674.28,3591.88,Figure out what EMP ID means,17E,17,EMPID,,1.0
+2692.03,3591.88,Flyer: Decode second I,17D,17,flyer,,1.0
+2696.7740000000003,3591.88,Flyer: Decode N,17B,17,flyer,,1.0
+2712.0240000000003,3591.88,Flyer: Decode R,17B,17,flyer,,1.0
+2720.026,3591.88,Flyer: Decode second E,17B,17,flyer,,1.0
+2722.777,3591.88,Flyer: Decode V,17E,17,flyer,,1.0
+2740.525,3591.88,Have all of the flyer letters*,None,17,flyer,end,0.0
+2740.525,3591.88,Have all of the flyer letters*,None,17,EMPID,start,0.0
+2743.53,3591.88,Figure out what IN REV means,17D,17,EMPID,,1.0
+2755.528,3591.88,mention going to firestoneheavy.com/745017,17E,17,EMPID,,1.0
+2778.527,3591.88,Bring up purple log in page*,None,17,EMPID,end,0.0
+2778.527,3591.88,Bring up purple log in page*,None,17,crumpet,start,0.0
+2801.281,3591.88,Figure out password,17B,17,crumpet,,1.0
+2806.528,3591.88,Figure out username,17E,17,crumpet,,1.0
+2810.78,3591.88,Get to maze game*,None,17,crumpet,end,0.0
+2810.78,3591.88,Get to maze game*,None,17,maze,start,0.0
+2986.025,3591.88,Figure out you need to walk to houses,17E,17,maze,,1.0
+3066.533,3591.88,"Find ""Second Song""",17A,17,maze,,1.0
+3177.5290000000005,3591.88,"Find ""Last Word""",17B,17,maze,,1.0
+3276.78,3591.88,"Find ""1979 Album""",17E,17,maze,,1.0
+3411.03,3591.88,"Find ""Toto""",17A,17,maze,,1.0
+3508.527,3591.88,Figure out word is dragon,17E,17,maze,,1.0
+3524.7729999999997,3591.88,Input dragon into admin portal*,None,17,maze,end,0.0
+3565.28,3591.88,See congratulations page*,None,17,,,0.0
+344.158,3591.88,Mentioning redwarren.com/resist,None,17,resist,,1.0
+1501.8670000000002,3591.88,First bring up the onedrive password box*,None,17,cables,,0.0
+1537.365,3591.88,Mention input consume as onedrive password,17E,17,cables,,1.0
+2671.616,3591.88,Mention the spaces between words,17E,17,flyer,,1.0
+126.655,2750.96,Screen sharing begins,14A,14,,,1.0
+197.57,2750.96,Opening phase 1*,None,14,resist,start,0.0
+199.07299999999998,2750.96,Mentioning redwarren.com,14D,14,resist,,1.0
+212.074,2750.96,"See ""RESIST""*",14D,14,resist,,0.0
+225.577,2750.96,Mentioning redwarren.com/resist,14B,14,resist,,1.0
+234.07299999999998,2750.96,Go to redwarren.com/resist*,None,14,resist,end,0.0
+294.575,2750.96,Seeing colors website*,None,14,colors,start,0.0
+363.575,2750.96,Figure out red position,14A,14,colors,,1.0
+376.574,2750.96,Figure out yellow position,14A,14,colors,,1.0
+390.825,2750.96,Figure out purple position,14A,14,colors,,1.0
+411.82199999999995,2750.96,Figure out blue position,14A,14,colors,,1.0
+412.075,2750.96,Figure out green position,14A,14,colors,,1.0
+416.325,2750.96,Get to color solution page*,None,14,colors,end,0.0
+482.074,2750.96,Open phase 2*,None,14,chase,start,0.0
+492.32199999999995,2750.96,Mention use the colors to decode phase 2,14D,14,chase,,1.0
+495.075,2750.96,Colors: Decode C,14A,14,chase,,1.0
+497.325,2750.96,Colors: Decode H,14A,14,chase,,1.0
+500.574,2750.96,Colors: Decode A,14A,14,chase,,1.0
+503.575,2750.96,Colors: Decode S,14A,14,chase,,1.0
+506.324,2750.96,Colors: Decode E,14A,14,chase,,1.0
+507.824,2750.96,Figure out the word is CHASE*,None,14,chase,,0.0
+511.574,2750.96,Mention inputting chase into URL,14A,14,chase,,1.0
+519.075,2750.96,Go to redwarren.com/chase*,None,14,chase,end,0.0
+607.3240000000001,2750.96,Open phase 3*,None,14,cables,start,0.0
+631.573,2750.96,Figure out how to decode DIVERTS,14D,14,cables,,1.0
+695.575,2750.96,Cables: Decode S,14D,14,cables,,1.0
+717.827,2750.96,Cables: Decode V,14E,14,cables,,1.0
+731.325,2750.96,Cables: Decode I,14C,14,cables,,1.0
+735.072,2750.96,Cables: Decode R,14A,14,cables,,1.0
+735.575,2750.96,Cables: Decode T,14B,14,cables,,1.0
+751.322,2750.96,Cables: Decode E,14A,14,cables,,1.0
+753.07,2750.96,Cables: Decode D,14E,14,cables,,1.0
+753.075,2750.96,Fully solved cable password*,None,14,cables,,0.0
+766.076,2750.96,Mention input consume as onedrive password,14D,14,cables,,1.0
+767.073,2750.96,Input consume as onedrive password*,None,14,cables,end,0.0
+782.573,2750.96,Open flyer*,None,14,flyer,,0.0
+784.825,2750.96,Mention firestoneheavy.com,14C,14,flyer,,1.0
+788.072,2750.96,Open phase 4 picture*,None,14,flyer,start,0.0
+830.826,2750.96,Open firestoneheavy.com*,None,14,myspace,start,0.0
+848.075,2750.96,Find Hughey Neube's name,14C,14,myspace,,1.0
+887.071,2750.96,Mention Hughey Neube's Myspace,14A,14,myspace,,1.0
+895.826,2750.96,Open admin portal page*,None,14,,,0.0
+901.081,2750.96,Open Hughey Neube's Myspace*,None,14,myspace,,0.0
+906.575,2750.96,Find missing corner of flyer*,None,14,myspace,,0.0
+1171.325,2750.96,Find pictures of Crumpet*,None,14,myspace,,0.0
+1310.073,2750.96,Mention association between corner letters and flyer icons,14A,14,flyer,,1.0
+1407.825,2750.96,Flyer: Decode E,14B,14,flyer,,1.0
+1416.0739999999998,2750.96,Flyer: Decode M,14E,14,flyer,,1.0
+1420.076,2750.96,Flyer: Decode P,14D,14,flyer,,1.0
+1428.5739999999998,2750.96,Flyer: Decode I,14D,14,flyer,,1.0
+1434.825,2750.96,Flyer: Decode D,14A,14,flyer,,1.0
+1457.075,2750.96,Flyer: Decode N,14A,14,flyer,,1.0
+1464.0710000000001,2750.96,Flyer: Decode R,14A,14,flyer,,1.0
+1483.8239999999998,2750.96,Mention the spaces between words,14B,14,flyer,,1.0
+1484.075,2750.96,Flyer: Decode V,14A,14,flyer,,1.0
+1619.3239999999998,2750.96,Flyer: Decode second E,14A,14,flyer,,1.0
+1643.075,2750.96,Flyer: Decode second I,14A,14,flyer,,1.0
+1643.5720000000001,2750.96,Have all of the flyer letters*,None,14,flyer,end,0.0
+1643.5720000000001,2750.96,Have all of the flyer letters*,None,14,EMPID,start,0.0
+1980.576,2750.96,Find Employee ID photo*,None,14,myspace,,0.0
+1983.075,2750.96,Notice Employee ID number,14B,14,myspace,end,1.0
+2141.571,2750.96,Figure out what EMP ID means,14E,14,EMPID,,1.0
+2166.074,2750.96,Figure out what IN REV means,14A,14,EMPID,,1.0
+2183.075,2750.96,mention going to firestoneheavy.com/745017,14B,14,EMPID,,1.0
+2198.573,2750.96,Bring up purple log in page*,None,14,EMPID,end,0.0
+2198.573,2750.96,Bring up purple log in page*,None,14,crumpet,start,0.0
+2216.572,2750.96,Figure out password,14D,14,crumpet,,1.0
+2229.325,2750.96,Figure out username,14D,14,crumpet,,1.0
+2254.822,2750.96,Get to maze game*,None,14,crumpet,end,0.0
+2254.822,2750.96,Get to maze game*,None,14,maze,start,0.0
+2323.575,2750.96,Figure out you need to walk to houses,14A,14,maze,,1.0
+2472.574,2750.96,"Find ""1979 Album""",14D,14,maze,,1.0
+2477.072,2750.96,"Find ""Toto""",14A,14,maze,,1.0
+2497.572,2750.96,"Find ""Last Word""",14B,14,maze,,1.0
+2652.821,2750.96,"Find ""Second Song""",14C,14,maze,,1.0
+2659.073,2750.96,Figure out word is dragon,14A,14,maze,,1.0
+2676.075,2750.96,Input dragon into admin portal*,14E,14,maze,end,0.0
+2727.575,2750.96,See congratulations page*,None,14,,,0.0
+630.576,2750.96,First bring up the onedrive password box*,None,14,cables,,0.0
+495.075,2750.96,Colors: Decode C,14D,14,chase,,1.0
+495.075,2750.96,Colors: Decode C,14E,14,chase,,1.0
+56.401,3251.84,Screen sharing begins,06A,6,,,1.0
+81.907,3251.84,Opening phase 1*,None,6,resist,start,0.0
+170.903,3251.84,Mentioning redwarren.com,06C,6,resist,,1.0
+195.155,3251.84,"See ""RESIST""*",None,6,resist,,0.0
+210.66,3251.84,Mentioning redwarren.com/resist,06C,6,resist,,1.0
+213.153,3251.84,Go to redwarren.com/resist*,None,6,resist,end,0.0
+274.904,3251.84,Seeing colors website*,None,6,colors,start,0.0
+301.654,3251.84,Figure out green position,06C,6,colors,,1.0
+302.154,3251.84,Figure out yellow position,06C,6,colors,,1.0
+477.655,3251.84,Figure out red position,06C,6,colors,,1.0
+513.406,3251.84,Figure out blue position,06C,6,colors,,1.0
+515.654,3251.84,Figure out purple position,06C,6,colors,,1.0
+516.156,3251.84,Get to color solution page*,None,6,colors,end,0.0
+607.9019999999999,3251.84,Open phase 2*,None,6,chase,start,0.0
+615.654,3251.84,Mention use the colors to decode phase 2,06C,6,chase,,1.0
+635.155,3251.84,Colors: Decode C,06C,6,chase,,1.0
+636.403,3251.84,Colors: Decode H,06C,6,chase,,1.0
+638.904,3251.84,Colors: Decode A,06C,6,chase,,1.0
+640.158,3251.84,Colors: Decode S,06C,6,chase,,1.0
+640.904,3251.84,Colors: Decode E,06C,6,chase,,1.0
+642.154,3251.84,Figure out the word is CHASE*,06C,6,chase,,0.0
+716.4060000000001,3251.84,Mention inputting chase into URL,06C,6,chase,,1.0
+717.404,3251.84,Go to redwarren.com/chase*,None,6,chase,end,0.0
+893.654,3251.84,Open phase 3*,None,6,cables,start,0.0
+946.6510000000001,3251.84,First bring up the onedrive password box*,06A,6,cables,,0.0
+975.6560000000001,3251.84,Figure out how to decode DIVERTS,06C,6,cables,,1.0
+1008.9069999999999,3251.84,Cables: Decode S,06C,6,cables,,1.0
+1011.153,3251.84,Cables: Decode E,06C,6,cables,,1.0
+1058.154,3251.84,Cables: Decode T,06B,6,cables,,1.0
+1081.6589999999999,3251.84,Cables: Decode R,06B,6,cables,,1.0
+1118.157,3251.84,Cables: Decode D,06D,6,cables,,1.0
+1134.906,3251.84,Cables: Decode V,06B,6,cables,,1.0
+1231.404,3251.84,Cables: Decode I,06D,6,cables,,1.0
+1250.657,3251.84,Mention input consume as onedrive password,06A,6,cables,,1.0
+1251.657,3251.84,Input consume as onedrive password*,None,6,cables,end,0.0
+1268.156,3251.84,Open phase 4 picture*,None,6,flyer,start,0.0
+1333.658,3251.84,Open flyer*,None,6,flyer,,0.0
+1367.652,3251.84,Mention firestoneheavy.com,06B,6,flyer,,1.0
+1371.4029999999998,3251.84,Open firestoneheavy.com*,None,6,myspace,start,0.0
+1579.406,3251.84,Open admin portal page*,None,6,,,0.0
+1610.1570000000002,3251.84,Find Hughey Neube's name,06C,6,myspace,,1.0
+1610.6589999999999,3251.84,Mention Hughey Neube's Myspace,06C,6,myspace,,1.0
+1611.404,3251.84,Open Hughey Neube's Myspace*,None,6,myspace,,0.0
+1659.155,3251.84,Find pictures of Crumpet*,None,6,myspace,,0.0
+1662.404,3251.84,Find missing corner of flyer*,None,6,myspace,,0.0
+1826.404,3251.84,Find Employee ID photo*,None,6,myspace,,0.0
+1854.905,3251.84,Notice Employee ID number,06A,6,myspace,end,1.0
+2128.151,3251.84,Mention association between corner letters and flyer icons,06C,6,flyer,,1.0
+2137.155,3251.84,Flyer: Decode N,06E,6,flyer,,1.0
+2277.904,3251.84,Flyer: Decode E,06C,6,flyer,,1.0
+2278.157,3251.84,Flyer: Decode M,06C,6,flyer,,1.0
+2278.406,3251.84,Flyer: Decode P,06C,6,flyer,,1.0
+2280.406,3251.84,Flyer: Decode I,06C,6,flyer,,1.0
+2280.907,3251.84,Flyer: Decode D,06C,6,flyer,,1.0
+2283.406,3251.84,Figure out what EMP ID means,06C,6,EMPID,,1.0
+2283.656,3251.84,Mention the spaces between words,06C,6,flyer,,1.0
+2288.904,3251.84,Flyer: Decode second I,06E,6,flyer,,1.0
+2307.406,3251.84,Flyer: Decode R,06C,6,flyer,,1.0
+2309.156,3251.84,Flyer: Decode second E,06C,6,flyer,,1.0
+2309.405,3251.84,Flyer: Decode V,06C,6,flyer,,1.0
+2309.904,3251.84,Have all of the flyer letters*,None,6,flyer,end,0.0
+2309.904,3251.84,Have all of the flyer letters*,None,6,EMPID,start,0.0
+2310.157,3251.84,Figure out what IN REV means,06C,6,EMPID,,1.0
+2321.656,3251.84,mention going to firestoneheavy.com/745017,06E,6,EMPID,,1.0
+2334.154,3251.84,Bring up purple log in page*,None,6,EMPID,end,0.0
+2334.154,3251.84,Bring up purple log in page*,None,6,crumpet,start,0.0
+2717.903,3251.84,Figure out username,06C,6,crumpet,,1.0
+2718.907,3251.84,Figure out password,06C,6,crumpet,,1.0
+2735.1609999999996,3251.84,Get to maze game*,None,6,crumpet,end,0.0
+2735.1609999999996,3251.84,Get to maze game*,None,6,maze,start,0.0
+2813.6540000000005,3251.84,Figure out you need to walk to houses,06C,6,maze,,1.0
+2957.337,3251.84,"Find ""1979 Album""",06A,6,maze,,1.0
+2968.337,3251.84,"Find ""Second Song""",06C,6,maze,,1.0
+3006.336,3251.84,"Find ""Toto""",06E,6,maze,,1.0
+3142.087,3251.84,"Find ""Last Word""",06D,6,maze,,1.0
+3145.335,3251.84,Figure out word is dragon,06A,6,maze,,1.0
+3163.5840000000003,3251.84,Input dragon into admin portal*,06C,6,maze,end,0.0
+3200.337,3251.84,See congratulations page*,06E,6,,,0.0
+1251.155,3251.84,Fully solved cable password*,None,6,cables,,0.0
+146.575,3153.92,Screen sharing begins,09A,9,,,1.0
+199.321,3153.92,Opening phase 1*,None,9,resist,start,0.0
+250.075,3153.92,Open phase 2*,None,9,chase,start,0.0
+299.572,3153.92,Mentioning redwarren.com,09D,9,resist,,1.0
+301.825,3153.92,"See ""RESIST""*",None,9,resist,,0.0
+304.822,3153.92,Mentioning redwarren.com/resist,09D,9,resist,,1.0
+314.323,3153.92,Go to redwarren.com/resist*,None,9,resist,end,0.0
+385.824,3153.92,Seeing colors website*,None,9,colors,start,0.0
+418.401,3153.92,Figure out green position,09E,9,colors,,1.0
+616.6519999999999,3153.92,Figure out blue position,09C,9,colors,,1.0
+618.151,3153.92,Figure out yellow position,09C,9,colors,,1.0
+618.155,3153.92,Figure out red position,09C,9,colors,,1.0
+618.405,3153.92,Figure out purple position,09C,9,colors,,1.0
+624.151,3153.92,Get to color solution page*,None,9,colors,end,0.0
+653.905,3153.92,Mention use the colors to decode phase 2,09E,9,chase,,1.0
+680.154,3153.92,Colors: Decode C,09D,9,chase,,1.0
+681.9019999999999,3153.92,Colors: Decode H,09D,9,chase,,1.0
+681.9060000000001,3153.92,Colors: Decode A,09D,9,chase,,1.0
+682.405,3153.92,Colors: Decode S,09D,9,chase,,1.0
+682.9019999999999,3153.92,Colors: Decode E,09D,9,chase,,1.0
+684.654,3153.92,Figure out the word is CHASE*,None,9,chase,,0.0
+701.403,3153.92,Mention inputting chase into URL,09C,9,chase,,1.0
+703.905,3153.92,Go to redwarren.com/chase*,None,9,chase,end,0.0
+802.905,3153.92,Open phase 3*,None,9,cables,start,0.0
+825.154,3153.92,First bring up the onedrive password box*,None,9,cables,,0.0
+834.904,3153.92,Figure out how to decode DIVERTS,09D,9,cables,,1.0
+906.654,3153.92,Cables: Decode D,09D,9,cables,,1.0
+907.154,3153.92,Cables: Decode I,09D,9,cables,,1.0
+958.329,3153.92,Mention input consume as onedrive password,09A,9,cables,,1.0
+983.3539999999999,3153.92,Cables: Decode E,09D,9,cables,,1.0
+985.105,3153.92,Cables: Decode R,09D,9,cables,,1.0
+985.3539999999999,3153.92,Cables: Decode T,09D,9,cables,,1.0
+985.855,3153.92,Cables: Decode S,09D,9,cables,,1.0
+1026.603,3153.92,Cables: Decode V,09C,9,cables,,1.0
+1026.855,3153.92,Fully solved cable password*,None,9,cables,,0.0
+1028.829,3153.92,Input consume as onedrive password*,None,9,cables,end,0.0
+1047.328,3153.92,Open phase 4 picture*,None,9,flyer,start,0.0
+1366.604,3153.92,Mention Hughey Neube's Myspace,09A,9,myspace,,1.0
+1370.606,3153.92,Open Hughey Neube's Myspace*,None,9,myspace,,0.0
+1379.0720000000001,3153.92,Find pictures of Crumpet*,09A,9,myspace,,0.0
+1385.039,3153.92,Find missing corner of flyer*,None,9,myspace,,0.0
+1688.1370000000002,3153.92,Mention association between corner letters and flyer icons,09E,9,flyer,,1.0
+1723.745,3153.92,Flyer: Decode E,09E,9,flyer,,1.0
+1728.743,3153.92,Flyer: Decode M,09E,9,flyer,,1.0
+1735.493,3153.92,Flyer: Decode P,09E,9,flyer,,1.0
+1741.493,3153.92,Flyer: Decode I,09E,9,flyer,,1.0
+1755.996,3153.92,Flyer: Decode D,09E,9,flyer,,1.0
+1763.243,3153.92,Flyer: Decode second I,09E,9,flyer,,1.0
+1769.494,3153.92,Flyer: Decode N,09E,9,flyer,,1.0
+1844.994,3153.92,Flyer: Decode R,09A,9,flyer,,1.0
+2015.245,3153.92,Find Employee ID photo*,None,9,myspace,,0.0
+2016.245,3153.92,Notice Employee ID number,09B,9,myspace,end,1.0
+2089.495,3153.92,Flyer: Decode second E,09E,9,flyer,,1.0
+2090.491,3153.92,Flyer: Decode V,09E,9,flyer,,1.0
+2090.741,3153.92,Have all of the flyer letters*,None,9,flyer,end,0.0
+2090.741,3153.92,Have all of the flyer letters*,None,9,EMPID,start,0.0
+2103.746,3153.92,Figure out what EMP ID means,09D,9,EMPID,,1.0
+2129.242,3153.92,Mention the spaces between words,09E,9,flyer,,1.0
+2380.242,3153.92,Figure out what IN REV means,09A,9,EMPID,,1.0
+2398.5570000000002,3153.92,mention going to firestoneheavy.com/745017,09E,9,EMPID,,1.0
+2403.5570000000002,3153.92,Bring up purple log in page*,None,9,EMPID,end,0.0
+2403.5570000000002,3153.92,Bring up purple log in page*,None,9,crumpet,start,0.0
+2417.81,3153.92,Figure out username,09C,9,crumpet,,1.0
+2423.311,3153.92,Figure out password,09A,9,crumpet,,1.0
+2471.061,3153.92,Get to maze game*,None,9,crumpet,end,0.0
+2471.061,3153.92,Get to maze game*,None,9,maze,start,0.0
+2624.22,3153.92,Figure out you need to walk to houses,09A,9,maze,,1.0
+2650.472,3153.92,"Find ""Toto""",09D,9,maze,,1.0
+2707.223,3153.92,"Find ""Last Word""",09E,9,maze,,1.0
+2741.475,3153.92,"Find ""Second Song""",09A,9,maze,,1.0
+2758.9759999999997,3153.92,"Find ""1979 Album""",09D,9,maze,,1.0
+3077.532,3153.92,Figure out word is dragon,09D,9,maze,,1.0
+3083.152,3153.92,Input dragon into admin portal*,None,9,maze,end,0.0
+3122.357,3153.92,See congratulations page*,None,9,,,0.0
+1071.106,3153.92,Open flyer*,None,9,flyer,,0.0
+1175.855,3153.92,Mention firestoneheavy.com,09C,9,flyer,,1.0
+1177.107,3153.92,Open firestoneheavy.com*,None,9,myspace,start,0.0
+1241.356,3153.92,Open admin portal page*,None,9,,,0.0
+1258.106,3153.92,Find Hughey Neube's name,09A,9,myspace,,1.0
+45.656000000000006,3081.76,Screen sharing begins,13A,13,,,1.0
+60.225,3081.76,Opening phase 1*,None,13,resist,start,0.0
+109.473,3081.76,Mentioning redwarren.com,13A,13,resist,,1.0
+114.475,3081.76,"See ""RESIST""*",None,13,resist,,0.0
+117.475,3081.76,Mentioning redwarren.com/resist,13A,13,resist,,1.0
+120.725,3081.76,Go to redwarren.com/resist*,None,13,resist,end,0.0
+188.97299999999998,3081.76,Seeing colors website*,None,13,colors,start,0.0
+303.904,3081.76,Figure out yellow position,13B,13,colors,,1.0
+381.401,3081.76,Figure out red position,13A,13,colors,,1.0
+923.653,3081.76,Figure out blue position,13A,13,colors,,1.0
+944.904,3081.76,Figure out green position,13A,13,colors,,1.0
+960.155,3081.76,Figure out purple position,13D,13,colors,,1.0
+960.654,3081.76,Get to color solution page*,None,13,colors,end,0.0
+1024.153,3081.76,Open phase 2*,None,13,chase,start,0.0
+1025.653,3081.76,Mention use the colors to decode phase 2,13B,13,chase,,1.0
+1033.402,3081.76,Colors: Decode H,13D,13,chase,,1.0
+1034.654,3081.76,Colors: Decode A,13D,13,chase,,1.0
+1036.656,3081.76,Colors: Decode S,13D,13,chase,,1.0
+1038.905,3081.76,Figure out the word is CHASE*,None,13,chase,,0.0
+1045.904,3081.76,Mention inputting chase into URL,13A,13,chase,,1.0
+1052.404,3081.76,Go to redwarren.com/chase*,None,13,chase,end,0.0
+1142.772,3081.76,Open phase 3*,None,13,cables,start,0.0
+1269.97,3081.76,Figure out how to decode DIVERTS,13D,13,cables,,1.0
+1305.72,3081.76,Cables: Decode D,13D,13,cables,,1.0
+1315.4720000000002,3081.76,Cables: Decode V,13A,13,cables,,1.0
+1321.725,3081.76,Cables: Decode R,13D,13,cables,,1.0
+1330.726,3081.76,Cables: Decode E,13A,13,cables,,1.0
+1331.726,3081.76,Cables: Decode I,13B,13,cables,,1.0
+1334.473,3081.76,Cables: Decode S,13A,13,cables,,1.0
+1349.229,3081.76,Mention input consume as onedrive password,13A,13,cables,,1.0
+1377.473,3081.76,Fully solved cable password*,None,13,cables,,0.0
+1380.471,3081.76,Cables: Decode T,13D,13,cables,,1.0
+1389.22,3081.76,Input consume as onedrive password*,13A,13,cables,end,0.0
+1405.726,3081.76,Open phase 4 picture*,None,13,flyer,start,0.0
+1456.977,3081.76,Open flyer*,None,13,flyer,,0.0
+1460.4720000000002,3081.76,Mention firestoneheavy.com,13A,13,flyer,,1.0
+1472.47,3081.76,Open firestoneheavy.com*,None,13,myspace,start,0.0
+1498.223,3081.76,Find Hughey Neube's name,13A,13,myspace,,1.0
+1501.724,3081.76,Mention Hughey Neube's Myspace,13C,13,myspace,,1.0
+1520.2220000000002,3081.76,Open Hughey Neube's Myspace*,None,13,myspace,,0.0
+1523.764,3081.76,Find pictures of Crumpet*,None,13,myspace,,0.0
+1530.516,3081.76,Find missing corner of flyer*,None,13,myspace,,0.0
+1657.7620000000002,3081.76,Find Employee ID photo*,None,13,myspace,,0.0
+1659.015,3081.76,Notice Employee ID number,13A,13,myspace,end,1.0
+1815.513,3081.76,Open admin portal page*,13C,13,,,0.0
+2198.593,3081.76,Flyer: Decode E,13D,13,flyer,,1.0
+2206.594,3081.76,Mention association between corner letters and flyer icons,13D,13,flyer,,1.0
+2221.345,3081.76,Flyer: Decode M,13D,13,flyer,,1.0
+2230.094,3081.76,Flyer: Decode P,13D,13,flyer,,1.0
+2236.344,3081.76,Flyer: Decode I,13A,13,flyer,,1.0
+2241.345,3081.76,Flyer: Decode D,13D,13,flyer,,1.0
+2248.594,3081.76,Flyer: Decode second I,13D,13,flyer,,1.0
+2253.094,3081.76,Flyer: Decode N,13E,13,flyer,,1.0
+2274.591,3081.76,Flyer: Decode R,13D,13,flyer,,1.0
+2281.845,3081.76,Flyer: Decode second E,13D,13,flyer,,1.0
+2285.845,3081.76,Flyer: Decode V,13D,13,flyer,,1.0
+2291.785,3081.76,Have all of the flyer letters*,None,13,flyer,end,0.0
+2291.785,3081.76,Have all of the flyer letters*,None,13,EMPID,start,0.0
+2328.584,3081.76,Figure out what EMP ID means,13A,13,EMPID,,1.0
+2418.835,3081.76,Figure out what IN REV means,13E,13,EMPID,,1.0
+2425.333,3081.76,mention going to firestoneheavy.com/745017,13A,13,EMPID,,1.0
+2436.334,3081.76,Bring up purple log in page*,None,13,EMPID,end,0.0
+2436.334,3081.76,Bring up purple log in page*,None,13,crumpet,start,0.0
+2462.3320000000003,3081.76,Figure out password,13C,13,crumpet,,1.0
+2471.0860000000002,3081.76,Figure out username,13D,13,crumpet,,1.0
+2557.337,3081.76,Get to maze game*,None,13,crumpet,end,0.0
+2557.337,3081.76,Get to maze game*,None,13,maze,start,0.0
+2617.423,3081.76,Figure out you need to walk to houses,13B,13,maze,,1.0
+2811.9240000000004,3081.76,"Find ""Toto""",13D,13,maze,,1.0
+2937.178,3081.76,"Find ""Second Song""",13E,13,maze,,1.0
+2947.6740000000004,3081.76,"Find ""Last Word""",13C,13,maze,,1.0
+2977.173,3081.76,Figure out word is dragon,13A,13,maze,,1.0
+2981.175,3081.76,Input dragon into admin portal*,None,13,maze,end,0.0
+3019.676,3081.76,See congratulations page*,None,13,,,0.0
+1032.154,3081.76,Colors: Decode C,13D,13,chase,,1.0
+1038.153,3081.76,Colors: Decode E,13D,13,chase,,1.0
+1185.775,3081.76,First bring up the onedrive password box*,None,13,cables,,0.0
+2318.146,3081.76,Mention the spaces between words,None,13,flyer,,1.0
+2943.885,3081.76,"Find ""1979 Album""",13D,13,maze,,1.0
+117.475,3081.76,Mentioning redwarren.com/resist,13E,13,resist,,1.0
+1045.904,3081.76,Mention inputting chase into URL,13D,13,chase,,1.0
+2236.344,3081.76,Flyer: Decode I,13D,13,flyer,,1.0
+74.175,2815.08,Screen sharing begins,05A,5,,,1.0
+75.923,2815.08,Opening phase 1*,None,5,resist,start,0.0
+104.427,2815.08,Mentioning redwarren.com,05A,5,resist,,1.0
+123.92399999999999,2815.08,"See ""RESIST""*",None,5,resist,,0.0
+163.424,2815.08,Mentioning redwarren.com/resist,05D,5,resist,,1.0
+168.135,2815.08,Go to redwarren.com/resist*,None,5,resist,end,0.0
+211.885,2815.08,Seeing colors website*,None,5,colors,start,0.0
+229.638,2815.08,Open phase 2*,05C,5,chase,start,0.0
+282.882,2815.08,Figure out green position,05C,5,colors,,1.0
+503.38199999999995,2815.08,Figure out yellow position,05A,5,colors,,1.0
+572.635,2815.08,Figure out red position,05E,5,colors,,1.0
+590.634,2815.08,Figure out blue position,05E,5,colors,,1.0
+594.63,2815.08,Figure out purple position,05E,5,colors,,1.0
+601.388,2815.08,Get to color solution page*,None,5,colors,end,0.0
+618.883,2815.08,Mention use the colors to decode phase 2,05A,5,chase,,1.0
+624.386,2815.08,Colors: Decode C,05A,5,chase,,1.0
+625.636,2815.08,Colors: Decode H,05A,5,chase,,1.0
+630.385,2815.08,Colors: Decode A,05E,5,chase,,1.0
+633.637,2815.08,Colors: Decode S,05A,5,chase,,1.0
+634.638,2815.08,Colors: Decode E,05A,5,chase,,1.0
+635.138,2815.08,Figure out the word is CHASE*,None,5,chase,,0.0
+637.175,2815.08,Mention inputting chase into URL,05E,5,chase,,1.0
+641.885,2815.08,Go to redwarren.com/chase*,None,5,chase,end,0.0
+715.135,2815.08,Open phase 3*,None,5,cables,start,0.0
+763.3839999999999,2815.08,First bring up the onedrive password box*,None,5,cables,,0.0
+809.385,2815.08,Figure out how to decode DIVERTS,05C,5,cables,,1.0
+829.3860000000001,2815.08,Cables: Decode D,05E,5,cables,,1.0
+852.387,2815.08,Cables: Decode I,05B,5,cables,,1.0
+886.135,2815.08,Cables: Decode V,05B,5,cables,,1.0
+891.133,2815.08,Cables: Decode T,05A,5,cables,,1.0
+897.1339999999999,2815.08,Cables: Decode S,05E,5,cables,,1.0
+897.8860000000001,2815.08,Cables: Decode E,05D,5,cables,,1.0
+925.8839999999999,2815.08,Cables: Decode R,05B,5,cables,,1.0
+926.8839999999999,2815.08,Fully solved cable password*,None,5,cables,,0.0
+934.883,2815.08,Mention input consume as onedrive password,05A,5,cables,,1.0
+941.8860000000001,2815.08,Input consume as onedrive password*,None,5,cables,end,0.0
+947.885,2815.08,Open phase 4 picture*,None,5,flyer,start,0.0
+995.138,2815.08,Open flyer*,None,5,flyer,,0.0
+1008.1360000000001,2815.08,Mention firestoneheavy.com,05A,5,flyer,,1.0
+1016.632,2815.08,Open firestoneheavy.com*,None,5,myspace,start,0.0
+1031.634,2815.08,Find Hughey Neube's name,None,5,myspace,,1.0
+1043.384,2815.08,Mention Hughey Neube's Myspace,05B,5,myspace,,1.0
+1053.135,2815.08,Open admin portal page*,None,5,,,0.0
+1070.637,2815.08,Open Hughey Neube's Myspace*,None,5,myspace,,0.0
+1084.637,2815.08,Find missing corner of flyer*,None,5,myspace,,0.0
+1182.637,2815.08,Find Employee ID photo*,None,5,myspace,,0.0
+1184.635,2815.08,Notice Employee ID number,05B,5,myspace,end,1.0
+1358.634,2815.08,Find pictures of Crumpet*,None,5,myspace,,0.0
+1675.634,2815.08,Mention association between corner letters and flyer icons,05A,5,flyer,,1.0
+1711.386,2815.08,Flyer: Decode E,05E,5,flyer,,1.0
+1717.136,2815.08,Flyer: Decode M,05E,5,flyer,,1.0
+1722.3870000000002,2815.08,Flyer: Decode P,05E,5,flyer,,1.0
+1728.14,2815.08,Flyer: Decode I,05E,5,flyer,,1.0
+1732.1370000000002,2815.08,Flyer: Decode D,05E,5,flyer,,1.0
+1740.6370000000002,2815.08,Flyer: Decode second I,05E,5,flyer,,1.0
+1746.1370000000002,2815.08,Flyer: Decode N,05E,5,flyer,,1.0
+1752.386,2815.08,Flyer: Decode R,05E,5,flyer,,1.0
+1763.385,2815.08,Flyer: Decode second E,05B,5,flyer,,1.0
+1770.6370000000002,2815.08,Flyer: Decode V,05E,5,flyer,,1.0
+1771.135,2815.08,Have all of the flyer letters*,None,5,flyer,end,0.0
+1771.135,2815.08,Have all of the flyer letters*,None,5,EMPID,start,0.0
+1790.631,2815.08,Figure out what EMP ID means,05A,5,EMPID,,1.0
+1790.8829999999998,2815.08,Figure out what IN REV means,05A,5,EMPID,,1.0
+1790.888,2815.08,Mention the spaces between words,None,5,flyer,,1.0
+1831.385,2815.08,mention going to firestoneheavy.com/745017,05A,5,EMPID,,1.0
+1840.134,2815.08,Bring up purple log in page*,None,5,EMPID,end,0.0
+1840.134,2815.08,Bring up purple log in page*,None,5,crumpet,start,0.0
+1855.634,2815.08,Figure out username,05C,5,crumpet,,1.0
+1899.134,2815.08,Figure out password,05C,5,crumpet,,1.0
+2148.386,2815.08,Get to maze game*,None,5,crumpet,end,0.0
+2148.386,2815.08,Get to maze game*,None,5,maze,start,0.0
+2214.635,2815.08,Figure out you need to walk to houses,05A,5,maze,,1.0
+2394.135,2815.08,"Find ""Second Song""",05A,5,maze,,1.0
+2598.634,2815.08,"Find ""1979 Album""",05A,5,maze,,1.0
+2619.636,2815.08,"Find ""Last Word""",05D,5,maze,,1.0
+2632.883,2815.08,"Find ""Toto""",05E,5,maze,,1.0
+2656.883,2815.08,Figure out word is dragon,05A,5,maze,,1.0
+2661.881,2815.08,Input dragon into admin portal*,None,5,maze,end,0.0
+2693.387,2815.08,See congratulations page*,None,5,,,0.0
+68.135,3246.88,Screen sharing begins,02B,2,,,1.0
+119.38600000000001,3246.88,Opening phase 1*,None,2,resist,start,0.0
+133.636,3246.88,Mentioning redwarren.com,02C,2,resist,,1.0
+157.135,3246.88,"See ""RESIST""*",None,2,resist,,0.0
+162.898,3246.88,Mentioning redwarren.com/resist,02A,2,resist,,1.0
+166.38400000000001,3246.88,Go to redwarren.com/resist*,None,2,resist,end,0.0
+219.135,3246.88,Seeing colors website*,None,2,colors,start,0.0
+502.134,3246.88,Figure out yellow position,02B,2,colors,,1.0
+643.135,3246.88,Figure out blue position,02B,2,colors,,1.0
+643.635,3246.88,Figure out green position,02B,2,colors,,1.0
+643.885,3246.88,Figure out red position,02B,2,colors,,1.0
+644.136,3246.88,Figure out purple position,02B,2,colors,,1.0
+645.883,3246.88,Get to color solution page*,None,2,colors,end,0.0
+695.385,3246.88,Open phase 2*,None,2,chase,start,0.0
+746.383,3246.88,Mention use the colors to decode phase 2,02A,2,chase,,1.0
+842.638,3246.88,Colors: Decode C,02E,2,chase,,1.0
+844.6389999999999,3246.88,Colors: Decode H,02E,2,chase,,1.0
+844.8910000000001,3246.88,Colors: Decode A,02E,2,chase,,1.0
+846.387,3246.88,Colors: Decode S,02E,2,chase,,1.0
+847.388,3246.88,Colors: Decode E,02E,2,chase,,1.0
+847.8860000000001,3246.88,Figure out the word is CHASE*,None,2,chase,,0.0
+852.382,3246.88,Mention inputting chase into URL,02B,2,chase,,1.0
+873.637,3246.88,Go to redwarren.com/chase*,None,2,chase,end,0.0
+959.138,3246.88,Open phase 3*,None,2,cables,start,0.0
+998.3839999999999,3246.88,Figure out how to decode DIVERTS,02C,2,cables,,1.0
+1001.635,3246.88,Cables: Decode D,02C,2,cables,,1.0
+1049.388,3246.88,Cables: Decode T,02E,2,cables,,1.0
+1065.134,3246.88,Cables: Decode S,02D,2,cables,,1.0
+1069.635,3246.88,Cables: Decode V,02B,2,cables,,1.0
+1084.387,3246.88,Cables: Decode I,02E,2,cables,,1.0
+1103.638,3246.88,Cables: Decode E,02A,2,cables,,1.0
+1150.884,3246.88,Cables: Decode R,02E,2,cables,,1.0
+1158.638,3246.88,Fully solved cable password*,None,2,cables,,0.0
+1174.135,3246.88,Mention input consume as onedrive password,02E,2,cables,,1.0
+1177.136,3246.88,First bring up the onedrive password box*,None,2,cables,,0.0
+1182.386,3246.88,Input consume as onedrive password*,None,2,cables,end,0.0
+1192.882,3246.88,Open phase 4 picture*,None,2,flyer,start,0.0
+1223.637,3246.88,Open flyer*,None,2,flyer,,0.0
+1676.134,3246.88,Mention firestoneheavy.com,02B,2,flyer,,1.0
+1684.634,3246.88,Open firestoneheavy.com*,None,2,myspace,start,0.0
+1719.884,3246.88,Open admin portal page*,None,2,,,0.0
+1758.132,3246.88,Find Hughey Neube's name,02B,2,myspace,,1.0
+1909.6370000000002,3246.88,Mention Hughey Neube's Myspace,None,2,myspace,,1.0
+1909.8829999999998,3246.88,Open Hughey Neube's Myspace*,None,2,myspace,,0.0
+1916.388,3246.88,Find pictures of Crumpet*,None,2,myspace,,0.0
+1928.1370000000002,3246.88,Find missing corner of flyer*,None,2,myspace,,0.0
+1959.3870000000002,3246.88,Find Employee ID photo*,None,2,myspace,,0.0
+2009.134,3246.88,Notice Employee ID number,02B,2,myspace,end,1.0
+2326.636,3246.88,Mention association between corner letters and flyer icons,02A,2,flyer,,1.0
+2327.135,3246.88,Flyer: Decode M,02A,2,flyer,,1.0
+2343.886,3246.88,Flyer: Decode E,02C,2,flyer,,1.0
+2355.885,3246.88,Flyer: Decode P,02C,2,flyer,,1.0
+2360.139,3246.88,Flyer: Decode I,02B,2,flyer,,1.0
+2363.882,3246.88,Flyer: Decode D,02B,2,flyer,,1.0
+2368.635,3246.88,Figure out what EMP ID means,02B,2,EMPID,,1.0
+2378.883,3246.88,Flyer: Decode N,02B,2,flyer,,1.0
+2406.135,3246.88,Flyer: Decode second I,02B,2,flyer,,1.0
+2414.13,3246.88,Mention the spaces between words,02B,2,flyer,,1.0
+2437.636,3246.88,Flyer: Decode second E,02B,2,flyer,,1.0
+2444.631,3246.88,Flyer: Decode V,02C,2,flyer,,1.0
+2452.883,3246.88,Flyer: Decode R,02B,2,flyer,,1.0
+2453.385,3246.88,Have all of the flyer letters*,None,2,flyer,end,0.0
+2453.385,3246.88,Have all of the flyer letters*,None,2,EMPID,start,0.0
+2513.883,3246.88,Figure out what IN REV means,02A,2,EMPID,,1.0
+2519.385,3246.88,mention going to firestoneheavy.com/745017,02C,2,EMPID,,1.0
+2527.385,3246.88,Bring up purple log in page*,None,2,EMPID,end,0.0
+2527.385,3246.88,Bring up purple log in page*,None,2,crumpet,start,0.0
+2542.633,3246.88,Figure out password,02C,2,crumpet,,1.0
+2544.135,3246.88,Figure out username,02B,2,crumpet,,1.0
+2555.135,3246.88,Get to maze game*,None,2,crumpet,end,0.0
+2555.135,3246.88,Get to maze game*,None,2,maze,start,0.0
+2669.135,3246.88,Figure out you need to walk to houses,02E,2,maze,,1.0
+2762.135,3246.88,"Find ""Second Song""",02E,2,maze,,1.0
+2928.137,3246.88,"Find ""Toto""",02E,2,maze,,1.0
+3011.138,3246.88,"Find ""1979 Album""",02E,2,maze,,1.0
+3151.384,3246.88,"Find ""Last Word""",02E,2,maze,,1.0
+3155.385,3246.88,Figure out word is dragon,02D,2,maze,,1.0
+3164.133,3246.88,Input dragon into admin portal*,None,2,maze,end,0.0
+3206.887,3246.88,See congratulations page*,None,2,,,0.0
+63.955,2346.28,Screen sharing begins,12C,12,,,1.0
+103.95700000000001,2346.28,Opening phase 1*,None,12,resist,start,0.0
+122.20700000000001,2346.28,Mentioning redwarren.com,12B,12,resist,,1.0
+134.458,2346.28,"See ""RESIST""*",None,12,resist,,0.0
+138.957,2346.28,Mentioning redwarren.com/resist,12C,12,resist,,1.0
+142.957,2346.28,Go to redwarren.com/resist*,None,12,resist,end,0.0
+217.202,2346.28,Seeing colors website*,None,12,colors,start,0.0
+319.459,2346.28,Figure out yellow position,12B,12,colors,,1.0
+365.954,2346.28,Figure out blue position,12B,12,colors,,1.0
+415.955,2346.28,Figure out green position,12A,12,colors,,1.0
+426.705,2346.28,Figure out purple position,12E,12,colors,,1.0
+426.955,2346.28,Figure out red position,12C,12,colors,,1.0
+433.454,2346.28,Get to color solution page*,None,12,colors,end,0.0
+468.705,2346.28,Open phase 2*,None,12,chase,start,0.0
+484.952,2346.28,Colors: Decode C,12C,12,chase,,1.0
+486.70300000000003,2346.28,Colors: Decode H,12C,12,chase,,1.0
+487.204,2346.28,Colors: Decode A,12C,12,chase,,1.0
+488.20300000000003,2346.28,Colors: Decode S,12C,12,chase,,1.0
+491.952,2346.28,Mention use the colors to decode phase 2,12E,12,chase,,1.0
+492.70300000000003,2346.28,Colors: Decode E,12C,12,chase,,1.0
+493.204,2346.28,Figure out the word is CHASE*,None,12,chase,,0.0
+502.204,2346.28,Mention inputting chase into URL,12C,12,chase,,1.0
+507.457,2346.28,Go to redwarren.com/chase*,None,12,chase,end,0.0
+634.706,2346.28,First bring up the onedrive password box*,None,12,cables,,0.0
+654.956,2346.28,Open phase 3*,None,12,cables,start,0.0
+665.706,2346.28,Figure out how to decode DIVERTS,12C,12,cables,,1.0
+688.9580000000001,2346.28,Cables: Decode D,12A,12,cables,,1.0
+729.954,2346.28,Cables: Decode I,12A,12,cables,,1.0
+730.2080000000001,2346.28,Cables: Decode T,12C,12,cables,,1.0
+730.705,2346.28,Cables: Decode S,12C,12,cables,,1.0
+736.203,2346.28,Cables: Decode V,12E,12,cables,,1.0
+743.461,2346.28,Cables: Decode R,12D,12,cables,,1.0
+747.207,2346.28,Cables: Decode E,12E,12,cables,,1.0
+747.955,2346.28,Fully solved cable password*,None,12,cables,,0.0
+753.956,2346.28,Mention input consume as onedrive password,12C,12,cables,,1.0
+765.955,2346.28,Input consume as onedrive password*,None,12,cables,end,0.0
+784.705,2346.28,Open phase 4 picture*,None,12,flyer,start,0.0
+807.456,2346.28,Open flyer*,None,12,flyer,,0.0
+820.455,2346.28,Mention firestoneheavy.com,12B,12,flyer,,1.0
+967.454,2346.28,Find Hughey Neube's name,12A,12,myspace,,1.0
+968.707,2346.28,Open firestoneheavy.com*,None,12,myspace,start,0.0
+1004.452,2346.28,Open admin portal page*,None,12,,,0.0
+1087.701,2346.28,Mention Hughey Neube's Myspace,12C,12,myspace,,1.0
+1098.954,2346.28,Open Hughey Neube's Myspace*,None,12,myspace,,0.0
+1111.455,2346.28,Find pictures of Crumpet*,None,12,myspace,,0.0
+1140.705,2346.28,Find missing corner of flyer*,None,12,myspace,,0.0
+1242.954,2346.28,Find Employee ID photo*,None,12,myspace,,0.0
+1244.201,2346.28,Notice Employee ID number,12B,12,myspace,end,1.0
+1582.955,2346.28,Mention association between corner letters and flyer icons,12C,12,flyer,,1.0
+1590.704,2346.28,Flyer: Decode E,12C,12,flyer,,1.0
+1599.704,2346.28,Flyer: Decode M,12C,12,flyer,,1.0
+1605.205,2346.28,Flyer: Decode P,12C,12,flyer,,1.0
+1615.7020000000002,2346.28,Flyer: Decode I,12C,12,flyer,,1.0
+1617.705,2346.28,Flyer: Decode D,12C,12,flyer,,1.0
+1623.205,2346.28,Flyer: Decode second I,12C,12,flyer,,1.0
+1628.4560000000001,2346.28,Flyer: Decode N,None,12,flyer,,1.0
+1646.455,2346.28,Flyer: Decode R,12E,12,flyer,,1.0
+1658.953,2346.28,Flyer: Decode second E,12C,12,flyer,,1.0
+1663.451,2346.28,Flyer: Decode V,12C,12,flyer,,1.0
+1663.701,2346.28,Have all of the flyer letters*,None,12,flyer,end,0.0
+1663.701,2346.28,Have all of the flyer letters*,None,12,EMPID,start,0.0
+1800.701,2346.28,Mention the spaces between words,12C,12,flyer,,1.0
+1815.205,2346.28,Figure out what IN REV means,12D,12,EMPID,,1.0
+1824.4579999999999,2346.28,Figure out what EMP ID means,12E,12,EMPID,,1.0
+1831.204,2346.28,Bring up purple log in page*,None,12,EMPID,end,0.0
+1831.204,2346.28,Bring up purple log in page*,None,12,crumpet,start,0.0
+1832.9589999999998,2346.28,mention going to firestoneheavy.com/745017,None,12,EMPID,,1.0
+1893.957,2346.28,Figure out password,12C,12,crumpet,,1.0
+1903.204,2346.28,Figure out username,12C,12,crumpet,,1.0
+1909.9560000000001,2346.28,Get to maze game*,None,12,crumpet,end,0.0
+1909.9560000000001,2346.28,Get to maze game*,None,12,maze,start,0.0
+1954.201,2346.28,Figure out you need to walk to houses,12D,12,maze,,1.0
+2088.946,2346.28,"Find ""1979 Album""",12E,12,maze,,1.0
+2092.1929999999998,2346.28,"Find ""Second Song""",12C,12,maze,,1.0
+2199.194,2346.28,"Find ""Last Word""",12B,12,maze,,1.0
+2222.445,2346.28,"Find ""Toto""",12E,12,maze,,1.0
+2241.94,2346.28,Figure out word is dragon,12C,12,maze,,1.0
+2282.444,2346.28,Input dragon into admin portal*,None,12,maze,end,0.0
+2309.692,2346.28,See congratulations page*,None,12,,,0.0
+50.401,3373.84,Screen sharing begins,11A,11,,,1.0
+78.65100000000001,3373.84,Opening phase 1*,None,11,resist,start,0.0
+149.905,3373.84,Mentioning redwarren.com,11E,11,resist,,1.0
+178.15200000000002,3373.84,"See ""RESIST""*",None,11,resist,,0.0
+191.65099999999998,3373.84,Mentioning redwarren.com/resist,11E,11,resist,,1.0
+198.15400000000002,3373.84,Go to redwarren.com/resist*,None,11,resist,end,0.0
+255.90099999999998,3373.84,Seeing colors website*,None,11,colors,start,0.0
+572.655,3373.84,Figure out yellow position,11A,11,colors,,1.0
+681.6519999999999,3373.84,Figure out green position,11B,11,colors,,1.0
+774.1510000000001,3373.84,Figure out red position,11A,11,colors,,1.0
+821.655,3373.84,Figure out purple position,11A,11,colors,,1.0
+864.4,3373.84,Figure out blue position,11A,11,colors,,1.0
+864.904,3373.84,Get to color solution page*,None,11,colors,end,0.0
+919.154,3373.84,Open phase 2*,None,11,chase,start,0.0
+978.655,3373.84,Mention use the colors to decode phase 2,11E,11,chase,,1.0
+1007.655,3373.84,Colors: Decode C,11B,11,chase,,1.0
+1014.155,3373.84,Colors: Decode H,11B,11,chase,,1.0
+1025.651,3373.84,Colors: Decode A,11A,11,chase,,1.0
+1030.653,3373.84,Colors: Decode S,11A,11,chase,,1.0
+1037.653,3373.84,Colors: Decode E,11A,11,chase,,1.0
+1040.905,3373.84,Figure out the word is CHASE*,None,11,chase,,0.0
+1049.653,3373.84,Mention inputting chase into URL,11B,11,chase,,1.0
+1059.651,3373.84,Go to redwarren.com/chase*,None,11,chase,end,0.0
+1220.152,3373.84,Open phase 3*,None,11,cables,start,0.0
+1291.651,3373.84,Figure out how to decode DIVERTS,11E,11,cables,,1.0
+1294.902,3373.84,Cables: Decode D,11E,11,cables,,1.0
+1338.901,3373.84,Cables: Decode I,11C,11,cables,,1.0
+1352.6529999999998,3373.84,Cables: Decode R,11A,11,cables,,1.0
+1371.151,3373.84,Cables: Decode E,11E,11,cables,,1.0
+1372.6529999999998,3373.84,Cables: Decode T,11E,11,cables,,1.0
+1373.15,3373.84,Cables: Decode S,11E,11,cables,,1.0
+1376.155,3373.84,Cables: Decode V,11E,11,cables,,1.0
+1381.902,3373.84,Fully solved cable password*,None,11,cables,,0.0
+1408.401,3373.84,First bring up the onedrive password box*,None,11,cables,,0.0
+1418.402,3373.84,Mention input consume as onedrive password,11A,11,cables,,1.0
+1418.905,3373.84,Input consume as onedrive password*,None,11,cables,end,0.0
+1457.655,3373.84,Open phase 4 picture*,None,11,flyer,start,0.0
+1484.651,3373.84,Open flyer*,None,11,flyer,,0.0
+1540.655,3373.84,Mention firestoneheavy.com,11E,11,flyer,,1.0
+1621.402,3373.84,Open firestoneheavy.com*,None,11,myspace,start,0.0
+1645.401,3373.84,Find Hughey Neube's name,11E,11,myspace,,1.0
+1651.151,3373.84,Mention Hughey Neube's Myspace,11E,11,myspace,,1.0
+1662.6529999999998,3373.84,Open admin portal page*,None,11,,,0.0
+1716.651,3373.84,Open Hughey Neube's Myspace*,None,11,myspace,,0.0
+1720.655,3373.84,Find pictures of Crumpet*,None,11,myspace,,0.0
+1924.904,3373.84,Find missing corner of flyer*,None,11,myspace,,0.0
+1999.9,3373.84,Find Employee ID photo*,None,11,myspace,,0.0
+2194.35,3373.84,Mention association between corner letters and flyer icons,11C,11,flyer,,1.0
+2209.354,3373.84,Flyer: Decode E,11A,11,flyer,,1.0
+2214.35,3373.84,Flyer: Decode M,11A,11,flyer,,1.0
+2231.854,3373.84,Flyer: Decode I,11A,11,flyer,,1.0
+2236.355,3373.84,Flyer: Decode D,11A,11,flyer,,1.0
+2251.8520000000003,3373.84,Flyer: Decode N,11A,11,flyer,,1.0
+2266.85,3373.84,Flyer: Decode second E,11A,11,flyer,,1.0
+2276.354,3373.84,Flyer: Decode V,11A,11,flyer,,1.0
+2280.855,3373.84,Flyer: Decode P,11A,11,flyer,,1.0
+2316.6020000000003,3373.84,Flyer: Decode second I,11A,11,flyer,,1.0
+2362.855,3373.84,Flyer: Decode R,11A,11,flyer,,1.0
+2363.853,3373.84,Have all of the flyer letters*,None,11,flyer,end,0.0
+2363.853,3373.84,Have all of the flyer letters*,None,11,EMPID,start,0.0
+2368.6,3373.84,Figure out what EMP ID means,11E,11,EMPID,,1.0
+2370.104,3373.84,Mention the spaces between words,11E,11,flyer,,1.0
+2391.601,3373.84,Notice Employee ID number,11D,11,myspace,end,1.0
+2511.105,3373.84,Figure out what IN REV means,11D,11,EMPID,,1.0
+2533.101,3373.84,mention going to firestoneheavy.com/745017,11E,11,EMPID,,1.0
+2543.601,3373.84,Bring up purple log in page*,None,11,EMPID,end,0.0
+2543.601,3373.84,Bring up purple log in page*,None,11,crumpet,start,0.0
+2559.851,3373.84,Figure out username,11D,11,crumpet,,1.0
+2560.354,3373.84,Figure out password,11D,11,crumpet,,1.0
+2613.351,3373.84,Get to maze game*,None,11,crumpet,end,0.0
+2613.351,3373.84,Get to maze game*,None,11,maze,start,0.0
+2775.6020000000003,3373.84,Figure out you need to walk to houses,11E,11,maze,,1.0
+2981.6009999999997,3373.84,"Find ""1979 Album""",11E,11,maze,,1.0
+2984.853,3373.84,"Find ""Toto""",11C,11,maze,,1.0
+3018.6020000000003,3373.84,"Find ""Last Word""",11E,11,maze,,1.0
+3139.105,3373.84,"Find ""Second Song""",11D,11,maze,,1.0
+3188.6009999999997,3373.84,Figure out word is dragon,11E,11,maze,,1.0
+3205.3509999999997,3373.84,Input dragon into admin portal*,None,11,maze,end,0.0
+3285.8509999999997,3373.84,See congratulations page*,None,11,,,0.0
+572.655,3373.84,Figure out yellow position,11B,11,colors,,1.0
+864.4,3373.84,Figure out blue position,11D,11,colors,,1.0
+2194.35,3373.84,Mention association between corner letters and flyer icons,11E,11,flyer,,1.0
+2276.354,3373.84,Flyer: Decode V,11C,11,flyer,,1.0
+64.655,4036.16,Screen sharing begins,10E,10,,,1.0
+99.406,4036.16,Opening phase 1*,None,10,resist,start,0.0
+115.257,4036.16,Open phase 2*,None,10,chase,start,0.0
+231.65200000000002,4036.16,Mentioning redwarren.com,10C,10,resist,,1.0
+238.155,4036.16,"See ""RESIST""*",None,10,resist,,0.0
+252.753,4036.16,Mentioning redwarren.com/resist,None,10,resist,,1.0
+257.756,4036.16,Go to redwarren.com/resist*,None,10,resist,end,0.0
+306.755,4036.16,Seeing colors website*,None,10,colors,start,0.0
+1024.257,4036.16,Figure out purple position,10D,10,colors,,1.0
+1066.006,4036.16,Figure out red position,10E,10,colors,,1.0
+1098.506,4036.16,Figure out yellow position,10D,10,colors,,1.0
+1117.755,4036.16,Figure out green position,10E,10,colors,,1.0
+1122.006,4036.16,Figure out blue position,10E,10,colors,,1.0
+1128.005,4036.16,Get to color solution page*,None,10,colors,end,0.0
+1205.253,4036.16,Mention use the colors to decode phase 2,10D,10,chase,,1.0
+1316.506,4036.16,Colors: Decode C,10B,10,chase,,1.0
+1317.005,4036.16,Colors: Decode H,10B,10,chase,,1.0
+1317.256,4036.16,Colors: Decode A,10B,10,chase,,1.0
+1317.505,4036.16,Colors: Decode S,10B,10,chase,,1.0
+1318.005,4036.16,Colors: Decode E,10B,10,chase,,1.0
+1318.255,4036.16,Figure out the word is CHASE*,None,10,chase,,0.0
+1344.505,4036.16,Mention inputting chase into URL,10D,10,chase,,1.0
+1361.756,4036.16,Go to redwarren.com/chase*,None,10,chase,end,0.0
+1462.755,4036.16,Open phase 3*,None,10,cables,start,0.0
+1538.756,4036.16,First bring up the onedrive password box*,None,10,cables,,0.0
+1650.751,4036.16,Figure out how to decode DIVERTS,10D,10,cables,,1.0
+1720.753,4036.16,Cables: Decode I,10D,10,cables,,1.0
+1747.255,4036.16,Cables: Decode R,10B,10,cables,,1.0
+1750.755,4036.16,Cables: Decode E,10C,10,cables,,1.0
+1769.005,4036.16,Cables: Decode T,10D,10,cables,,1.0
+1792.753,4036.16,Cables: Decode D,10D,10,cables,,1.0
+1793.005,4036.16,Cables: Decode V,10D,10,cables,,1.0
+1793.505,4036.16,Cables: Decode S,10D,10,cables,,1.0
+1794.255,4036.16,Fully solved cable password*,None,10,cables,,0.0
+1828.755,4036.16,Mention input consume as onedrive password,10E,10,cables,,1.0
+1836.5020000000002,4036.16,Input consume as onedrive password*,None,10,cables,end,0.0
+1856.255,4036.16,Open flyer*,None,10,flyer,,0.0
+1869.255,4036.16,Open phase 4 picture*,None,10,flyer,start,0.0
+1964.001,4036.16,Mention firestoneheavy.com,10A,10,flyer,,1.0
+2025.755,4036.16,Open firestoneheavy.com*,None,10,myspace,start,0.0
+2046.756,4036.16,Find Hughey Neube's name,10A,10,myspace,,1.0
+2199.756,4036.16,Mention Hughey Neube's Myspace,10C,10,myspace,,1.0
+2319.006,4036.16,Open Hughey Neube's Myspace*,10E,10,myspace,,0.0
+2328.937,4036.16,Find pictures of Crumpet*,None,10,myspace,,0.0
+2420.936,4036.16,Find missing corner of flyer*,None,10,myspace,,0.0
+2635.685,4036.16,Mention association between corner letters and flyer icons,None,10,flyer,,1.0
+2729.935,4036.16,Flyer: Decode second I,10D,10,flyer,,1.0
+2748.935,4036.16,Flyer: Decode M,10B,10,flyer,,1.0
+2760.9359999999997,4036.16,Flyer: Decode P,10E,10,flyer,,1.0
+2787.9359999999997,4036.16,Flyer: Decode D,10B,10,flyer,,1.0
+2868.935,4036.16,Flyer: Decode R,None,10,flyer,,1.0
+2929.935,4036.16,Flyer: Decode I,10B,10,flyer,,1.0
+2930.185,4036.16,Flyer: Decode N,10B,10,flyer,,1.0
+2930.935,4036.16,Flyer: Decode second E,10B,10,flyer,,1.0
+2931.935,4036.16,Flyer: Decode V,10B,10,flyer,,1.0
+2967.1859999999997,4036.16,Flyer: Decode E,10D,10,flyer,,1.0
+2967.435,4036.16,Have all of the flyer letters*,None,10,flyer,end,0.0
+2967.435,4036.16,Have all of the flyer letters*,None,10,EMPID,start,0.0
+2985.935,4036.16,Figure out what EMP ID means,None,10,EMPID,,1.0
+2986.185,4036.16,Figure out what IN REV means,None,10,EMPID,,1.0
+2986.435,4036.16,Mention the spaces between words,None,10,flyer,,1.0
+3058.9359999999997,4036.16,Open admin portal page*,None,10,,,0.0
+3087.9359999999997,4036.16,Find Employee ID photo*,None,10,myspace,,0.0
+3097.435,4036.16,Notice Employee ID number,10D,10,myspace,end,1.0
+3133.185,4036.16,mention going to firestoneheavy.com/745017,10E,10,EMPID,,1.0
+3135.935,4036.16,Bring up purple log in page*,None,10,EMPID,end,0.0
+3135.935,4036.16,Bring up purple log in page*,None,10,crumpet,start,0.0
+3164.1859999999997,4036.16,Figure out username,10E,10,crumpet,,1.0
+3184.935,4036.16,Figure out password,10B,10,crumpet,,1.0
+3213.435,4036.16,Get to maze game*,None,10,crumpet,end,0.0
+3213.435,4036.16,Get to maze game*,None,10,maze,start,0.0
+3360.4359999999997,4036.16,Figure out you need to walk to houses,10E,10,maze,,1.0
+3423.9359999999997,4036.16,"Find ""Second Song""",10E,10,maze,,1.0
+3519.9359999999997,4036.16,"Find ""1979 Album""",10D,10,maze,,1.0
+3650.435,4036.16,"Find ""Last Word""",10D,10,maze,,1.0
+3782.685,4036.16,"Find ""Toto""",10D,10,maze,,1.0
+3985.185,4036.16,Figure out word is dragon,10D,10,maze,,1.0
+3986.935,4036.16,Input dragon into admin portal*,None,10,maze,end,0.0
+4014.9359999999997,4036.16,See congratulations page*,None,10,,,0.0
+2729.935,4036.16,Flyer: Decode second I,10E,10,flyer,,1.0
+3097.435,4036.16,Notice Employee ID number,10E,10,myspace,end,1.0
+35.154,2637.48,Screen sharing begins,27D,27,,,1.0
+55.153,2637.48,Opening phase 1*,None,27,resist,start,0.0
+81.405,2637.48,Mentioning redwarren.com,27D,27,resist,,1.0
+174.15400000000002,2637.48,Open phase 2*,None,27,chase,start,0.0
+237.153,2637.48,"See ""RESIST""*",27A,27,resist,,0.0
+254.155,2637.48,Mentioning redwarren.com/resist,27A,27,resist,,1.0
+258.402,2637.48,Go to redwarren.com/resist*,None,27,resist,end,0.0
+316.155,2637.48,Seeing colors website*,None,27,colors,start,0.0
+574.905,2637.48,Figure out blue position,27D,27,colors,,1.0
+604.654,2637.48,Figure out red position,27D,27,colors,,1.0
+615.654,2637.48,Figure out green position,27A,27,colors,,1.0
+626.905,2637.48,Figure out yellow position,27E,27,colors,,1.0
+638.404,2637.48,Figure out purple position,27D,27,colors,,1.0
+638.9019999999999,2637.48,Get to color solution page*,None,27,colors,end,0.0
+655.403,2637.48,Mention use the colors to decode phase 2,27D,27,chase,,1.0
+672.655,2637.48,Colors: Decode C,27A,27,chase,,1.0
+674.405,2637.48,Colors: Decode H,27A,27,chase,,1.0
+675.653,2637.48,Colors: Decode A,27A,27,chase,,1.0
+677.153,2637.48,Colors: Decode S,27A,27,chase,,1.0
+678.1510000000001,2637.48,Colors: Decode E,27A,27,chase,,1.0
+678.6510000000001,2637.48,Figure out the word is CHASE*,None,27,chase,,0.0
+681.653,2637.48,Mention inputting chase into URL,27D,27,chase,,1.0
+686.404,2637.48,Go to redwarren.com/chase*,None,27,chase,end,0.0
+790.405,2637.48,Open phase 3*,None,27,cables,start,0.0
+836.403,2637.48,First bring up the onedrive password box*,None,27,cables,,0.0
+928.405,2637.48,Figure out how to decode DIVERTS,27A,27,cables,,1.0
+944.655,2637.48,Cables: Decode D,27E,27,cables,,1.0
+965.405,2637.48,Cables: Decode I,27E,27,cables,,1.0
+976.905,2637.48,Cables: Decode V,27E,27,cables,,1.0
+981.9010000000001,2637.48,Cables: Decode E,27D,27,cables,,1.0
+995.1560000000001,2637.48,Cables: Decode T,27E,27,cables,,1.0
+997.653,2637.48,Cables: Decode R,27D,27,cables,,1.0
+1053.152,2637.48,Cables: Decode S,27A,27,cables,,1.0
+1056.403,2637.48,Fully solved cable password*,None,27,cables,,0.0
+1059.401,2637.48,Mention input consume as onedrive password,27D,27,cables,,1.0
+1066.905,2637.48,Input consume as onedrive password*,None,27,cables,end,0.0
+1084.155,2637.48,Open phase 4 picture*,None,27,flyer,start,0.0
+1120.405,2637.48,Open flyer*,None,27,flyer,,0.0
+1139.653,2637.48,Mention firestoneheavy.com,27E,27,flyer,,1.0
+1149.402,2637.48,Open firestoneheavy.com*,None,27,myspace,start,0.0
+1151.903,2637.48,Find Hughey Neube's name,27E,27,myspace,,1.0
+1167.405,2637.48,Mention Hughey Neube's Myspace,27B,27,myspace,,1.0
+1187.151,2637.48,Open Hughey Neube's Myspace*,None,27,myspace,,0.0
+1191.905,2637.48,Find pictures of Crumpet*,None,27,myspace,,0.0
+1272.254,2637.48,Find missing corner of flyer*,None,27,myspace,,0.0
+1280.755,2637.48,Open admin portal page*,None,27,,,0.0
+1379.0339999999999,2637.48,Find Employee ID photo*,None,27,myspace,,0.0
+1380.785,2637.48,Notice Employee ID number,27E,27,myspace,end,1.0
+1913.0120000000002,2637.48,Mention association between corner letters and flyer icons,27E,27,flyer,,1.0
+1947.009,2637.48,Flyer: Decode E,27D,27,flyer,,1.0
+1952.509,2637.48,Flyer: Decode M,27D,27,flyer,,1.0
+1965.076,2637.48,Flyer: Decode P,27D,27,flyer,,1.0
+1970.578,2637.48,Flyer: Decode I,27E,27,flyer,,1.0
+1975.076,2637.48,Flyer: Decode D,27E,27,flyer,,1.0
+1980.5810000000001,2637.48,Flyer: Decode second I,27E,27,flyer,,1.0
+1988.08,2637.48,Flyer: Decode N,27E,27,flyer,,1.0
+2003.8310000000001,2637.48,Flyer: Decode R,27E,27,flyer,,1.0
+2012.578,2637.48,Flyer: Decode second E,27E,27,flyer,,1.0
+2020.832,2637.48,Flyer: Decode V,27E,27,flyer,,1.0
+2032.899,2637.48,Mention the spaces between words,27D,27,flyer,,1.0
+2055.151,2637.48,Have all of the flyer letters*,None,27,flyer,end,0.0
+2055.151,2637.48,Have all of the flyer letters*,None,27,EMPID,start,0.0
+2061.901,2637.48,Figure out what EMP ID means,27A,27,EMPID,,1.0
+2065.401,2637.48,Figure out what IN REV means,27B,27,EMPID,,1.0
+2087.6479999999997,2637.48,mention going to firestoneheavy.com/745017,27D,27,EMPID,,1.0
+2097.401,2637.48,Bring up purple log in page*,None,27,EMPID,end,0.0
+2097.401,2637.48,Bring up purple log in page*,None,27,crumpet,start,0.0
+2117.652,2637.48,Figure out username,27D,27,crumpet,,1.0
+2123.4,2637.48,Figure out password,27A,27,crumpet,,1.0
+2146.4,2637.48,Get to maze game*,None,27,crumpet,end,0.0
+2146.4,2637.48,Get to maze game*,None,27,maze,start,0.0
+2179.875,2637.48,Figure out you need to walk to houses,27D,27,maze,,1.0
+2244.377,2637.48,"Find ""Toto""",27D,27,maze,,1.0
+2366.6279999999997,2637.48,"Find ""Second Song""",27D,27,maze,,1.0
+2471.379,2637.48,"Find ""Last Word""",27A,27,maze,,1.0
+2474.125,2637.48,"Find ""1979 Album""",27E,27,maze,,1.0
+2540.631,2637.48,Figure out word is dragon,27B,27,maze,,1.0
+2550.379,2637.48,Input dragon into admin portal*,None,27,maze,end,0.0
+2580.388,2637.48,See congratulations page*,None,27,,,0.0
+928.405,2637.48,Figure out how to decode DIVERTS,27E,27,cables,,1.0
+1952.509,2637.48,Flyer: Decode M,27E,27,flyer,,1.0
+98.633,1702.68,Screen sharing begins,16B,16,,,1.0
+129.194,1702.68,Mentioning redwarren.com,16D,16,resist,,1.0
+133.137,1702.68,Opening phase 1*,None,16,resist,start,0.0
+137.194,1702.68,"See ""RESIST""*",None,16,resist,,0.0
+148.194,1702.68,Mentioning redwarren.com/resist,16E,16,resist,,1.0
+154.947,1702.68,Go to redwarren.com/resist*,None,16,resist,end,0.0
+210.342,1702.68,Seeing colors website*,None,16,colors,start,0.0
+292.096,1702.68,Figure out green position,16D,16,colors,,1.0
+315.594,1702.68,Figure out yellow position,16B,16,colors,,1.0
+374.345,1702.68,Figure out blue position,16E,16,colors,,1.0
+404.844,1702.68,Figure out red position,16A,16,colors,,1.0
+406.593,1702.68,Figure out purple position,16A,16,colors,,1.0
+407.344,1702.68,Get to color solution page*,None,16,colors,end,0.0
+418.846,1702.68,Open phase 2*,None,16,chase,start,0.0
+510.848,1702.68,Mention use the colors to decode phase 2,16A,16,chase,,1.0
+511.844,1702.68,Colors: Decode C,16A,16,chase,,1.0
+512.3430000000001,1702.68,Colors: Decode H,16A,16,chase,,1.0
+514.095,1702.68,Colors: Decode A,16A,16,chase,,1.0
+514.344,1702.68,Colors: Decode S,16A,16,chase,,1.0
+514.845,1702.68,Colors: Decode E,16A,16,chase,,1.0
+515.3480000000001,1702.68,Figure out the word is CHASE*,None,16,chase,,0.0
+521.097,1702.68,Mention inputting chase into URL,16D,16,chase,,1.0
+524.846,1702.68,Go to redwarren.com/chase*,None,16,chase,end,0.0
+608.515,1702.68,Open phase 3*,None,16,cables,start,0.0
+614.015,1702.68,First bring up the onedrive password box*,None,16,cables,,0.0
+643.765,1702.68,Figure out how to decode DIVERTS,16D,16,cables,,1.0
+665.263,1702.68,Cables: Decode D,16E,16,cables,,1.0
+668.015,1702.68,Cables: Decode T,16A,16,cables,,1.0
+678.7660000000001,1702.68,Cables: Decode S,16E,16,cables,,1.0
+686.013,1702.68,Cables: Decode E,16C,16,cables,,1.0
+693.5160000000001,1702.68,Cables: Decode V,16A,16,cables,,1.0
+699.5169999999999,1702.68,Cables: Decode R,16C,16,cables,,1.0
+707.2669999999999,1702.68,Mention input consume as onedrive password,16A,16,cables,,1.0
+714.0169999999999,1702.68,Input consume as onedrive password*,None,16,cables,end,0.0
+714.5160000000001,1702.68,Cables: Decode I,16A,16,cables,,1.0
+715.0169999999999,1702.68,Fully solved cable password*,None,16,cables,,0.0
+731.2660000000001,1702.68,Open phase 4 picture*,None,16,flyer,start,0.0
+764.5239999999999,1702.68,Open flyer*,None,16,flyer,,0.0
+784.7669999999999,1702.68,Open firestoneheavy.com*,None,16,myspace,start,0.0
+791.018,1702.68,Mention firestoneheavy.com,16E,16,flyer,,1.0
+803.2639999999999,1702.68,Find Hughey Neube's name,16B,16,myspace,,1.0
+818.265,1702.68,Open admin portal page*,None,16,,,0.0
+837.7639999999999,1702.68,Mention Hughey Neube's Myspace,16A,16,myspace,,1.0
+840.765,1702.68,Open Hughey Neube's Myspace*,None,16,myspace,,0.0
+852.7669999999999,1702.68,Find pictures of Crumpet*,None,16,myspace,,0.0
+889.6460000000001,1702.68,Find missing corner of flyer*,None,16,myspace,,0.0
+953.997,1702.68,Find Employee ID photo*,None,16,myspace,,0.0
+958.495,1702.68,Notice Employee ID number,16C,16,myspace,end,1.0
+1120.482,1702.68,Mention association between corner letters and flyer icons,16E,16,flyer,,1.0
+1126.235,1702.68,Flyer: Decode E,16C,16,flyer,,1.0
+1131.483,1702.68,Flyer: Decode M,16E,16,flyer,,1.0
+1141.983,1702.68,Flyer: Decode P,16C,16,flyer,,1.0
+1148.486,1702.68,Flyer: Decode I,16A,16,flyer,,1.0
+1176.236,1702.68,Flyer: Decode D,16A,16,flyer,,1.0
+1192.235,1702.68,Flyer: Decode second I,16A,16,flyer,,1.0
+1192.733,1702.68,Flyer: Decode N,16A,16,flyer,,1.0
+1197.235,1702.68,Mention the spaces between words,16E,16,flyer,,1.0
+1199.236,1702.68,Figure out what EMP ID means,16E,16,EMPID,,1.0
+1202.987,1702.68,Flyer: Decode R,16A,16,flyer,,1.0
+1214.484,1702.68,Flyer: Decode second E,16A,16,flyer,,1.0
+1214.737,1702.68,Flyer: Decode V,16A,16,flyer,,1.0
+1216.935,1702.68,Have all of the flyer letters*,None,16,flyer,end,0.0
+1216.935,1702.68,Have all of the flyer letters*,None,16,EMPID,start,0.0
+1248.985,1702.68,Figure out what IN REV means,16A,16,EMPID,,1.0
+1259.524,1702.68,mention going to firestoneheavy.com/745017,16A,16,EMPID,,1.0
+1277.287,1702.68,Bring up purple log in page*,None,16,EMPID,end,0.0
+1277.287,1702.68,Bring up purple log in page*,None,16,crumpet,start,0.0
+1290.038,1702.68,Figure out password,16B,16,crumpet,,1.0
+1293.4460000000001,1702.68,Figure out username,16C,16,crumpet,,1.0
+1306.194,1702.68,Get to maze game*,None,16,crumpet,end,0.0
+1306.194,1702.68,Get to maze game*,None,16,maze,start,0.0
+1333.445,1702.68,Figure out you need to walk to houses,16B,16,maze,,1.0
+1449.444,1702.68,"Find ""1979 Album""",16B,16,maze,,1.0
+1482.4479999999999,1702.68,"Find ""Second Song""",16A,16,maze,,1.0
+1495.481,1702.68,"Find ""Last Word""",16E,16,maze,,1.0
+1549.236,1702.68,"Find ""Toto""",16A,16,maze,,1.0
+1632.695,1702.68,Figure out word is dragon,16E,16,maze,,1.0
+1639.4460000000001,1702.68,Input dragon into admin portal*,None,16,maze,end,0.0
+1673.376,1702.68,See congratulations page*,None,16,,,0.0
+7.904,2154.8,Opening phase 1*,None,36,resist,start,0.0
+47.651,2154.8,Open phase 2*,None,36,chase,start,0.0
+94.441,2154.8,Mentioning redwarren.com,36B,36,resist,,1.0
+104.19200000000001,2154.8,"See ""RESIST""*",None,36,resist,,0.0
+113.441,2154.8,Mentioning redwarren.com/resist,None,36,resist,,1.0
+115.441,2154.8,Go to redwarren.com/resist*,None,36,resist,end,0.0
+272.442,2154.8,Seeing colors website*,None,36,colors,start,0.0
+517.195,2154.8,Figure out green position,36B,36,colors,,1.0
+539.195,2154.8,Figure out blue position,36A,36,colors,,1.0
+571.0930000000001,2154.8,Figure out yellow position,36C,36,colors,,1.0
+571.5930000000001,2154.8,Figure out red position,36C,36,colors,,1.0
+572.091,2154.8,Figure out purple position,36C,36,colors,,1.0
+573.5930000000001,2154.8,Get to color solution page*,None,36,colors,end,0.0
+580.841,2154.8,Mention use the colors to decode phase 2,36B,36,chase,,1.0
+619.094,2154.8,Colors: Decode C,36C,36,chase,,1.0
+619.5930000000001,2154.8,Figure out the word is CHASE*,None,36,chase,,0.0
+620.342,2154.8,Colors: Decode H,36C,36,chase,,1.0
+620.8430000000001,2154.8,Colors: Decode A,36C,36,chase,,1.0
+621.3430000000001,2154.8,Colors: Decode S,36C,36,chase,,1.0
+622.092,2154.8,Colors: Decode E,36C,36,chase,,1.0
+636.595,2154.8,Mention inputting chase into URL,36C,36,chase,,1.0
+661.0930000000001,2154.8,Go to redwarren.com/chase*,None,36,chase,end,0.0
+783.8430000000001,2154.8,Open phase 3*,None,36,cables,start,0.0
+835.3439999999999,2154.8,Figure out how to decode DIVERTS,36A,36,cables,,1.0
+873.845,2154.8,Cables: Decode D,36C,36,cables,,1.0
+879.3430000000001,2154.8,Cables: Decode I,36A,36,cables,,1.0
+884.345,2154.8,Cables: Decode V,36D,36,cables,,1.0
+893.3430000000001,2154.8,Cables: Decode E,36B,36,cables,,1.0
+893.8430000000001,2154.8,Cables: Decode S,36B,36,cables,,1.0
+907.592,2154.8,Cables: Decode T,36B,36,cables,,1.0
+910.345,2154.8,Cables: Decode R,36A,36,cables,,1.0
+914.841,2154.8,Fully solved cable password*,None,36,cables,,0.0
+918.34,2154.8,First bring up the onedrive password box*,None,36,cables,,0.0
+919.84,2154.8,Mention input consume as onedrive password,36A,36,cables,,1.0
+934.34,2154.8,Input consume as onedrive password*,None,36,cables,end,0.0
+952.0939999999999,2154.8,Open phase 4 picture*,None,36,flyer,start,0.0
+976.595,2154.8,Open flyer*,None,36,flyer,,0.0
+989.095,2154.8,Mention firestoneheavy.com,36A,36,flyer,,1.0
+1011.0939999999999,2154.8,Open firestoneheavy.com*,None,36,myspace,start,0.0
+1027.345,2154.8,Find Hughey Neube's name,36C,36,myspace,,1.0
+1049.345,2154.8,Mention Hughey Neube's Myspace,36B,36,myspace,,1.0
+1064.595,2154.8,Open Hughey Neube's Myspace*,None,36,myspace,,0.0
+1093.5919999999999,2154.8,Find pictures of Crumpet*,None,36,myspace,,0.0
+1131.345,2154.8,Find missing corner of flyer*,None,36,myspace,,0.0
+1148.345,2154.8,Mention association between corner letters and flyer icons,36C,36,flyer,,1.0
+1229.8410000000001,2154.8,Flyer: Decode E,36C,36,flyer,,1.0
+1235.09,2154.8,Flyer: Decode M,36C,36,flyer,,1.0
+1240.595,2154.8,Flyer: Decode P,36C,36,flyer,,1.0
+1246.343,2154.8,Flyer: Decode I,36C,36,flyer,,1.0
+1259.5919999999999,2154.8,Flyer: Decode D,36C,36,flyer,,1.0
+1269.345,2154.8,Flyer: Decode R,36B,36,flyer,,1.0
+1269.595,2154.8,Flyer: Decode V,36B,36,flyer,,1.0
+1320.8410000000001,2154.8,Flyer: Decode second I,36B,36,flyer,,1.0
+1321.0910000000001,2154.8,Flyer: Decode N,36B,36,flyer,,1.0
+1329.3429999999998,2154.8,Flyer: Decode second E,36B,36,flyer,,1.0
+1333.84,2154.8,Mention the spaces between words,None,36,flyer,,1.0
+1346.345,2154.8,Have all of the flyer letters*,None,36,flyer,end,0.0
+1346.345,2154.8,Have all of the flyer letters*,None,36,EMPID,start,0.0
+1347.8410000000001,2154.8,Figure out what EMP ID means,36D,36,EMPID,,1.0
+1351.595,2154.8,Figure out what IN REV means,36A,36,EMPID,,1.0
+1363.3410000000001,2154.8,mention going to firestoneheavy.com/745017,36C,36,EMPID,,1.0
+1374.094,2154.8,Find Employee ID photo*,None,36,myspace,,0.0
+1380.595,2154.8,Notice Employee ID number,36A,36,myspace,end,1.0
+1390.0929999999998,2154.8,Open admin portal page*,None,36,,,0.0
+1433.094,2154.8,Bring up purple log in page*,None,36,EMPID,end,0.0
+1433.094,2154.8,Bring up purple log in page*,None,36,crumpet,start,0.0
+1451.595,2154.8,Figure out password,36B,36,crumpet,,1.0
+1584.092,2154.8,Figure out username,36B,36,crumpet,,1.0
+1619.0910000000001,2154.8,Get to maze game*,None,36,crumpet,end,0.0
+1619.0910000000001,2154.8,Get to maze game*,None,36,maze,start,0.0
+1767.592,2154.8,Figure out you need to walk to houses,36C,36,maze,,1.0
+1785.3410000000001,2154.8,"Find ""Toto""",36B,36,maze,,1.0
+1829.094,2154.8,"Find ""Last Word""",36C,36,maze,,1.0
+1887.094,2154.8,"Find ""1979 Album""",36B,36,maze,,1.0
+1900.095,2154.8,"Find ""Second Song""",36D,36,maze,,1.0
+1926.595,2154.8,Figure out word is dragon,36A,36,maze,,1.0
+2081.091,2154.8,Input dragon into admin portal*,None,36,maze,end,0.0
+2115.594,2154.8,See congratulations page*,None,36,,,0.0
+517.195,2154.8,Figure out green position,36D,36,colors,,1.0
+539.195,2154.8,Figure out blue position,36C,36,colors,,1.0
+539.195,2154.8,Figure out blue position,36D,36,colors,,1.0
+919.84,2154.8,Mention input consume as onedrive password,36C,36,cables,,1.0
+1320.8410000000001,2154.8,Flyer: Decode second I,36C,36,flyer,,1.0
+1351.595,2154.8,Figure out what IN REV means,36C,36,EMPID,,1.0
+1380.595,2154.8,Notice Employee ID number,36C,36,myspace,end,1.0
+1926.595,2154.8,Figure out word is dragon,36B,36,maze,,1.0
+48.651,2928.16,Screen sharing begins,31C,31,,,1.0
+70.653,2928.16,Opening phase 1*,None,31,resist,start,0.0
+86.902,2928.16,Mentioning redwarren.com,31C,31,resist,,1.0
+124.90100000000001,2928.16,Open phase 2*,None,31,chase,start,0.0
+198.155,2928.16,"See ""RESIST""*",None,31,resist,,0.0
+200.405,2928.16,Mentioning redwarren.com/resist,31E,31,resist,,1.0
+207.15,2928.16,Go to redwarren.com/resist*,None,31,resist,end,0.0
+273.155,2928.16,Seeing colors website*,None,31,colors,start,0.0
+378.87300000000005,2928.16,Mention use the colors to decode phase 2,31C,31,chase,,1.0
+758.875,2928.16,Get to color solution page*,None,31,colors,end,0.0
+759.3739999999999,2928.16,Figure out blue position,31C,31,colors,,1.0
+759.625,2928.16,Figure out green position,31C,31,colors,,1.0
+759.8710000000001,2928.16,Figure out yellow position,31C,31,colors,,1.0
+760.12,2928.16,Figure out red position,31C,31,colors,,1.0
+761.373,2928.16,Figure out purple position,31C,31,colors,,1.0
+858.875,2928.16,Colors: Decode C,31D,31,chase,,1.0
+859.372,2928.16,Colors: Decode H,31D,31,chase,,1.0
+859.6239999999999,2928.16,Colors: Decode A,31D,31,chase,,1.0
+860.1210000000001,2928.16,Colors: Decode S,31D,31,chase,,1.0
+860.123,2928.16,Figure out the word is CHASE*,None,31,chase,,0.0
+862.122,2928.16,Colors: Decode E,31D,31,chase,,1.0
+867.1239999999999,2928.16,Mention inputting chase into URL,31C,31,chase,,1.0
+871.3710000000001,2928.16,Go to redwarren.com/chase*,None,31,chase,end,0.0
+966.375,2928.16,Open phase 3*,None,31,cables,start,0.0
+986.625,2928.16,First bring up the onedrive password box*,None,31,cables,,0.0
+999.875,2928.16,Figure out how to decode DIVERTS,31D,31,cables,,1.0
+1016.8710000000001,2928.16,Cables: Decode D,31D,31,cables,,1.0
+1038.624,2928.16,Cables: Decode V,31C,31,cables,,1.0
+1047.37,2928.16,Cables: Decode I,31E,31,cables,,1.0
+1059.875,2928.16,Cables: Decode R,31D,31,cables,,1.0
+1075.621,2928.16,Cables: Decode E,31B,31,cables,,1.0
+1083.623,2928.16,Cables: Decode T,31C,31,cables,,1.0
+1083.625,2928.16,Fully solved cable password*,None,31,cables,,0.0
+1084.875,2928.16,Cables: Decode S,31C,31,cables,,1.0
+1086.874,2928.16,Mention input consume as onedrive password,31C,31,cables,,1.0
+1087.371,2928.16,Input consume as onedrive password*,None,31,cables,end,0.0
+1100.372,2928.16,Open phase 4 picture*,None,31,flyer,start,0.0
+1125.873,2928.16,Open flyer*,None,31,flyer,,0.0
+1221.622,2928.16,Mention firestoneheavy.com,31E,31,flyer,,1.0
+1222.121,2928.16,Open firestoneheavy.com*,None,31,myspace,start,0.0
+1240.875,2928.16,Find Hughey Neube's name,31C,31,myspace,,1.0
+1291.873,2928.16,Open admin portal page*,None,31,,,0.0
+1499.375,2928.16,Mention Hughey Neube's Myspace,None,31,myspace,,1.0
+1507.371,2928.16,Open Hughey Neube's Myspace*,None,31,myspace,,0.0
+1509.875,2928.16,Find pictures of Crumpet*,None,31,myspace,,0.0
+1530.624,2928.16,Find missing corner of flyer*,None,31,myspace,,0.0
+1566.621,2928.16,Find Employee ID photo*,None,31,myspace,,0.0
+1571.875,2928.16,Notice Employee ID number,31A,31,myspace,end,1.0
+1593.122,2928.16,Mention association between corner letters and flyer icons,31C,31,flyer,,1.0
+1644.371,2928.16,Flyer: Decode E,31C,31,flyer,,1.0
+1644.621,2928.16,Flyer: Decode M,31C,31,flyer,,1.0
+1646.6229999999998,2928.16,Flyer: Decode P,31C,31,flyer,,1.0
+1649.121,2928.16,Flyer: Decode I,31C,31,flyer,,1.0
+1654.3729999999998,2928.16,Flyer: Decode D,31C,31,flyer,,1.0
+1658.875,2928.16,Flyer: Decode second I,31C,31,flyer,,1.0
+1663.121,2928.16,Flyer: Decode N,31C,31,flyer,,1.0
+1782.6229999999998,2928.16,Flyer: Decode R,31D,31,flyer,,1.0
+1805.375,2928.16,Flyer: Decode second E,31C,31,flyer,,1.0
+1812.622,2928.16,Flyer: Decode V,31C,31,flyer,,1.0
+1813.121,2928.16,Have all of the flyer letters*,None,31,flyer,end,0.0
+1813.121,2928.16,Have all of the flyer letters*,None,31,EMPID,start,0.0
+2150.121,2928.16,Mention the spaces between words,None,31,flyer,,1.0
+2159.121,2928.16,Figure out what EMP ID means,None,31,EMPID,,1.0
+2176.623,2928.16,Figure out what IN REV means,31C,31,EMPID,,1.0
+2189.374,2928.16,mention going to firestoneheavy.com/745017,31A,31,EMPID,,1.0
+2196.373,2928.16,Bring up purple log in page*,None,31,EMPID,end,0.0
+2196.373,2928.16,Bring up purple log in page*,None,31,crumpet,start,0.0
+2309.624,2928.16,Figure out password,31D,31,crumpet,,1.0
+2316.12,2928.16,Figure out username,31C,31,crumpet,,1.0
+2401.874,2928.16,Get to maze game*,None,31,crumpet,end,0.0
+2401.874,2928.16,Get to maze game*,None,31,maze,start,0.0
+2464.375,2928.16,Figure out you need to walk to houses,31C,31,maze,,1.0
+2530.625,2928.16,"Find ""1979 Album""",31A,31,maze,,1.0
+2690.125,2928.16,"Find ""Toto""",31A,31,maze,,1.0
+2753.3709999999996,2928.16,"Find ""Last Word""",31E,31,maze,,1.0
+2805.375,2928.16,"Find ""Second Song""",31D,31,maze,,1.0
+2830.875,2928.16,Figure out word is dragon,31A,31,maze,,1.0
+2863.873,2928.16,Input dragon into admin portal*,None,31,maze,end,0.0
+2883.1209999999996,2928.16,See congratulations page*,None,31,,,0.0
+2189.374,2928.16,mention going to firestoneheavy.com/745017,31C,31,EMPID,,1.0
+2830.875,2928.16,Figure out word is dragon,31C,31,maze,,1.0
