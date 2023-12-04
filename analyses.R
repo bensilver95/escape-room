@@ -5,7 +5,7 @@ library(lmerTest)
 library(brms)
 library(bmlm)
 
-setwd("/Users/bensilver/Google Drive/My Drive/Grad School/Projects/Escape_Room/data")
+setwd("/Users/benjaminsilver/Google Drive/My Drive/Grad School/Projects/Escape_Room/data")
 
 ######### CLEAN #############
 pre <- read_csv('surveys/pre_clean.csv')
@@ -38,9 +38,6 @@ change <- pre %>%
          Like_post.c = scale(Like_post, center = T, scale = F),
          Closeness_post.c = scale(Closeness_post, center = T, scale = F),
          Similar_post.c = scale(Similar_post, center = T, scale = F),
-         Like_week.c = scale(Like_week, center = T, scale = F),
-         Closeness_week.c = scale(Closeness_week, center = T, scale = F),
-         Similar_week.c = scale(Similar_week, center = T, scale = F),
          Like_pre.cs = scale(Like_pre,center = T, scale = T),
          Familiar_pre.cs = scale(Familiar_pre, center = T, scale = T),
          Closeness_pre.cs = scale(Closeness_pre,center = T, scale = T),
@@ -299,17 +296,12 @@ mPerfComp <- brm(post ~ ParticipationObjective.cs + pre +
                    filter(Dimension == 'Ability'),
                  cores = 4, chains = 2, iter = 8000)
 
-mInterComp1 <- brm(post ~ Like_pre.cs*Similar_pre.cs*ParticipationObjective.cs + pre +
-                     (1 + Like_pre.cs*Similar_pre.cs*ParticipationObjective.cs + pre | ID),
+mInterComp <- brm(post ~ Like_pre.cs*Similar_pre.cs*Familiar_pre.cs*ParticipationObjective.cs + pre +
+                     (1 + Like_pre.cs*Similar_pre.cs*Familiar_pre.cs*ParticipationObjective.cs + pre | ID),
                    data = change %>% 
                      filter(Dimension == 'Ability'),
-                   cores = 4, chains = 2, iter = 8000)
-
-mInterComp2 <- brm(post ~ Familiar_pre.cs*Similar_pre.cs*ParticipationObjective.cs + pre +
-                     (1 + Familiar_pre.cs*Similar_pre.cs*ParticipationObjective.cs + pre | ID),
-                   data = change %>% 
-                     filter(Dimension == 'Ability'),
-                   cores = 4, chains = 2, iter = 8000)
+                   cores = 4, chains = 2, iter = 8000, 
+                  control = list(adapt_delta = .9))
 
 mPerfSoc <- brm(post ~ collab_ratio.cs + pre + 
                   (1 + collab_ratio.cs + pre | ID),
@@ -317,17 +309,12 @@ mPerfSoc <- brm(post ~ collab_ratio.cs + pre +
                   filter(Dimension == 'Sociability'),
                 cores = 4, chains = 2, iter = 8000)
 
-mInterSoc1 <- brm(post ~ Like_pre.cs*Familiar_pre.cs*collab_ratio.cs + pre +
-                    (1 + Like_pre.cs*Familiar_pre.cs*collab_ratio.cs + pre | ID),
+mInterSoc <- brm(post ~ Like_pre.cs*Similar_pre.cs*Familiar_pre.cs*collab_ratio.cs + pre +
+                    (1 + Like_pre.cs*Similar_pre.cs*Familiar_pre.cs*collab_ratio.cs + pre | ID),
                   data = change %>% 
                     filter(Dimension == 'Sociability'),
-                  cores = 4, chains = 2, iter = 8000)
-
-mInterSoc2 <- brm(post ~ Similar_pre.cs*Familiar_pre.cs*collab_ratio.cs + pre +
-                    (1 + Similar_pre.cs*Familiar_pre.cs*collab_ratio.cs + pre | ID),
-                  data = change %>% 
-                    filter(Dimension == 'Sociability'),
-                  cores = 4, chains = 2, iter = 8000)
+                  cores = 4, chains = 2, iter = 8000, 
+                  control = list(adapt_delta = .9))
 
 # PAB #####
 change <- change %>% 
@@ -350,6 +337,19 @@ mAccSoc <- brm(TeamCollabDiff_post ~ Familiar_pre.cs*Like_pre.cs*Similar_pre.cs 
                cores = 4, chains = 2, iter = 8000)
 
 # mediation #####
+mMediationComp <- brm(post ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*SolvingPuzzlesDiff_post + pre +
+                        (1 + Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*SolvingPuzzlesDiff_post + pre | ID),
+                      data = change %>% 
+                        filter(Dimension == 'Ability'),
+                      cores = 4, chains = 2, iter = 8000)
+
+mMediationSoc <- brm(post ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*TeamCollabDiff_post + pre +
+                       (1 + Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*TeamCollabDiff_post + pre | ID),
+                     data = change %>% 
+                       filter(Dimension == 'Sociability'),
+                     cores = 4, chains = 2, iter = 8000)
+
+# don't use these in the paper but helpful for understanding mediation
 change_med <- change %>% 
   select(ID, Teammate,Familiar_pre.cs,Like_pre.cs,Similar_pre.cs,
          SolvingPuzzlesDiff_post,TeamCollabDiff_post,Dimension,pre,post)
@@ -382,51 +382,17 @@ fit_med_soc <- mlm(d = change_med_soc %>%
                    m = "TeamCollabDiff_post_cw",y = "post_cw",
                    iter = 8000, cores = 4)
 
-mMediationComp <- brm(post ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*SolvingPuzzlesDiff_post + pre +
-                        (1 + Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*SolvingPuzzlesDiff_post + pre | ID),
-                      data = change %>% 
-                        filter(Dimension == 'Ability'),
-                      cores = 4, chains = 2, iter = 8000)
-
-mMediationSoc <- brm(post ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*TeamCollabDiff_post + pre +
-                       (1 + Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*TeamCollabDiff_post + pre | ID),
-                     data = change %>% 
-                       filter(Dimension == 'Sociability'),
-                     cores = 4, chains = 2, iter = 8000)
-
 
 
 
 ## Figures #####
 med <- median(change$ParticipationObjective.cs,na.rm = T)
-med3 <- median(change$collab_ratio.cs, na.rm = T)
-
-ggplot(change %>% 
-         filter(Dimension == "Ability",
-                !is.na(ParticipationObjective.cs)) %>% 
-         mutate(ParticipationObjective.csd = as.factor(if_else(ParticipationObjective.cs > med,1,0))),
-       aes(x = Similar_pre, y = post, 
-           color = ParticipationObjective.csd, group = ParticipationObjective.csd)) +
-  geom_jitter(alpha = .2) +
-  geom_smooth(method = "lm") +
-  scale_color_manual(values = c("orchid4","orchid1"),
-                     labels = c("Low","High")) +
-  theme_classic() +
-  labs(x = "Similarity", y = "Post-game competence rating", color = "Performance\nScore",
-       title = "Puzzle solving performance x\nSimilarity") +
-  theme(plot.title = element_text(size = 18, hjust = .5),
-        axis.title = element_text(size = 16),
-        axis.text = element_text(size = 14),
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12))
-ggsave("figs/paper/inter_comp.jpg")
-
 
 ggplot(change %>% 
          filter(Dimension == "Sociability",
                 !is.na(collab_ratio.cs)) %>% 
          mutate(collab_ratio.csd = as.factor(if_else(collab_ratio.cs > med3,1,0))),
-       aes(x = Familiar_pre, y = post, 
+       aes(x = Like_pre, y = post, 
            color = collab_ratio.csd, group = collab_ratio.csd)) +
   geom_jitter(alpha = .2) +
   geom_smooth(method = "lm") +
