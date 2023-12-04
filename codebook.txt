@@ -1,0 +1,17 @@
+## pre_clean.csv and post_clean.csv
+Gender: 1 = Man, 2 = Woman
+Race: 1 = American Indian/Alaska Native, 2 = Asian, 3 = Native Hawaiin/Pacific Islander, 4 = Black/African 
+American, 5 = White, 6 = A race not listed
+Ethnicity: 1 = Hispanic or Latino, 2 = Not Hispanic or Latino 
+All questions are on a 0-10 scale, except for FirstMeet and Interact, which are on a 1-6 scale 
+
+## video_data.csv
+Time: In seconds from start of video
+SubjAssign: 1 means a subject was assigned as the primary contributor for this step, 0 means this step does not 
+require a contributor
+Videos coded using BORIS video coding software
+
+## transcript_info.csv
+num_utterances: Number of times participant spoke
+positivity: semantic analysis from 0 (negative) to 1 (positive)
+first: number of first-person pronouns uttered
