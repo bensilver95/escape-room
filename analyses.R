@@ -4,6 +4,8 @@ library(tidyverse)
 library(lmerTest)
 library(brms)
 library(bmlm)
+library(ggpubr)
+library(corrplot)
 
 setwd("/Users/benjaminsilver/Google Drive/My Drive/Grad School/Projects/Escape_Room/data")
 
@@ -96,17 +98,67 @@ change <- change %>%
          num_utterances.cs = scale(num_utterances, center = T, scale = T),
          collab_ratio2.cs = scale(collab_ratio2, center = T, scale = T))
 
+###### demographics and descriptives ######
+### demographics ######
+# gender
+change %>% 
+  distinct(ID, .keep_all = T) %>% 
+  count(Gender)
+
+# age
+change %>% 
+  distinct(ID, .keep_all = T) %>% 
+  summarize(mean(Age))
+
+change %>% 
+  distinct(ID, .keep_all = T) %>% 
+  summarize(min(Age))
+
+change %>% 
+  distinct(ID, .keep_all = T) %>% 
+  summarize(max(Age))
+
+change %>% 
+  distinct(ID, .keep_all = T) %>% 
+  count(Age < 23)
+
+# race
+change %>% 
+  distinct(ID, .keep_all = T) %>% 
+  count(Race)
+
+### descriptives #####
+# means and sds
+change_descriptives <- change %>% 
+  distinct(ID, Teammate, .keep_all = T) %>% 
+  summarize(Like_pre_sd = sd(Like_pre,na.rm = T),
+            Interact_pre.r_sd = sd(Interact_pre, na.rm = T),
+            FirstMeet_pre_sd = sd(FirstMeet_pre, na.rm = T),
+            Similar_pre_sd = sd(Similar_pre,na.rm = T),
+            Like_pre = mean(Like_pre, na.rm = T),
+            Interact_pre.r = mean(Interact_pre, na.rm = T),
+            FirstMeet_pre = mean(FirstMeet_pre, na.rm = T),
+            Similar_pre = mean(Similar_pre, na.rm = T))
+
+# correlation matrix
+change_corrmat <- change %>% 
+  distinct(ID, Teammate, .keep_all = T) %>% 
+  select(Like_pre,
+         Similar_pre,
+         Familiar_pre)
+cor(change_corrmat, use="complete.obs")
+
 ###### QUESTION 1 ######
 ## Models ####
 mChangeComp1 <- brm(Rating ~ Time.d + 
-                      (1 + Time.d | ID),
+                      (1 + Time.d | Group / ID),
                     data = change2 %>% 
                       filter(Dimension == 'Ability') %>% 
                       mutate(Time.d = if_else(Time == 'pre',0,1)),
                     cores = 4, chains = 2, iter = 6000)
 
 mChangeSoc1 <- brm(Rating ~ Time.d + 
-                     (1 + Time.d | ID),
+                     (1 + Time.d | Group / ID),
                    data = change2 %>% 
                      filter(Dimension == 'Sociability') %>% 
                      mutate(Time.d = if_else(Time == 'pre',0,1)),
@@ -114,7 +166,7 @@ mChangeSoc1 <- brm(Rating ~ Time.d +
 
 ## Figures ####
 
-ggplot(change2 %>% 
+f2a <- ggplot(change2 %>% 
          filter(Dimension == "Ability") %>% 
          mutate(Time = factor(Time,
                               levels = c("pre","post"))),
@@ -133,9 +185,8 @@ ggplot(change2 %>%
         axis.text = element_text(size = 12),
         plot.title = element_text(size = 18, hjust = .5),
         axis.title.x = element_blank())
-ggsave("figs/paper/time_comp_noduration.jpg")
 
-ggplot(change2 %>% 
+f2b <- ggplot(change2 %>% 
          filter(Dimension == "Sociability") %>% 
          mutate(Time = factor(Time,
                               levels = c("pre","post"))),
@@ -154,13 +205,19 @@ ggplot(change2 %>%
         axis.text = element_text(size = 12),
         plot.title = element_text(size = 18, hjust = .5),
         axis.title.x = element_blank())
-ggsave("figs/paper/time_soc_noduration.jpg")
+
+ggarrange(f2a,f2b,
+          labels = c("A","B"),
+          ncol = 2, nrow = 1,
+          font.label = list(size = 20))
+ggsave("figs/paper/Fig2.jpg", scale = 1.8, width = 6, height = 3)
 
 
 ###### QUESTION 2 ######
 ## Models ######
 mLikeFamiliarSimComp <- brm(post ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs + pre +
-                              (1 + Like_pre.cs*Familiar_pre.cs*Similar_pre.cs + pre | ID),
+                              (1 + Like_pre.cs*Familiar_pre.cs*Similar_pre.cs + pre | ID) +
+                              (1 | Group),
                             data = change %>% 
                               filter(Dimension == 'Ability'),
                             cores = 4, chains = 2, iter = 8000)
@@ -172,6 +229,7 @@ mLikeFamiliarSimSoc <- brm(post ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs + p
                            cores = 4, chains = 2, iter = 8000)
 
 ## Figures ######
+# maybe delete this?
 # competence
 x = c("Liking","Familiarity","Similarity",
       "Liking x\nFamiliarity","Liking x\nSimilarity",
@@ -386,12 +444,32 @@ fit_med_soc <- mlm(d = change_med_soc %>%
 
 
 ## Figures #####
-med <- median(change$ParticipationObjective.cs,na.rm = T)
+medcomp <- median(change$ParticipationObjective.cs,na.rm = T)
+medsoc <- median(change$collab_ratio.cs, na.rm = T)
 
-ggplot(change %>% 
+f4a <- ggplot(change %>% 
+         filter(Dimension == "Ability",
+                !is.na(ParticipationObjective.cs)) %>% 
+         mutate(ParticipationObjective.csd = as.factor(if_else(ParticipationObjective.cs > medcomp,1,0))),
+       aes(x = Similar_pre, y = post, 
+           color = ParticipationObjective.csd, group = ParticipationObjective.csd)) +
+  geom_jitter(alpha = .2) +
+  geom_smooth(method = "lm") +
+  scale_color_manual(values = c("orchid4","orchid1"),
+                     labels = c("Low","High")) +
+  theme_classic() +
+  labs(x = "Pre-game similarity rating", y = "Post-game competence rating", color = "Performance\nScore",
+       title = "Puzzle solving performance x\nSimilarity") +
+  theme(plot.title = element_text(size = 18, hjust = .5),
+        axis.title = element_text(size = 16),
+        axis.text = element_text(size = 14),
+        legend.title = element_text(size = 14),
+        legend.text = element_text(size = 12))
+
+f4b <- ggplot(change %>% 
          filter(Dimension == "Sociability",
                 !is.na(collab_ratio.cs)) %>% 
-         mutate(collab_ratio.csd = as.factor(if_else(collab_ratio.cs > med3,1,0))),
+         mutate(collab_ratio.csd = as.factor(if_else(collab_ratio.cs > medsoc,1,0))),
        aes(x = Like_pre, y = post, 
            color = collab_ratio.csd, group = collab_ratio.csd)) +
   geom_jitter(alpha = .2) +
@@ -399,15 +477,19 @@ ggplot(change %>%
   scale_color_manual(values = c("darkgoldenrod4","darkgoldenrod1"),
                      labels = c("Low","High")) +
   theme_classic() +
-  labs(x = "Familiarity", y = "Post-game sociability rating", color = "Performance\nScore",
-       title = "Team collaboration performance x\nfamiliarity") +
+  labs(x = "Pre-game liking rating", y = "Post-game sociability rating", color = "Performance\nScore",
+       title = "Team collaboration performance x\nliking") +
   theme(plot.title = element_text(size = 18, hjust = .5),
         axis.title = element_text(size = 16),
         axis.text = element_text(size = 14),
         legend.title = element_text(size = 14),
         legend.text = element_text(size = 12))
-ggsave("figs/paper/inter_soc.jpg")
 
+ggarrange(f4a,f4b,
+          labels = c("A","B"),
+          ncol = 2, nrow = 1,
+          font.label = list(size = 20))
+ggsave("figs/paper/Fig4.jpg", scale = 1.8, width = 6, height = 3)
 
 
 
