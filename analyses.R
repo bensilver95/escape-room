@@ -7,11 +7,12 @@ library(bmlm)
 library(ggpubr)
 library(corrplot)
 
-setwd("/Users/benjaminsilver/Google Drive/My Drive/Grad School/Projects/Escape_Room/data")
+setwd("/Users/benjaminsilver/Google Drive/My Drive/Grad School/Projects/Escape_Room/manuscript/submissions/")
 
 ######### CLEAN #############
-pre <- read_csv('surveys/pre_clean.csv')
-post <- read_csv('surveys/post_clean.csv')
+pre <- read_csv('sharing_github/pre_clean.csv')
+post <- read_csv('sharing_github/post_clean.csv')
+week <- read_csv('sharing_github/week_clean.csv')
 
 change <- pre %>% 
   rename_at(vars(-c(ID,Age,Gender,Race,Group,Teammate,
@@ -22,6 +23,11 @@ change <- pre %>%
                                 contains("Pred"))),
                         ~ paste0(.,"_post")), 
             by = c("ID","Group","Teammate")) %>% 
+  left_join(week %>% 
+              rename_at(vars(-c(ID,Group,Teammate,
+                                contains("Pred"))),
+                        ~ paste0(.,"_week")), 
+            by = c("ID","Group","Teammate")) %>% 
   pivot_longer(cols = c(starts_with("Morality"),
                         starts_with("Ability"),
                         starts_with("Sociability")),
@@ -30,8 +36,11 @@ change <- pre %>%
   mutate(postpreDiff.Real = post - pre,
          postpreDiff.Abs = abs(postpreDiff.Real),
          postpreDiff.d = ifelse(postpreDiff.Real <= 0, 0, 1),
+         weekpostDiff.Real = week - post,
+         weekpostDiff.Abs = abs(weekpostDiff.Real),
+         weekpostDiff.d = ifelse(weekpostDiff.Real <= 0, 0, 1),
          Interact_pre.r = 7 - Interact_pre,
-         Familiar_pre = Interact_pre.r * FirstMeet_pre,
+         Familiar_pre = (Interact_pre.r+FirstMeet_pre)/2,
          Familiar_pre.c = scale(Familiar_pre, center = T, 
                                 scale = F),
          Like_pre.c = scale(Like_pre, center = T, scale = F),
@@ -55,17 +64,22 @@ change1 <- change %>%
                names_to = c("Comparison",".value"),
                names_sep = "Diff.") %>% 
   mutate(Comparison.d = case_when(
-    Comparison == "postpre" ~ 0
+    Comparison == "postpre" ~ 0,
+    Comparison == "weekpost" ~ 1
+  ),
+  Comparison.drev = case_when(
+    Comparison == "postpre" ~ 1,
+    Comparison == "weekpost" ~ 0
   ))
 
 change2 <- change %>% 
-  pivot_longer(cols = c("pre","post"),
+  pivot_longer(cols = c("pre","post","week"),
                names_to = "Time",
                values_to = "Rating")
 
 
 # get objective competence performance scores
-video <- read_csv("video_data.csv")
+video <- read_csv("sharing_github/video_data.csv")
 
 video_sum <- video %>% 
   mutate(Puzzle = recode(Puzzle, EMPID = "flyer",
@@ -77,7 +91,7 @@ video_sum <- video %>%
   rename(Teammate = "Subject")
 
 # get objective sociability performance scores
-transcript <- read_csv('transcript_info.csv')
+transcript <- read_csv('sharing_github/transcript_info.csv')
 transcript_sum <- transcript %>% 
   rename(Group = "group",Teammate = "participant") %>% 
   mutate(
@@ -153,7 +167,16 @@ cor(change_corrmat, use="complete.obs")
 mChangeComp1 <- brm(Rating ~ Time.d + 
                       (1 + Time.d | Group / ID),
                     data = change2 %>% 
-                      filter(Dimension == 'Ability') %>% 
+                      filter(Dimension == 'Ability',
+                             Time != 'week') %>% 
+                      mutate(Time.d = if_else(Time == 'pre',0,1)),
+                    cores = 4, chains = 2, iter = 6000)
+
+mChangeComp2 <- brm(Rating ~ Time.d + 
+                      (1 + Time.d | ID),
+                    data = change2 %>% 
+                      filter(Dimension == 'Ability',
+                             Time != 'post') %>% 
                       mutate(Time.d = if_else(Time == 'pre',0,1)),
                     cores = 4, chains = 2, iter = 6000)
 
@@ -164,12 +187,21 @@ mChangeSoc1 <- brm(Rating ~ Time.d +
                      mutate(Time.d = if_else(Time == 'pre',0,1)),
                    cores = 4, chains = 2, iter = 6000)
 
+#5/8: Need to run
+mChangeSoc2 <- brm(Rating ~ Time.d + 
+                      (1 + Time.d | ID),
+                    data = change2 %>% 
+                      filter(Dimension == 'Sociability',
+                             Time != 'post') %>% 
+                      mutate(Time.d = if_else(Time == 'pre',0,1)),
+                    cores = 4, chains = 2, iter = 6000)
+
 ## Figures ####
 
 f2a <- ggplot(change2 %>% 
          filter(Dimension == "Ability") %>% 
          mutate(Time = factor(Time,
-                              levels = c("pre","post"))),
+                              levels = c("pre","post","week"))),
        aes(x = Time, y = Rating)) +
   geom_line(alpha = .05,aes(group = interaction(ID,Teammate))) +
   geom_violin(fill = "orchid3") +
@@ -177,7 +209,8 @@ f2a <- ggplot(change2 %>%
                geom = "crossbar", width = .6) +
   theme_classic() +
   scale_x_discrete(labels = c("1-7 days prior\nto escape room",
-                              "Immediately after\nescape room")) +
+                              "Immediately after\nescape room",
+                              '1 week after\nescape room')) +
   scale_y_continuous(breaks = seq(0,10,1)) +
   labs(y = "Competence Rating",
        title = "Change in perceived competence") +
@@ -189,7 +222,7 @@ f2a <- ggplot(change2 %>%
 f2b <- ggplot(change2 %>% 
          filter(Dimension == "Sociability") %>% 
          mutate(Time = factor(Time,
-                              levels = c("pre","post"))),
+                              levels = c("pre","post","week"))),
        aes(x = Time, y = Rating)) +
   geom_line(alpha = .05,aes(group = interaction(ID,Teammate))) +
   geom_violin(fill = "darkgoldenrod2") +
@@ -197,7 +230,8 @@ f2b <- ggplot(change2 %>%
                geom = "crossbar", width = .6) +
   theme_classic() +
   scale_x_discrete(labels = c("1-7 days prior\nto escape room",
-                              "Immediately after\nescape room")) +
+                              "Immediately after\nescape room",
+                              '1 week after\nescape room')) +
   scale_y_continuous(breaks = seq(0,10,1)) +
   labs(y = "Sociability Rating",
        title = "Change in perceived sociability") +
@@ -210,26 +244,223 @@ ggarrange(f2a,f2b,
           labels = c("A","B"),
           ncol = 2, nrow = 1,
           font.label = list(size = 20))
-ggsave("figs/paper/Fig2.jpg", scale = 1.8, width = 6, height = 3)
+ggsave("figs/Fig2.jpg", scale = 1.8, width = 6, height = 3)
+
+
+##### QUESTION 1 REDO #######
+## Models ####
+
+mDirChangeComp1 <- brm(Rating ~ Time.d + 
+                      (1 + Time.d | Group / ID),
+                    data = change2 %>% 
+                      filter(Dimension == 'Ability',
+                             Time != 'week') %>% 
+                      mutate(Time.d = if_else(Time == 'pre',0,1)),
+                    cores = 4, chains = 2, iter = 6000)
+
+mDirChangeComp2 <- brm(Rating ~ Time.d + 
+                      (1 + Time.d | ID),
+                    data = change2 %>% 
+                      filter(Dimension == 'Ability',
+                             Time != 'post') %>% 
+                      mutate(Time.d = if_else(Time == 'pre',0,1)),
+                    cores = 4, chains = 2, iter = 6000)
+
+mDirChangeSoc1 <- brm(Rating ~ Time.d + 
+                     (1 + Time.d | Group / ID),
+                   data = change2 %>% 
+                     filter(Dimension == 'Sociability') %>% 
+                     mutate(Time.d = if_else(Time == 'pre',0,1)),
+                   cores = 4, chains = 2, iter = 6000)
+
+mDirChangeSoc2 <- brm(Rating ~ Time.d + 
+                     (1 + Time.d | ID),
+                   data = change2 %>% 
+                     filter(Dimension == 'Sociability',
+                            Time != 'post') %>% 
+                     mutate(Time.d = if_else(Time == 'pre',0,1)),
+                   cores = 4, chains = 2, iter = 6000)
+
+mChangeComp1 <- brm(Abs ~ Comparison.d +
+                      (1 + Comparison.d | Group / ID), 
+                    data = change1 %>%
+                      filter(Dimension == 'Ability'),
+                    cores = 4, chains = 2, iter = 6000)
+
+mChangeComp2 <- brm(Abs ~ Comparison.drev +
+                      (1 + Comparison.drev | Group / ID), 
+                    data = change1 %>%
+                      filter(Dimension == 'Ability'),
+                    cores = 4, chains = 2, iter = 6000)
+
+mChangeSoc1 <- brm(Abs ~ Comparison.d +
+                      (1 + Comparison.d | Group / ID), 
+                    data = change1 %>%
+                      filter(Dimension == 'Sociability'),
+                    cores = 4, chains = 2, iter = 6000)
+
+mChangeSoc2 <- brm(Abs ~ Comparison.drev +
+                      (1 + Comparison.drev | Group / ID), 
+                    data = change1 %>%
+                      filter(Dimension == 'Sociability'),
+                    cores = 4, chains = 2, iter = 6000)
+
+
+
+## Figures ####
+
+lines <- tibble(Comparison = c("postpre","postpre","weekpost","weekpost"),
+                Dimension = c("Ability","Sociability","Ability","Sociability"),
+                mean = c(fixef(mChangeComp1)[1,1],fixef(mChangeSoc1)[1,1],
+                         fixef(mChangeComp2)[1,1],fixef(mChangeSoc2)[1,1]),
+                low = c(fixef(mChangeComp1)[1,3],fixef(mChangeSoc1)[1,3],
+                        fixef(mChangeComp2)[1,3],fixef(mChangeSoc2)[1,3]),
+                high = c(fixef(mChangeComp1)[1,4],fixef(mChangeSoc1)[1,4],
+                         fixef(mChangeComp2)[1,4],fixef(mChangeSoc2)[1,4]))
+
+change1 <- change1 %>% 
+  left_join(lines)
+
+f2a <- ggplot(change2 %>% 
+                filter(Dimension == "Ability") %>% 
+                mutate(Time = factor(Time,
+                                     levels = c("pre","post","week"))),
+              aes(x = Time, y = Rating)) +
+  geom_line(alpha = .05,aes(group = interaction(ID,Teammate))) +
+  geom_violin(fill = "orchid3") +
+  stat_summary(fun = mean, fun.min = mean, fun.max = mean,
+               geom = "crossbar", width = .6) +
+  theme_classic() +
+  scale_x_discrete(labels = c("1-7 days prior\nto escape room",
+                              "Immediately after\nescape room",
+                              '1 week after\nescape room')) +
+  scale_y_continuous(breaks = seq(0,10,1)) +
+  labs(y = "Competence Rating",
+       title = "Change in perceived competence") +
+  theme(axis.title = element_text(size = 16),
+        axis.text = element_text(size = 12),
+        plot.title = element_text(size = 18, hjust = .5),
+        axis.title.x = element_blank())
+
+f2b <- ggplot(change1 %>%
+         filter(Dimension == 'Ability'),
+       aes(x = Abs, fill = as.factor(Comparison.d),
+           color = as.factor(Comparison.d))) +
+  geom_histogram() +
+  facet_grid(rows = vars(Comparison)) +
+  geom_vline(aes(xintercept = mean)) +
+  geom_vline(aes(xintercept = low), linetype = "dashed") +
+  geom_vline(aes(xintercept = high), linetype = "dashed") +
+  theme_bw() +
+  labs(x = 'Absolute change in competence ratings\nbetween timepoints',
+       y = 'Count',
+       title = 'Competence rating change\nafter escape room game',
+       fill = 'Comparison') +
+  scale_fill_manual(values = c("orchid1","orchid4"),
+                    labels = c('Immediately after',"1 week after")) +
+  scale_color_manual(values = c("orchid1","orchid4"),
+                    labels = c('Immediately after',"1 week after"),
+                    guide = "none") +
+  theme(legend.position = "bottom",
+        strip.text = element_blank(),
+        axis.title = element_text(size = 16),
+        axis.text = element_text(size = 12),
+        plot.title = element_text(size = 18, hjust = .5),
+        legend.title = element_text(size = 14),
+        legend.text = element_text(size = 12))
+
+f2c <- ggplot(change2 %>% 
+                filter(Dimension == "Sociability") %>% 
+                mutate(Time = factor(Time,
+                                     levels = c("pre","post","week"))),
+              aes(x = Time, y = Rating)) +
+  geom_line(alpha = .05,aes(group = interaction(ID,Teammate))) +
+  geom_violin(fill = "darkgoldenrod2") +
+  stat_summary(fun = mean, fun.min = mean, fun.max = mean,
+               geom = "crossbar", width = .6) +
+  theme_classic() +
+  scale_x_discrete(labels = c("1-7 days prior\nto escape room",
+                              "Immediately after\nescape room",
+                              '1 week after\nescape room')) +
+  scale_y_continuous(breaks = seq(0,10,1)) +
+  labs(y = "Sociability Rating",
+       title = "Change in perceived sociability") +
+  theme(axis.title = element_text(size = 16),
+        axis.text = element_text(size = 12),
+        plot.title = element_text(size = 18, hjust = .5),
+        axis.title.x = element_blank())
+
+f2d <- ggplot(change1 %>%
+                filter(Dimension == 'Sociability'),
+              aes(x = Abs, fill = as.factor(Comparison.d),
+                  color = as.factor(Comparison.d))) +
+  geom_histogram() +
+  facet_grid(rows = vars(Comparison)) +
+  geom_vline(aes(xintercept = mean)) +
+  geom_vline(aes(xintercept = low), linetype = "dashed") +
+  geom_vline(aes(xintercept = high), linetype = "dashed") +
+  theme_bw() +
+  labs(x = 'Absolute change in sociability ratings\nbetween timepoints',
+       y = 'Count',
+       title = 'Sociability rating change\nafter escape room game',
+       fill = 'Comparison') +
+  scale_fill_manual(values = c("darkgoldenrod1","darkgoldenrod4"),
+                    labels = c('Immediately after',"1 week after")) +
+  scale_color_manual(values = c("darkgoldenrod1","darkgoldenrod4"),
+                     labels = c('Immediately after',"1 week after"),
+                     guide = "none") +
+  theme(legend.position = "bottom",
+        strip.text = element_blank(),
+        axis.title = element_text(size = 16),
+        axis.text = element_text(size = 12),
+        plot.title = element_text(size = 18, hjust = .5),
+        legend.title = element_text(size = 14),
+        legend.text = element_text(size = 12))
+
+ggarrange(f2a,f2b,f2c,f2d,
+          labels = c("A","B","C","D"),
+          ncol = 2, nrow = 2,
+          font.label = list(size = 20))
+ggsave("figs/Fig2.jpg", scale = 1.8, width = 6, height = 6)
 
 
 ###### QUESTION 2 ######
 ## Models ######
 mLikeFamiliarSimComp <- brm(post ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs + pre +
-                              (1 + Like_pre.cs*Familiar_pre.cs*Similar_pre.cs + pre | ID) +
-                              (1 | Group),
+                              (1 + Like_pre.cs*Familiar_pre.cs* 
+                                 Similar_pre.cs + pre | Group / ID),
                             data = change %>% 
                               filter(Dimension == 'Ability'),
-                            cores = 4, chains = 2, iter = 8000)
+                            cores = 4, chains = 2, iter = 8000,
+                            control = list(adapt_delta = .9))
 
 mLikeFamiliarSimSoc <- brm(post ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs + pre +
-                             (1 + Like_pre.cs*Familiar_pre.cs*Similar_pre.cs + pre | ID),
+                             (1 + Like_pre.cs*Familiar_pre.cs* 
+                                Similar_pre.cs + pre | Group / ID),
                            data = change %>% 
                              filter(Dimension == 'Sociability'),
-                           cores = 4, chains = 2, iter = 8000)
+                           cores = 4, chains = 2, iter = 8000,
+                           control = list(adapt_delta = .9))
+
+# not used in paper
+mLikeFamiliarSimCompWeek <- brm(week ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs + pre +
+                              (1 + Like_pre.cs*Familiar_pre.cs*
+                                 Similar_pre.cs + pre | Group / ID),
+                            data = change %>% 
+                              filter(Dimension == 'Ability'),
+                            cores = 4, chains = 2, iter = 8000,
+                            control = list(adapt_delta = .9))
+
+# not used in paper
+mLikeFamiliarSimSocWeek <- brm(week ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs + pre +
+                             (1 + Like_pre.cs*Familiar_pre.cs*
+                                Similar_pre.cs + pre | Group / ID),
+                           data = change %>% 
+                             filter(Dimension == 'Sociability'),
+                           cores = 4, chains = 2, iter = 8000,
+                           control = list(adapt_delta = .9))
 
 ## Figures ######
-# maybe delete this?
 # competence
 x = c("Liking","Familiarity","Similarity",
       "Liking x\nFamiliarity","Liking x\nSimilarity",
@@ -269,11 +500,11 @@ pdf <- data.frame(x = x,
                   lower80 = lower80, upper80 = upper80)
 pdf$x <- factor(pdf$x, levels = rev(x))
 
-ggplot(pdf, aes(x = effect, y = x)) +
+f3a<- ggplot(pdf, aes(x = effect, y = x)) +
   geom_errorbar(aes(xmin = lower, xmax = upper),
                 width = 0, color = 'orchid3') +
   geom_errorbar(aes(xmin = lower80, xmax = upper80),
-                width = 0, size = 1.5, color = 'orchid3') +  
+                width = 0, linewidth = 1.5, color = 'orchid3') +  
   geom_point(size = 3, color = 'orchid3') +
   theme_classic() +
   geom_vline(xintercept = 0, linetype = "dotted") +
@@ -285,7 +516,6 @@ ggplot(pdf, aes(x = effect, y = x)) +
         axis.title.y = element_blank(),
         axis.title.x = element_text(size = 16),
         plot.title = element_text(hjust = .5, size = 18))
-ggsave('figs/paper/mfs_target_comp.jpg')
 
 # sociability
 
@@ -327,11 +557,11 @@ pdf <- data.frame(x = x,
                   lower80 = lower80, upper80 = upper80)
 pdf$x <- factor(pdf$x, levels = rev(x))
 
-ggplot(pdf, aes(x = effect, y = x)) +
+f3b<-ggplot(pdf, aes(x = effect, y = x)) +
   geom_errorbar(aes(xmin = lower, xmax = upper),
                 width = 0, color = 'darkgoldenrod2') +
   geom_errorbar(aes(xmin = lower80, xmax = upper80),
-                width = 0, size = 1.5, color = 'darkgoldenrod2') +  
+                width = 0, linewidth = 1.5, color = 'darkgoldenrod2') +  
   geom_point(size = 3, color = 'darkgoldenrod2') +
   theme_classic() +
   geom_vline(xintercept = 0, linetype = "dotted") +
@@ -343,32 +573,46 @@ ggplot(pdf, aes(x = effect, y = x)) +
         axis.title.y = element_blank(),
         axis.title.x = element_text(size = 16),
         plot.title = element_text(hjust = .5, size = 18))
-ggsave('figs/paper/mfs_target_soc.jpg')
+
+ggarrange(f3a,f3b,
+          labels = c("A","B"),
+          ncol = 2, nrow = 1,
+          font.label = list(size = 20))
+ggsave("figs/Fig3.jpg", scale = 1.8, width = 6, height = 3)
 
 ###### QUESTION 3 ######
 ## Models #####
 # objective performance #####
+
+#5/29: still can't quite converge
 mPerfComp <- brm(post ~ ParticipationObjective.cs + pre + 
-                   (1 + ParticipationObjective.cs + pre | ID),
+                   (1  + pre | Group / ID),
                  data = change %>% 
                    filter(Dimension == 'Ability'),
-                 cores = 4, chains = 2, iter = 8000)
+                 cores = 4, chains = 2, iter = 6000,
+                 control = list(adapt_delta = .91))
 
+#5/14: still can't converge
 mInterComp <- brm(post ~ Like_pre.cs*Similar_pre.cs*Familiar_pre.cs*ParticipationObjective.cs + pre +
-                     (1 + Like_pre.cs*Similar_pre.cs*Familiar_pre.cs*ParticipationObjective.cs + pre | ID),
+                     (1 + Like_pre.cs*Similar_pre.cs*
+                        Familiar_pre.cs*ParticipationObjective.cs + pre | Group / ID),
                    data = change %>% 
                      filter(Dimension == 'Ability'),
                    cores = 4, chains = 2, iter = 8000, 
-                  control = list(adapt_delta = .9))
+                  control = list(adapt_delta = .91))
 
+# 5/29: still can't quite converge but pretty good
 mPerfSoc <- brm(post ~ collab_ratio.cs + pre + 
-                  (1 + collab_ratio.cs + pre | ID),
+                  (1 + pre | Group / ID),
                 data = change %>% 
                   filter(Dimension == 'Sociability'),
-                cores = 4, chains = 2, iter = 8000)
+                cores = 4, chains = 2, iter = 6000,
+                control = list(adapt_delta = .91))
 
+#5/14: still can't converge
 mInterSoc <- brm(post ~ Like_pre.cs*Similar_pre.cs*Familiar_pre.cs*collab_ratio.cs + pre +
-                    (1 + Like_pre.cs*Similar_pre.cs*Familiar_pre.cs*collab_ratio.cs + pre | ID),
+                    (1 + Like_pre.cs + Similar_pre.cs + 
+                       Familiar_pre.cs + collab_ratio.cs + pre | Group / ID),
                   data = change %>% 
                     filter(Dimension == 'Sociability'),
                   cores = 4, chains = 2, iter = 8000, 
@@ -383,29 +627,36 @@ change <- change %>%
          SolvingPuzzlesDiff_post = SolvingPuzzles_post - ParticipationObjective.rs)
 
 mAccComp <- brm(SolvingPuzzlesDiff_post ~ Familiar_pre.cs*Like_pre.cs*Similar_pre.cs + 
-                  (1 + Familiar_pre.cs*Like_pre.cs*Similar_pre.cs | ID), 
+                  (1 + Familiar_pre.cs + Like_pre.cs + Similar_pre.cs | Group / ID), 
                 data = change %>% 
                   distinct(ID,Teammate,.keep_all = T),
                 cores = 4, chains = 2, iter = 8000)
 
 mAccSoc <- brm(TeamCollabDiff_post ~ Familiar_pre.cs*Like_pre.cs*Similar_pre.cs + 
-                 (1 + Familiar_pre.cs*Like_pre.cs*Similar_pre.cs | ID), 
+                 (1 + Familiar_pre.cs + Like_pre.cs + Similar_pre.cs | Group / ID), 
                data = change %>% 
                  distinct(ID,Teammate,.keep_all = T),
                cores = 4, chains = 2, iter = 8000)
 
 # mediation #####
+
+#5/14:Some trouble converging
 mMediationComp <- brm(post ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*SolvingPuzzlesDiff_post + pre +
-                        (1 + Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*SolvingPuzzlesDiff_post + pre | ID),
+                        (1 + Like_pre.cs + Familiar_pre.cs + 
+                           Similar_pre.cs + SolvingPuzzlesDiff_post + pre | Group / ID),
                       data = change %>% 
                         filter(Dimension == 'Ability'),
-                      cores = 4, chains = 2, iter = 8000)
+                      cores = 4, chains = 2, iter = 8000,
+                      control = list(adapt_delta = .9))
 
+#5/14:Some trouble converging
 mMediationSoc <- brm(post ~ Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*TeamCollabDiff_post + pre +
-                       (1 + Like_pre.cs*Familiar_pre.cs*Similar_pre.cs*TeamCollabDiff_post + pre | ID),
+                       (1 + Like_pre.cs + Familiar_pre.cs + 
+                          Similar_pre.cs + TeamCollabDiff_post + pre | Group / ID),
                      data = change %>% 
                        filter(Dimension == 'Sociability'),
-                     cores = 4, chains = 2, iter = 8000)
+                     cores = 4, chains = 2, iter = 8000,
+                     control = list(adapt_delta = .9))
 
 # don't use these in the paper but helpful for understanding mediation
 change_med <- change %>% 
@@ -440,10 +691,8 @@ fit_med_soc <- mlm(d = change_med_soc %>%
                    m = "TeamCollabDiff_post_cw",y = "post_cw",
                    iter = 8000, cores = 4)
 
-
-
-
 ## Figures #####
+# Objective performance x RF Interactions #####
 medcomp <- median(change$ParticipationObjective.cs,na.rm = T)
 medsoc <- median(change$collab_ratio.cs, na.rm = T)
 
@@ -491,5 +740,100 @@ ggarrange(f4a,f4b,
           font.label = list(size = 20))
 ggsave("figs/paper/Fig4.jpg", scale = 1.8, width = 6, height = 3)
 
+# Effects of RFs on PAB (not in paper) #######
 
+x = c("Liking","Familiarity","Similarity")
+modelPers = brms::fixef(mAccComp)
 
+effect = c(modelPers[3,1],modelPers[2,1],modelPers[4,1])
+
+lower = c(modelPers[3,3],modelPers[2,3],modelPers[4,3])
+
+upper = c(modelPers[3,4],modelPers[2,4],modelPers[4,4])
+
+ci80Pers = brms::posterior_samples(mAccComp)
+
+# 80% CIs
+lower80 = c(quantile(ci80Pers[,3],.1),
+            quantile(ci80Pers[,2],.1),
+            quantile(ci80Pers[,4],.1))
+
+# 80% CIs
+upper80 = c(quantile(ci80Pers[,3],.9),
+            quantile(ci80Pers[,2],.9),
+            quantile(ci80Pers[,4],.9))
+
+pdf <- data.frame(x = x, 
+                  effect = effect, lower = lower,
+                  upper = upper,
+                  lower80 = lower80, upper80 = upper80)
+pdf$x <- factor(pdf$x, levels = rev(x))
+
+f5a<- ggplot(pdf, aes(x = effect, y = x)) +
+  geom_errorbar(aes(xmin = lower, xmax = upper),
+                width = 0, color = 'orchid3') +
+  geom_errorbar(aes(xmin = lower80, xmax = upper80),
+                width = 0, size = 1.5, color = 'orchid3') +  
+  geom_point(size = 3, color = 'orchid3') +
+  theme_classic() +
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  labs(x = "Standardized Beta",
+       title = "Effects of relational factors on\nPAB - puzzle solving ability") +
+  scale_x_continuous(n.breaks = 8) +
+  theme(axis.text.y = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.title.y = element_blank(),
+        axis.title.x = element_text(size = 16),
+        plot.title = element_text(hjust = .5, size = 18))
+
+# sociability
+
+x = c("Liking","Familiarity","Similarity")
+modelPers = brms::fixef(mAccSoc)
+
+effect = c(modelPers[3,1],modelPers[2,1],modelPers[4,1])
+
+lower = c(modelPers[3,3],modelPers[2,3],modelPers[4,3])
+
+upper = c(modelPers[3,4],modelPers[2,4],modelPers[4,4])
+
+ci80Pers = brms::posterior_samples(mAccSoc)
+
+# 80% CIs
+lower80 = c(quantile(ci80Pers[,3],.1),
+            quantile(ci80Pers[,2],.1),
+            quantile(ci80Pers[,4],.1))
+
+# 80% CIs
+upper80 = c(quantile(ci80Pers[,3],.9),
+            quantile(ci80Pers[,2],.9),
+            quantile(ci80Pers[,4],.9))
+
+pdf <- data.frame(x = x, 
+                  effect = effect, lower = lower,
+                  upper = upper,
+                  lower80 = lower80, upper80 = upper80)
+pdf$x <- factor(pdf$x, levels = rev(x))
+
+f5b<-ggplot(pdf, aes(x = effect, y = x)) +
+  geom_errorbar(aes(xmin = lower, xmax = upper),
+                width = 0, color = 'darkgoldenrod2') +
+  geom_errorbar(aes(xmin = lower80, xmax = upper80),
+                width = 0, size = 1.5, color = 'darkgoldenrod2') +  
+  geom_point(size = 3, color = 'darkgoldenrod2') +
+  theme_classic() +
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  labs(x = "Standardized Beta",
+       title = "Effects of relational factors on\nPAB - team collaboration ability") +
+  scale_x_continuous(n.breaks = 8) +
+  theme(axis.text.y = element_text(size = 12),
+        axis.text.x = element_text(size = 12),
+        axis.title.y = element_blank(),
+        axis.title.x = element_text(size = 16),
+        plot.title = element_text(hjust = .5, size = 18))
+
+ggarrange(f5a,f5b,
+          labels = c("A","B"),
+          ncol = 2, nrow = 1,
+          font.label = list(size = 20))
+ggsave("figs/Fig5.jpg", scale = 1.8, width = 6, height = 3)
