@@ -86,7 +86,8 @@ video_sum <- video %>%
                          crumpet = "myspace")) %>% 
   group_by(Group) %>% 
   count(Subject) %>% 
-  filter(Subject != 'None') %>% 
+  filter(Subject != 'None',
+         Group != 28) %>% 
   rename(ParticipationObjective = "n") %>%
   rename(Teammate = "Subject")
 
@@ -96,7 +97,8 @@ transcript_sum <- transcript %>%
   rename(Group = "group",Teammate = "participant") %>% 
   mutate(
     firstplural_pct = (firstplural/num_words)*100) %>% 
-  filter(Teammate != "GM",Teammate != "GM2") %>% 
+  filter(Teammate != "GM",Teammate != "GM2",
+         Group != 28) %>% 
   group_by(Group) %>% 
   mutate(collab_ratio = ((firstplural + second)/sum((num_words)))*100) %>% 
   ungroup() %>% 
@@ -106,7 +108,7 @@ transcript_sum <- transcript %>%
 change <- change %>% 
   left_join(video_sum) %>% 
   left_join(transcript_sum) %>% 
-  mutate(ParticipationObjective = replace_na(ParticipationObjective,0),
+  mutate(ParticipationObjective = if_else(Teammate == '23A',0,ParticipationObjective),
          ParticipationObjective.cs = scale(ParticipationObjective, center = T, scale = T),
          collab_ratio.cs = scale(collab_ratio, center = T, scale = T),
          num_utterances.cs = scale(num_utterances, center = T, scale = T),
@@ -154,6 +156,15 @@ change_descriptives <- change %>%
             FirstMeet_pre = mean(FirstMeet_pre, na.rm = T),
             Similar_pre = mean(Similar_pre, na.rm = T))
 
+change %>% 
+  group_by(Dimension) %>% 
+  summarize(pre_mean = mean(pre,na.rm = T),
+            pre_sd = sd(pre,na.rm = T),
+            post_mean = mean(post,na.rm = T),
+            post_sd = sd(post,na.rm = T),
+            week_mean = mean(week,na.rm = T),
+            week_sd = sd(week,na.rm = T))
+
 # correlation matrix
 change_corrmat <- change %>% 
   distinct(ID, Teammate, .keep_all = T) %>% 
@@ -170,7 +181,86 @@ change_corrmat <- change %>%
          Familiar_pre)
 cor(change_corrmat, use="complete.obs")^2
 
-##### QUESTION 1 REDO #######
+## descriptive figures ####
+# first met
+library(tidygraph)
+library(ggraph)
+
+familiarity <- change %>% 
+  distinct(ID,Teammate,.keep_all = T) %>% 
+  select(ID,Group,Teammate, FirstMeet_pre) %>% 
+  filter(!(Group == 14 & Teammate == '14E'),
+         !(Group == 19 & Teammate == '19E'),
+         !(Group == 21 & Teammate == '21D'),
+         !(Group == 21 & Teammate == '21E'),
+         !(Group == 27 & Teammate == '27C'),
+         !(Group == 31 & Teammate == '31E'),
+         !(Group == 34 & Teammate == '34E'),
+         !(Group == 36 & Teammate == '36E')) %>% 
+  mutate(ID = str_extract(ID, "[A-Za-z]"),
+         Teammate = str_extract(Teammate, "[A-Za-z]"),
+         Group = as.integer(factor(Group)),
+         FirstMeet_pre = as.factor(FirstMeet_pre)) %>% 
+  rename(from = ID, to = Teammate, group = Group, weight = FirstMeet_pre)
+
+graph <- tbl_graph(edges = familiarity, directed = FALSE)
+
+# Plot all groups using facets
+ggraph(graph, layout = "circle") +
+  geom_edge_link(aes(color = weight)) +
+  geom_node_point(size = 2, color = 'black') +
+  scale_edge_color_manual(values = RColorBrewer::brewer.pal(6, "Blues"),
+                          labels = c("Past month","Past 6 months",
+                                     "Past year","Past 3 years",
+                                     "Past 5 years","More than 5 years ago")) +
+  #scale_color_manual(values = c(`1` = "blue", `2` = "pink")) + 
+  labs(edge_color = "First meet") +
+  theme_void() +
+  facet_wrap(~group, ncol = 5) +
+  labs(title = "When did you first meet X?") +
+  theme(plot.margin = unit(c(.5,.5,.5,.5),"lines"),
+        plot.title = element_text(hjust = .5))
+ggsave('figs/supp1.jpg',width = 5, height = 5)
+
+familiarity <- change %>% 
+  distinct(ID,Teammate,.keep_all = T) %>% 
+  select(ID,Group,Teammate, Interact_pre) %>% 
+  filter(!(Group == 14 & Teammate == '14E'),
+         !(Group == 19 & Teammate == '19E'),
+         !(Group == 21 & Teammate == '21D'),
+         !(Group == 21 & Teammate == '21E'),
+         !(Group == 27 & Teammate == '27C'),
+         !(Group == 31 & Teammate == '31E'),
+         !(Group == 34 & Teammate == '34E'),
+         !(Group == 36 & Teammate == '36E')) %>% 
+  mutate(ID = str_extract(ID, "[A-Za-z]"),
+         Teammate = str_extract(Teammate, "[A-Za-z]"),
+         Group = as.integer(factor(Group)),
+         Interact_pre = as.factor(Interact_pre)) %>% 
+  rename(from = ID, to = Teammate, group = Group, weight = Interact_pre)
+
+graph <- tbl_graph(edges = familiarity, directed = FALSE)
+
+# Plot all groups using facets
+ggraph(graph, layout = "circle") +
+  geom_edge_link(aes(color = weight)) +
+  geom_node_point(size = 2, color = "black") +
+  scale_edge_color_manual(values = RColorBrewer::brewer.pal(6, "Blues"),
+                          labels = c("Less than several times/year",
+                                     "Several times/year",
+                                     "Several times/6 months",
+                                     "Several times/month",
+                                     "Several times/week","Every day")) +
+  labs(edge_color = "Interaction frequency") +
+  theme_void() +
+  facet_wrap(~group, ncol = 5) +
+  labs(title = "How often do you interact with X?") +
+  theme(plot.margin = unit(c(.5,.5,.5,.5),"lines"),
+        plot.title = element_text(hjust = .5))
+ggsave('figs/supp2.jpg',width = 5.5, height = 5)
+
+
+##### QUESTION 1 #######
 ## Models ####
 
 mDirChangeComp1 <- brm(Rating ~ Time.d + 
@@ -228,7 +318,21 @@ mChangeSoc2 <- brm(Abs ~ Comparison.drev +
                       filter(Dimension == 'Sociability'),
                     cores = 4, chains = 2, iter = 6000)
 
+# percent positive vs negative change
+change %>% 
+  filter(Dimension == 'Ability') %>% 
+  mutate(impression_change = post - pre,
+         change_dir = if_else(impression_change > 0,2,
+                              if_else(impression_change == 0,1,0))) %>% 
+  count(change_dir)
 
+change %>% 
+  filter(Dimension == 'Sociability') %>% 
+  mutate(impression_change = post - pre,
+         change_dir = if_else(impression_change > 0,2,
+                              if_else(impression_change == 0,1,0))) %>% 
+  count(change_dir)
+  
 
 ## Figures ####
 
@@ -355,7 +459,6 @@ ggarrange(f2a,f2b,f2c,f2d,
           ncol = 2, nrow = 2,
           font.label = list(size = 20))
 ggsave("figs/Fig2.jpg", scale = 1.8, width = 6, height = 6)
-
 
 ###### QUESTION 2 ######
 ## Models ######
@@ -541,13 +644,15 @@ mPerfSoc <- brm(post ~ collab_ratio.cs + pre +
 change <- change %>% 
   mutate(ParticipationObjective.rs = scales::rescale(ParticipationObjective,to = c(0,10)),
          collab_ratio.rs = scales::rescale(collab_ratio, to = c(0,10)),
-         num_utterances.rs = scales::rescale(collab_ratio, to = c(0,10))) %>% 
-  mutate(TeamCollabDiff_post = TeamCollab_post - collab_ratio.rs,
-         SolvingPuzzlesDiff_post = SolvingPuzzles_post - ParticipationObjective.rs) %>% 
-  mutate(TeamCollabSum_post = TeamCollab_post + collab_ratio.rs,
-         SolvingPuzzlesSum_post = SolvingPuzzles_post + ParticipationObjective.rs)
+         num_utterances.rs = scales::rescale(collab_ratio, to = c(0,10)),
+         TeamCollabDiff_post = TeamCollab_post - collab_ratio.rs,
+         SolvingPuzzlesDiff_post = SolvingPuzzles_post - ParticipationObjective.rs, 
+         TeamCollabSum_post = TeamCollab_post + collab_ratio.rs,
+         SolvingPuzzlesSum_post = SolvingPuzzles_post + ParticipationObjective.rs,
+         SolvingPuzzles_post.cs = scale(SolvingPuzzles_post, center = T, scale = T),
+         TeamCollab_post.cs = scale(TeamCollab_post,center = T, scale = T))
 
-mAccComp <- brm(SolvingPuzzlesDiff_post ~ Familiar_pre.cs*Like_pre.cs*Similar_pre.cs + 
+mAccComp <- brm(SolvingPuzzlesDiff_post ~ Familiar_pre.cs*Like_pre.cs*Similar_pre.cs +
                   (1 + Familiar_pre.cs*Like_pre.cs*Similar_pre.cs | Group / ID), 
                 data = change %>% 
                   distinct(ID,Teammate,.keep_all = T),
@@ -577,6 +682,186 @@ mAccTraitSoc <- brm(post ~ TeamCollabDiff_post + TeamCollabSum_post + pre +
                      cores = 4, chains = 2, iter = 4000,
                      control = list(adapt_delta = .95))
 
+# PAB-traits based on performance level ####
+change_explore <- change %>% 
+  mutate(performance_puzzles = if_else(ParticipationObjective > median(ParticipationObjective, na.rm = T),
+                                       'high','low'),
+         performance_collab = if_else(collab_ratio > median(collab_ratio,na.rm = T),'high','low'),
+         impression_change = post - pre)
+
+mAccTraitComp2 <- brm(post ~ SolvingPuzzlesDiff_post*performance.d + pre +
+                        (1 + SolvingPuzzlesDiff_post*performance.d + pre | Group/ID),
+                      data = change_explore %>% 
+                        filter(Dimension == 'Ability') %>% 
+                        mutate(performance.d = if_else(performance_puzzles == 'low',0,1)),
+                      cores = 4, chains = 2, iter = 4000,
+                      control = list(adapt_delta = .95))
+
+mAccTraitSoc2 <- brm(post ~ TeamCollabDiff_post*performance.d + pre +
+                        (1 + TeamCollabDiff_post*performance.d + pre | Group/ID),
+                      data = change_explore %>% 
+                        filter(Dimension == 'Sociability') %>% 
+                        mutate(performance.d = if_else(performance_collab == 'low',0,1)),
+                      cores = 4, chains = 2, iter = 4000,
+                      control = list(adapt_delta = .95))
+
+# PAB-traits with CRA #####
+# first just include components separately
+mAccTraitCompCRA1 <- brm(post ~ SolvingPuzzles_post + ParticipationObjective.rs + pre +
+                           (1 + SolvingPuzzles_post + ParticipationObjective.rs + pre | Group / ID),
+                         data = change %>% 
+                           filter(Dimension == 'Ability'),
+                         cores = 4, chains = 2, iter = 8000,
+                         control = list(adapt_delta = .95))
+
+mAccTraitSocCRA1 <- brm(post ~ TeamCollab_post + collab_ratio.rs + pre +
+                          (1 + TeamCollab_post + collab_ratio.rs + pre | Group / ID),
+                        data = change %>% 
+                          filter(Dimension == 'Sociability'),
+                        cores = 4, chains = 2, iter = 8000,
+                        control = list(adapt_delta = .95))
+
+# implement with lavaan
+library(lavaan)
+
+# competence
+model <- 'post ~ 1 + c1*SolvingPuzzles_post + c2*ParticipationObjective.rs
+a1 := c1+c2
+a3 := c1-c2
+c1_times_2 := 2*c1
+c2_times_2 := 2*c2
+minus_c1_times_2 := -2*c1
+minus_c2_times_2 := -2*c2'
+
+regression <- sem(model, data=change %>% filter(Dimension == 'Ability'))
+
+estimates <- parameterEstimates(regression)
+
+if (subset(estimates, label == "a3")["est"]>=0 & subset(estimates, label == "a1")["est"]>0){
+  abs <- round(subset(estimates, label == "minus_c2_times_2")["est"],2)
+  se <- round(subset(estimates, label == "minus_c2_times_2")["se"],2)
+  a3_is <- "positive"
+  
+  # compute one-tailed p-value of abs for the hypothesis abs > 0, 
+  # depending on the tail in which abs is positioned
+  if (abs >= 0){pvalue <- round(subset(estimates, label == "minus_c2_times_2")["pvalue"]/2, 5)}
+  if (abs < 0){pvalue <- round(1 - (subset(estimates, label == "minus_c2_times_2")["pvalue"]/2), 5)}
+}
+
+
+if (subset(estimates, label == "a3")["est"]<0 & subset(estimates, label == "a1")["est"]>0){
+  abs <- round(subset(estimates, label == "minus_c1_times_2")["est"],2)
+  se <- round(subset(estimates, label == "minus_c1_times_2")["se"],2)
+  a3_is <- "negative"
+  
+  # compute one-tailed p-value of abs for the hypothesis abs > 0, 
+  # depending on the tail in which abs is positioned
+  if (abs >= 0){pvalue <- round(subset(estimates, label == "minus_c1_times_2")["pvalue"]/2, 5)}
+  if (abs < 0){pvalue <- round(1 - (subset(estimates, label == "minus_c1_times_2")["pvalue"]/2), 5)}
+}
+
+
+if (subset(estimates, label == "a3")["est"]>=0 & subset(estimates, label == "a1")["est"]<0){
+  abs <- round(subset(estimates, label == "c1_times_2")["est"],2)
+  se <- round(subset(estimates, label == "c1_times_2")["se"],2)
+  a3_is <- "positive"
+  
+  # compute one-tailed p-value of abs for the hypothesis abs > 0, 
+  # depending on the tail in which abs is positioned
+  if (abs >= 0){pvalue <- round(subset(estimates, label == "c1_times_2")["pvalue"]/2, 5)}
+  if (abs < 0){pvalue <- round(1 - (subset(estimates, label == "c1_times_2")["pvalue"]/2), 5)}
+}
+
+
+if (subset(estimates, label == "a3")["est"]<0 & subset(estimates, label == "a1")["est"]<0){
+  abs <- round(subset(estimates, label == "c2_times_2")["est"],2)
+  se <- round(subset(estimates, label == "c2_times_2")["se"],2)
+  a3_is <- "negative"
+  
+  # compute one-tailed p-value of abs for the hypothesis abs > 0, 
+  # depending on the tail in which abs is positioned
+  if (abs >= 0){pvalue <- round(subset(estimates, label == "c2_times_2")["pvalue"]/2, 5)}
+  if (abs < 0){pvalue <- round(1 - (subset(estimates, label == "c2_times_2")["pvalue"]/2), 5)}
+}
+
+print(c("abs"=abs,se,pvalue,"a3 is"=a3_is))
+
+# sociability
+model <- 'post ~ 1 + c1*TeamCollab_post + c2*collab_ratio.rs
+a1 := c1+c2
+a3 := c1-c2
+c1_times_2 := 2*c1
+c2_times_2 := 2*c2
+minus_c1_times_2 := -2*c1
+minus_c2_times_2 := -2*c2'
+
+regression <- sem(model, data=change %>% filter(Dimension == 'Sociability'))
+
+estimates <- parameterEstimates(regression)
+
+if (subset(estimates, label == "a3")["est"]>=0 & subset(estimates, label == "a1")["est"]>0){
+  abs <- round(subset(estimates, label == "minus_c2_times_2")["est"],2)
+  se <- round(subset(estimates, label == "minus_c2_times_2")["se"],2)
+  a3_is <- "positive"
+  
+  # compute one-tailed p-value of abs for the hypothesis abs > 0, 
+  # depending on the tail in which abs is positioned
+  if (abs >= 0){pvalue <- round(subset(estimates, label == "minus_c2_times_2")["pvalue"]/2, 5)}
+  if (abs < 0){pvalue <- round(1 - (subset(estimates, label == "minus_c2_times_2")["pvalue"]/2), 5)}
+}
+
+
+if (subset(estimates, label == "a3")["est"]<0 & subset(estimates, label == "a1")["est"]>0){
+  abs <- round(subset(estimates, label == "minus_c1_times_2")["est"],2)
+  se <- round(subset(estimates, label == "minus_c1_times_2")["se"],2)
+  a3_is <- "negative"
+  
+  # compute one-tailed p-value of abs for the hypothesis abs > 0, 
+  # depending on the tail in which abs is positioned
+  if (abs >= 0){pvalue <- round(subset(estimates, label == "minus_c1_times_2")["pvalue"]/2, 5)}
+  if (abs < 0){pvalue <- round(1 - (subset(estimates, label == "minus_c1_times_2")["pvalue"]/2), 5)}
+}
+
+
+if (subset(estimates, label == "a3")["est"]>=0 & subset(estimates, label == "a1")["est"]<0){
+  abs <- round(subset(estimates, label == "c1_times_2")["est"],2)
+  se <- round(subset(estimates, label == "c1_times_2")["se"],2)
+  a3_is <- "positive"
+  
+  # compute one-tailed p-value of abs for the hypothesis abs > 0, 
+  # depending on the tail in which abs is positioned
+  if (abs >= 0){pvalue <- round(subset(estimates, label == "c1_times_2")["pvalue"]/2, 5)}
+  if (abs < 0){pvalue <- round(1 - (subset(estimates, label == "c1_times_2")["pvalue"]/2), 5)}
+}
+
+
+if (subset(estimates, label == "a3")["est"]<0 & subset(estimates, label == "a1")["est"]<0){
+  abs <- round(subset(estimates, label == "c2_times_2")["est"],2)
+  se <- round(subset(estimates, label == "c2_times_2")["se"],2)
+  a3_is <- "negative"
+  
+  # compute one-tailed p-value of abs for the hypothesis abs > 0, 
+  # depending on the tail in which abs is positioned
+  if (abs >= 0){pvalue <- round(subset(estimates, label == "c2_times_2")["pvalue"]/2, 5)}
+  if (abs < 0){pvalue <- round(1 - (subset(estimates, label == "c2_times_2")["pvalue"]/2), 5)}
+}
+
+print(c("abs"=abs,se,pvalue,"a3 is"=a3_is))
+
+# unused in paper ######
+# don't use in paper but helpful for visualizing
+
+ggplot(change_explore %>% filter(Dimension == 'Ability'),
+       aes(x = SolvingPuzzlesDiff_post, y = post, color = performance_puzzles)) +
+  geom_jitter() +
+  geom_smooth(method = 'lm')
+
+ggplot(change_pabtest %>% filter(Dimension == 'Sociability',
+                                 !is.na(performance_collab)),
+       aes(x = TeamCollabDiff_post, y = post, color = performance_collab)) +
+  geom_jitter() +
+  geom_smooth(method = 'lm')
+  
 # don't use these in the paper but helpful if I want to begin to conceptualize as mediation
 change_med <- change %>% 
   select(ID, Teammate,Familiar_pre.cs,Like_pre.cs,Similar_pre.cs,
